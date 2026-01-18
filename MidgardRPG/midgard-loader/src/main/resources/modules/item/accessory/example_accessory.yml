@@ -1,0 +1,10 @@
+accessory_example:
+  base:
+    material: FLINT
+    name: '<white>'
+    tier: COMMON
+    type: ACCESSORY
+    revision-id: 1
+  mechanics:
+    stats:
+      attack-damage: 5

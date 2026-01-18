@@ -1,0 +1,225 @@
+# ============================================
+# MIDGARD COMBAT MODULE - MESSAGES
+# ============================================
+# Sistema de mensagens modernizado para o módulo de combate
+# Suporta Mini Message format
+# Placeholders: %player%, %target%, %damage%, %element%, %weapon%
+
+# ============================================
+# MODO DE COMBATE
+# ============================================
+combat_mode:
+  # Entrada/Saída
+  enabled: "<red>⚔ Modo de Combate <bold>ATIVADO</bold>!</red>"
+  disabled: "<green>✔ Modo de Combate <bold>DESATIVADO</bold>.</green>"
+  
+  # Timer
+  warning_5s: "<yellow>⚠ Combate termina em <red>5 segundos</red>...</yellow>"
+  warning_3s: "<yellow>⚠ Combate termina em <red>3 segundos</red>...</yellow>"
+  expired: "<gray>✦ Você saiu do combate.</gray>"
+  
+  # Restrições
+  cannot_logout: "<red>✖ Você não pode deslogar em combate!</red>"
+  cannot_teleport: "<red>✖ Você não pode se teleportar em combate!</red>"
+  cannot_use_command: "<red>✖ Comando bloqueado durante combate!</red>"
+  
+  # Informações
+  time_remaining: "<gray>Tempo restante em combate: <red>%time%</red></gray>"
+  opponent: "<gray>Em combate com: <red>%target%</red></gray>"
+
+# ============================================
+# DANO E ATAQUES (Feedback via hologramas)
+# ============================================
+# Mensagens de dano no chat foram removidas.
+# O feedback de dano é exibido via hologramas flutuantes
+# configurados em config.yml (damage-indicators).
+
+# ============================================
+# COMBATE ELEMENTAL
+# ============================================
+elemental:
+  # Tipos de dano
+  fire: "<red>🔥 Fogo</red>"
+  water: "<blue>💧 Água</blue>"
+  earth: "<gold>⛰ Terra</gold>"
+  air: "<white>💨 Ar</white>"
+  ice: "<aqua>❄ Gelo</aqua>"
+  thunder: "<yellow>⚡ Raio</yellow>"
+  light: "<yellow>☀ Luz</yellow>"
+  darkness: "<dark_purple>🌙 Trevas</dark_purple>"
+  divine: "<light_purple>✦ Divino</light_purple>"
+  
+  # Efeitos
+  burning: "<red>🔥 Você está queimando! -%damage% ❤/s</red>"
+  frozen: "<aqua>❄ Você está congelado! Movimento reduzido.</aqua>"
+  shocked: "<yellow>⚡ Você está eletrizado! -%damage% ❤/s</yellow>"
+  poisoned: "<green>☠ Você está envenenado! -%damage% ❤/s</green>"
+  
+  # Resistências
+  resistance_high: "<green>↑ Resistência: +%amount%%</green>"
+  resistance_low: "<red>↓ Fraqueza: -%amount%%</red>"
+  immunity: "<gold>★ Imunidade: %element%</gold>"
+
+# ============================================
+# STATUS E REGENERAÇÃO
+# ============================================
+status:
+  stamina_low: "<yellow>⚠ Sua stamina está baixa!</yellow>"
+  stamina_exhausted: "<red>⚠ Você está exausto!</red>"
+  health_regenerated: "<green>+%amount% ❤</green>"
+  mana_regenerated: "<blue>+%amount% 💧</blue>"
+
+# ============================================
+# PROGRESSÃO DE COMBATE
+# ============================================
+progression:
+  combat_level_up: "<gold>⚔ COMBAT LEVEL UP! Nível %level%!</gold>"
+  xp_gained: "<gray>+%amount% Combat XP</gray>"
+
+# ============================================
+# ARMAS E EQUIPAMENTOS
+# ============================================
+weapons:
+  # Equipar
+  equipped: "<green>✔ Equipado: <yellow>%weapon%</yellow></green>"
+  unequipped: "<gray>✖ Desequipado: <white>%weapon%</white></gray>"
+  
+  # Durabilidade
+  durability_low: "<yellow>⚠ %weapon% está com durabilidade baixa! <red>%durability%</red></yellow>"
+  durability_broken: "<red>✖ %weapon% quebrou!</red>"
+  durability_repaired: "<green>✔ %weapon% reparado!</green>"
+  
+  # Habilidades da arma
+  skill_activated: "<yellow>★ Habilidade da arma ativada: <white>%skill%</white></yellow>"
+  skill_cooldown: "<red>⏱ Habilidade em recarga: <yellow>%time%</yellow></red>"
+  
+  # Encantamentos
+  enchant_triggered: "<light_purple>✦ %enchant% ativado!</light_purple>"
+
+# ============================================
+# COMBATE PVP
+# ============================================
+pvp:
+  # Morte
+  killed_by_player: "<red>☠ Você foi morto por <yellow>%killer%</yellow>!</red>"
+  killed_player: "<green>⚔ Você matou <yellow>%target%</yellow>!</green>"
+  
+  # Kill Streak
+  streak_started: "<yellow>🔥 Kill Streak: <gold>%streak%</gold></yellow>"
+  streak_continued: "<gold>🔥 KILL STREAK! <yellow>%streak%</yellow> abates!</gold>"
+  streak_ended: "<red>☠ Sua streak de %streak% abates foi interrompida por <yellow>%killer%</yellow>!</red>"
+  
+  # Duelos
+  duel_request: "<yellow>%player%</yellow> <gray>desafiou você para um duelo!</gray>"
+  duel_accepted: "<green>✔ Duelo aceito! Prepare-se...</green>"
+  duel_declined: "<gray>✖ Duelo recusado.</gray>"
+  duel_started: "<red>⚔ DUELO INICIADO!</red>"
+  duel_won: "<gold>🏆 VITÓRIA! Você venceu o duelo!</gold>"
+  duel_lost: "<red>☠ DERROTA! Você perdeu o duelo.</red>"
+  
+  # Proteções
+  pvp_disabled: "<yellow>⚠ PvP está desabilitado nesta área.</yellow>"
+  protected_area: "<yellow>⚠ Esta é uma zona protegida.</yellow>"
+  same_team: "<red>✖ Você não pode atacar membros do seu time!</red>"
+
+# ============================================
+# COMBATE PVE
+# ============================================
+pve:
+  # Morte
+  killed_by_mob: "<red>☠ Você foi morto por <yellow>%mob%</yellow>!</red>"
+  killed_mob: "<green>⚔ Você matou <yellow>%mob%</yellow>!</green>"
+  
+  # Boss
+  boss_appeared: "<dark_red>💀 <bold>BOSS APARECEU!</bold> <yellow>%boss%</yellow></dark_red>"
+  boss_damaged: "<red>%boss% → <yellow>%health%</yellow>/<white>%max_health%</white> ❤</red>"
+  boss_enraged: "<dark_red>💢 %boss% está ENFURECIDO!</dark_red>"
+  boss_defeated: "<gold>🏆 BOSS DERROTADO! <yellow>%boss%</yellow></gold>"
+  
+  # Recompensas
+  loot_obtained: "<green>✦ Saque: <yellow>%items%</yellow></green>"
+  rare_drop: "<light_purple>★ ITEM RARO! <yellow>%item%</yellow></light_purple>"
+
+# ============================================
+# LEVEL E PROGRESSÃO
+# ============================================
+progression:
+  # Level de combate
+  combat_level_up: "<gold>✦ LEVEL UP!</gold> <gray>Nível de Combate:</gray> <yellow>%level%</yellow>"
+  combat_xp_gained: "<green>+%xp% XP de Combate</green>"
+  xp_gained: "<green>+%xp% XP de Combate</green>"
+  
+  # Habilidades de combate
+  skill_improved: "<green>✔ %skill% melhorado para Level <yellow>%level%</yellow>!</green>"
+  skill_mastered: "<gold>★ %skill% MASTERIZADO!</gold>"
+
+# ============================================
+# STATUS E EFEITOS
+# ============================================
+status:
+  # Buffs
+  buff_applied: "<green>↑ Buff aplicado: <yellow>%buff%</yellow> <dark_gray>(%duration%)</dark_gray></green>"
+  buff_removed: "<gray>↓ Buff removido: <white>%buff%</white></gray>"
+  buff_expired: "<yellow>⏱ %buff% expirou.</yellow>"
+  
+  # Debuffs
+  debuff_applied: "<red>↓ Debuff aplicado: <yellow>%debuff%</yellow> <dark_gray>(%duration%)</dark_gray></red>"
+  debuff_removed: "<green>↑ Debuff removido: <white>%debuff%</white></green>"
+  debuff_expired: "<gray>⏱ %debuff% expirou.</gray>"
+  
+  # Regeneração
+  health_regenerated: "<green>+%amount% ❤</green>"
+  mana_regenerated: "<aqua>+%amount% ✦</aqua>"
+  
+  # Stamina
+  stamina_low: "<red>⚠ Stamina baixa! Seus ataques estão mais lentos.</red>"
+  stamina_exhausted: "<red>✖ Você está exausto! Recupere sua stamina.</red>"
+  
+  # Morte
+  respawning: "<gray>Renascendo em <yellow>%time%</yellow>...</gray>"
+  respawned: "<green>✔ Você renasceu!</green>"
+
+# ============================================
+# MENSAGENS DE COMANDOS
+# ============================================
+commands:
+  # Uso
+  usage_combat: "<red>Uso: <yellow>/combat [stats|toggle|info]</yellow></red>"
+  
+  # Permissões
+  no_permission: "<red>✖ Você não tem permissão para usar este comando.</red>"
+  
+  # Reload
+  reload_start: "<gray>Recarregando módulo de combate...</gray>"
+  reload_success: "<green>✔ Módulo de combate recarregado!</green>"
+  reload_failed: "<red>✖ Erro ao recarregar. Verifique o console.</red>"
+
+# ============================================
+# MENSAGENS DE ERRO
+# ============================================
+errors:
+  # Alvo
+  no_target: "<red>✖ Nenhum alvo válido encontrado.</red>"
+  target_too_far: "<red>✖ Alvo muito distante!</red>"
+  target_dead: "<red>✖ O alvo já está morto.</red>"
+  
+  # Arma
+  no_weapon: "<red>✖ Você precisa de uma arma equipada!</red>"
+  wrong_weapon_type: "<red>✖ Tipo de arma incorreto para esta habilidade.</red>"
+  
+  # Cooldown
+  on_cooldown: "<red>⏱ Aguarde <yellow>%time%</yellow> antes de atacar novamente.</red>"
+  
+  # Sistema
+  combat_disabled: "<yellow>⚠ Sistema de combate está desabilitado.</yellow>"
+  internal_error: "<red>✖ Erro no sistema de combate. Reporte aos admins.</red>"
+
+# ============================================
+# MENSAGENS DE DEBUG (Admin)
+# ============================================
+debug:
+  damage_calculation: "<gray>Dano: Base=%base%, Mult=%mult%, Final=%final%</gray>"
+  defense_calculation: "<gray>Defesa: Base=%base%, Redução=%reduction%, Dano=%damage%</gray>"
+  combat_stats: "<gray>Stats: ATK=%attack%, DEF=%defense%, CRIT=%crit%%</gray>"
+  force_combat_mode: "<green>✔ Modo de combate forçado para %player%</green>"
+  clear_combat_data: "<yellow>⚠ Dados de combate limpos.</yellow>"

@@ -1,0 +1,15 @@
+title: Selecionar Material
+updated: '<green>Material atualizado para %s'
+item_name: '<yellow>%s'
+item_lore:
+  - '<gray>Clique para selecionar este material'
+  - '<gray>para o item.'
+categories:
+  weapons: Armas
+  armor: Armaduras
+  tools: Ferramentas
+  consumables: Consumíveis
+  blocks: Blocos
+  resources: Recursos
+  miscellaneous: Diversos
+category_lore: '<gray>Clique para ver <white>%d <gray>itens.'

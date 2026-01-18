@@ -1,0 +1,186 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '8.1.1' apply false
+}
+
+allprojects {
+    group = 'me.ray.midgard'
+    version = '1.0.0-SNAPSHOT'
+}
+
+subprojects {
+    if (project.name == 'midgard-modules') {
+        return
+    }
+
+    // Proxy Configuration
+    if (project.name == 'midgard-proxy') {
+        apply plugin: 'java'
+        apply plugin: 'java-library'
+        apply plugin: 'com.github.johnrengelman.shadow'
+
+        java {
+            toolchain {
+                languageVersion = JavaLanguageVersion.of(21)
+            }
+        }
+
+        repositories {
+            mavenCentral()
+            maven {
+                name = "papermc-repo"
+                url = "https://repo.papermc.io/repository/maven-public/"
+            }
+        }
+
+        dependencies {
+            compileOnly "com.velocitypowered:velocity-api:3.4.0-SNAPSHOT"
+            annotationProcessor "com.velocitypowered:velocity-api:3.4.0-SNAPSHOT"
+            implementation 'redis.clients:jedis:5.1.0'
+        }
+
+        tasks.named('shadowJar') {
+            archiveClassifier.set('')
+        }
+        return
+    }
+
+    apply plugin: 'java'
+    apply plugin: 'java-library'
+    apply plugin: 'eclipse'
+
+    eclipse {
+        project {
+            name = project.name
+        }
+    }
+
+    java {
+        toolchain {
+            languageVersion = JavaLanguageVersion.of(21)
+        }
+    }
+
+    repositories {
+        mavenCentral()
+        maven {
+            name = "spigot-repo"
+            url = "https://hub.spigotmc.org/nexus/content/repositories/snapshots/"
+        }
+        maven {
+            name = "papermc-repo"
+            url = "https://repo.papermc.io/repository/maven-public/"
+        }
+        maven {
+            name = "sonatype"
+            url = "https://oss.sonatype.org/content/groups/public/"
+        }
+        // WorldGuard & WorldEdit
+        maven { url = "https://maven.enginehub.org/repo/" }
+        // PlaceholderAPI
+        maven { url = "https://repo.extendedclip.com/content/repositories/placeholderapi/" }
+        // ProtocolLib
+        maven { url = "https://repo.dmulloy2.net/repository/public/" }
+        // FancyHolograms
+        maven { url = "https://repo.fancyplugins.de/releases" }
+        // MythicMobs
+        maven { url = "https://mvn.lumine.io/repository/maven-public/" }
+        // FancyNpcs
+        maven { url = "https://repo.fancyinnovations.com/releases" }
+        // TAB
+        maven { url = "https://jitpack.io" }
+        // Spark API (Lucko)
+        maven { url = "https://repo.lucko.me/" }
+    }
+
+    dependencies {
+        // Using Paper API as it is a superset of Spigot and easier to resolve
+        compileOnly "io.papermc.paper:paper-api:1.21.10-R0.1-SNAPSHOT"
+
+        // --- External APIs (CompileOnly) ---
+        
+        // Spark API
+        compileOnly "me.lucko:spark-api:0.1-SNAPSHOT"
+
+        // WorldEdit & WorldGuard
+        compileOnly("com.sk89q.worldedit:worldedit-bukkit:7.3.6") {
+            exclude group: 'org.bukkit', module: 'bukkit'
+            exclude group: 'org.spigotmc', module: 'spigot-api'
+            exclude group: 'com.google.guava', module: 'guava'
+            exclude group: 'com.google.code.gson', module: 'gson'
+            exclude group: 'it.unimi.dsi', module: 'fastutil'
+        }
+        compileOnly("com.sk89q.worldguard:worldguard-bukkit:7.0.12") {
+            exclude group: 'org.bukkit', module: 'bukkit'
+            exclude group: 'org.spigotmc', module: 'spigot-api'
+            exclude group: 'com.google.guava', module: 'guava'
+            exclude group: 'com.google.code.gson', module: 'gson'
+            exclude group: 'it.unimi.dsi', module: 'fastutil'
+        }
+        
+        // PlaceholderAPI
+        compileOnly("me.clip:placeholderapi:2.11.6") {
+            exclude group: 'org.bukkit', module: 'bukkit'
+            exclude group: 'org.spigotmc', module: 'spigot-api'
+        }
+        
+        // ProtocolLib
+        compileOnly("com.comphenix.protocol:ProtocolLib:5.3.0") {
+            exclude group: 'org.bukkit', module: 'bukkit'
+            exclude group: 'org.spigotmc', module: 'spigot-api'
+        }
+        
+        // FancyHolograms
+        compileOnly("de.oliver:FancyHolograms:2.4.2") {
+            exclude group: 'org.bukkit', module: 'bukkit'
+            exclude group: 'org.spigotmc', module: 'spigot-api'
+        }
+        
+        // MythicMobs (Community Edition)
+        compileOnly("io.lumine:Mythic-Dist:5.7.1") {
+            exclude group: 'org.bukkit', module: 'bukkit'
+            exclude group: 'org.spigotmc', module: 'spigot-api'
+        }
+        
+        // FancyNpcs
+        compileOnly("de.oliver:FancyNpcs:2.9.0") {
+            exclude group: 'org.bukkit', module: 'bukkit'
+            exclude group: 'org.spigotmc', module: 'spigot-api'
+        }
+
+        // TAB
+        compileOnly("com.github.NEZNAMY:TAB-API:5.4.0") {
+            exclude group: 'org.bukkit', module: 'bukkit'
+            exclude group: 'org.spigotmc', module: 'spigot-api'
+        }
+
+        // ItemsAdder
+        compileOnly("com.github.LoneDev6:API-ItemsAdder:3.6.1") {
+            exclude group: 'org.bukkit', module: 'bukkit'
+            exclude group: 'org.spigotmc', module: 'spigot-api'
+        }
+        
+        // Vault
+        compileOnly("com.github.MilkBowl:VaultAPI:1.7") {
+            exclude group: 'org.bukkit', module: 'bukkit'
+            exclude group: 'org.spigotmc', module: 'spigot-api'
+        }
+
+
+    }
+
+    tasks.withType(JavaCompile).configureEach {
+        options.encoding = 'UTF-8'
+    }
+
+    sourceSets {
+        main {
+            java {
+                srcDirs = ['src/main/java']
+            }
+            resources {
+                srcDirs = ['src/main/resources']
+            }
+        }
+    }
+}

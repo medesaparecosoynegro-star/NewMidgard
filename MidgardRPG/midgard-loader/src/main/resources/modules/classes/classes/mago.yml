@@ -1,0 +1,39 @@
+display-name: "<aqua>Mage"
+icon: BLAZE_ROD
+lore:
+  - "<gray>Master of arcane arts."
+  - "<gray>Devastating magical damage."
+  - ""
+  - "<dark_gray>Stats:"
+  - "<gray> Damage: <aqua>Very High"
+  - "<gray> Defense: <red>Low"
+  - "<gray> Range: <green>High"
+
+attributes:
+  base:
+    strength: 2
+    defense: 3
+    vitality: 4
+    intelligence: 12
+    dexterity: 4
+  per-level:
+    intelligence: 3
+    vitality: 0.5
+
+health:
+  base: 15
+  per-level: 3
+
+mana:
+  base: 30
+  per-level: 5
+
+skills:
+  FIREBALL: 
+    level: 1
+  ICE_NOVA: 
+    level: 5
+  TELEPORT: 
+    level: 8
+  METEOR: 
+    level: 15

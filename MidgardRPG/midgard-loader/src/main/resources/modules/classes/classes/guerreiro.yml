@@ -1,0 +1,42 @@
+display-name: "<red>Warrior"
+icon: IRON_SWORD
+lore:
+  - "<gray>A strong and resilient fighter."
+  - "<gray>Specialist in melee combat."
+  - ""
+  - "<dark_gray>Stats:"
+  - "<gray> Damage: <red>High"
+  - "<gray> Defense: &High"
+  - "<gray> Range: <red>Low"
+
+# Base attributes for level 1
+attributes:
+  base:
+    strength: 10
+    defense: 8
+    vitality: 10
+    intelligence: 2
+    dexterity: 5
+  per-level:
+    strength: 2
+    vitality: 1
+    defense: 0.5
+
+# Resources configuration
+health:
+  base: 20
+  per-level: 5
+
+mana:
+  base: 10
+  per-level: 2
+
+# Skills available to this class
+# Format: Skill_ID: Unlock_Level
+skills:
+  BASH: 
+    level: 1
+  CHARGE: 
+    level: 5
+  EARTHQUAKE: 
+    level: 10

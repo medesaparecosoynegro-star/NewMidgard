@@ -1,0 +1,10 @@
+axe_example:
+  base:
+    material: IRON_AXE
+    name: '<white>'
+    tier: COMMON
+    type: AXE
+    revision-id: 1
+  mechanics:
+    stats:
+      attack-damage: 5

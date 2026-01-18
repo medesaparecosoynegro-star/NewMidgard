@@ -1,0 +1,10 @@
+gem_stone_example:
+  base:
+    material: EMERALD
+    name: '<white>'
+    tier: COMMON
+    type: GEM_STONE
+    revision-id: 1
+  mechanics:
+    stats:
+      attack-damage: 5

@@ -1,0 +1,10 @@
+ornament_example:
+  base:
+    material: GOLD_NUGGET
+    name: '<white>'
+    tier: COMMON
+    type: ORNAMENT
+    revision-id: 1
+  mechanics:
+    stats:
+      attack-damage: 5

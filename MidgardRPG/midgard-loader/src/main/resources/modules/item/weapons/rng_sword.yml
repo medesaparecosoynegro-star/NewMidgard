@@ -1,0 +1,17 @@
+
+RNG_SWORD:
+  base:
+    material: DIAMOND_SWORD
+    name: '<aqua>Espada do Destino'
+    tier: LEGENDARY
+    lore:
+    - '<gray>Uma espada cujos poderes variam.'
+    - '<gray>Dano instável.'
+  
+  stats:
+    attack-damage: 10-20
+    critical-strike-chance: 5-10
+    
+  gem-sockets:
+  - RED
+  - BLUE

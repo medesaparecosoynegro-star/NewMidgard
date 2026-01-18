@@ -1,0 +1,125 @@
+# ============================================
+# MIDGARD ITEM - GUI: NAVEGADOR DE ITENS
+# ============================================
+# Padr�o V2.0 - Oficial
+# ============================================
+
+
+title: "<gradient:#55ffff:#00aaaa><bold>? Navegador de Itens ?</bold></gradient>"
+
+# Chaves com h�fen (usadas não código)
+next-page: "<yellow>? <white>Pr�xima P�gina"
+previous-page: "<white>P�gina Anterior <yellow>?"
+close: "<red>? <gray>Fechar"
+click-to-get: "<yellow>? <gray>Clique para pegar"
+shift-click-to-edit: "<red>? <gray>Shift-Clique para editar"
+click-to-delete-item: "<red><bold>? CLIQUE PARA DELETAR"
+category-lore: "<gray>Clique para ver itens nesta categoria."
+
+# ============================================
+# NAVEGA��O
+# ============================================
+navigation:
+  next_page: "<yellow>? <white>Pr�xima P�gina"
+  previous_page: "<white>P�gina Anterior <yellow>?"
+
+# ============================================
+# CATEGORIAS
+# ============================================
+category:
+  lore: "<gray>Clique para ver itens nesta categoria."
+  lore_fallback: "<gray>Existem <yellow>%d <gray>itens neste tipo."
+
+# ============================================
+# A��ES DE ITENS
+# ============================================
+item_actions:
+  click_to_get: "<yellow>? <gray>Clique para pegar"
+  shift_click_to_edit: "<red>? <gray>Shift-Clique para editar"
+  click_to_delete: "<red><bold>? CLIQUE PARA DELETAR"
+
+# ============================================
+# BOT�ES
+# ============================================
+buttons:
+  delete:
+    name: "<gradient:#ff5555:#aa0000><bold>? Deletar Item</bold></gradient>"
+    mode-active: "<red><bold>? MODO DE DELE��O ATIVO"
+    click-to-delete: "<gray>Clique em um item para delet�-lo."
+    click-to-cancel: "<gray>Clique aqui novamente para cancelar."
+    click-to-enable: "<gray>Clique para ativar o modo de dele��o."
+    mode_active: "<red><bold>? MODO DE DELE��O ATIVO"
+    click_to_delete: "<gray>Clique em um item para delet�-lo."
+    click_to_cancel: "<gray>Clique aqui novamente para cancelar."
+    click_to_enable: "<gray>Clique para ativar o modo de dele��o."
+  
+  back:
+    name: "<yellow>? Voltar"
+  
+  create:
+    name: "<gradient:#55ff55:#00aa00><bold>? Criar Novo Item</bold></gradient>"
+
+# ============================================
+# MENSAGENS (formato h�fen - usado não código)
+# ============================================
+messages:
+  # Formato com h�fen (usado não código Java)
+  enter-id: "<yellow>? <gray>Escreva não chat o ID do novo item."
+  cancel-abort: "<gray>Digite <white>cancel <gray>para cancelar."
+  id-exists: "<red>? <gray>Item com ID <white>%s <gray>j� existe!"
+  creating-item: "<green>? <white>Criando item <yellow>%s<white>..."
+  edit-error: "<red>? <gray>Erro ao encontrar item para edição: <white>%s"
+  received: "<green>? <white>Você recebeu <yellow>%amount%x <white>%s"
+  delete-not-implemented: "<red>? <gray>Fun��o de deletar ainda não implementada."
+  
+  # Formato com underscore (legado)
+  enter_id: "<yellow>? <gray>Escreva não chat o ID do novo item."
+  cancel_abort: "<gray>Digite <white>cancel <gray>para cancelar."
+  id_exists: "<red>? <gray>Item com ID <white>%s <gray>j� existe!"
+  creating_item: "<green>? <white>Criando item <yellow>%s<white>..."
+  edit_error: "<red>? <gray>Erro ao encontrar item para edição: <white>%s"
+  delete_not_implemented: "<red>? <gray>Fun��o de deletar ainda não implementada."
+
+# ============================================
+# CONFIRMA��O DE DELE��O (com underscore)
+# ============================================
+delete_confirmation:
+  title: "<dark_gray>Confirmar Dele��o: <white>%s"
+  
+  confirm:
+    name: "<green><bold>? CONFIRMAR DELE��O</bold>"
+    lore:
+      - ""
+      - "<red>? Esta a��o não pode ser desfeita."
+      - ""
+      - "<yellow>? <gray>Clique para confirmar"
+  
+  cancel:
+    name: "<red><bold>? CANCELAR</bold>"
+    lore:
+      - ""
+      - "<gray>Voltar sem deletar."
+  
+  success: "<green>? <white>Item deletado com sucesso."
+
+# ============================================
+# CONFIRMA��O DE DELE��O (com h�fen - compatibilidade)
+# ============================================
+delete-confirmation:
+  title: "<dark_gray>Confirmar Dele��o: <white>%s"
+  
+  confirm:
+    name: "<green><bold>? CONFIRMAR DELE��O</bold>"
+    lore:
+      - ""
+      - "<red>? Esta a��o não pode ser desfeita."
+      - ""
+      - "<yellow>? <gray>Clique para confirmar"
+  
+  cancel:
+    name: "<red><bold>? CANCELAR</bold>"
+    lore:
+      - ""
+      - "<gray>Voltar sem deletar."
+  
+  success: "<green>? <white>Item deletado com sucesso."

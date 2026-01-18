@@ -1,0 +1,12 @@
+
+RUBY_GEM:
+  base:
+    material: RED_DYE
+    name: '<red>Rubi de Força'
+    type: GEM
+    tier: RED
+    lore:
+    - '<gray>Pode ser engastado em slots Vermelhos.'
+  
+  stats:
+    attack-damage: 5

@@ -1,0 +1,37 @@
+title: "<gradient:#5e4fa2:#f79459><bold>⚔ Escolha sua Classe ⚔</bold></gradient>"
+warrior:
+  name: "<red><bold>⚔ Guerreiro</bold>"
+  lore:
+    - "<dark_gray>━━━━━━━━━━━━━━━━━━━━━"
+    - "<gray>Mestre do combate corpo a corpo."
+    - ""
+    - "<yellow><bold>✦ Atributos:</bold>"
+    - " <gray>• <red>❤ Força: <bold>Alta</bold>"
+    - " <gray>• <green>🛡 Defesa: <bold>Média</bold>"
+    - ""
+    - "<dark_gray>━━━━━━━━━━━━━━━━━━━━━"
+    - "<aqua>Clique para escolher esta classe!"
+mage:
+  name: "<aqua><bold>✨ Mago</bold>"
+  lore:
+    - "<dark_gray>━━━━━━━━━━━━━━━━━━━━━"
+    - "<gray>Domina o poder da magia arcana."
+    - ""
+    - "<yellow><bold>✦ Atributos:</bold>"
+    - " <gray>• <light_purple>✨ Inteligência: <bold>Alta</bold>"
+    - " <gray>• <red>🛡 Defesa: <bold>Baixa</bold>"
+    - ""
+    - "<dark_gray>━━━━━━━━━━━━━━━━━━━━━"
+    - "<aqua>Clique para escolher esta classe!"
+archer:
+  name: "<green><bold>🏹 Arqueiro</bold>"
+  lore:
+    - "<dark_gray>━━━━━━━━━━━━━━━━━━━━━"
+    - "<gray>Rápido e mortal com armas de longo alcance."
+    - ""
+    - "<yellow><bold>✦ Atributos:</bold>"
+    - " <gray>• <yellow>⚡ Destreza: <bold>Alta</bold>"
+    - " <gray>• <green>➤ Alcance: <bold>Longo</bold>"
+    - ""
+    - "<dark_gray>━━━━━━━━━━━━━━━━━━━━━"
+    - "<aqua>Clique para escolher esta classe!"

@@ -1,0 +1,87 @@
+# ============================================
+# MIDGARD ITEM - GUI: EDITOR
+# ============================================
+# Padr�o V2.0 - Oficial
+# ============================================
+
+
+# ============================================
+# PROMPTS DE ENTRADA (formato direto)
+# ============================================
+enter-prompt: "<yellow>? <gray>Digite <white>%s <gray>no chat:"
+enter-prompt-cancel: "<yellow>? <gray>Digite <white>%s <gray>no chat: <dark_gray>(ou \"cancel\")"
+updated: "<green>? <white>%s atualizado!"
+reset: "<green>? <white>%s redefinido para 0!"
+reset-stone: "<green>? <white>%s redefinido para STONE!"
+invalid-number: "<red>? <gray>Formato de n�mero inválido."
+invalid-material: "<red>? <gray>Material inválido."
+
+# ============================================
+# PROMPTS DE ENTRADA (formato aninhado - legado)
+# ============================================
+prompts:
+  enter_prompt: "<yellow>? <gray>Digite <white>%s <gray>no chat:"
+  enter_prompt_cancel: "<yellow>? <gray>Digite <white>%s <gray>no chat: <dark_gray>(ou \"cancel\")"
+
+# ============================================
+# MENSAGENS DE VALIDA��O
+# ============================================
+validation:
+  invalid_number: "<red>? <gray>Formato de n�mero inválido."
+  invalid_material: "<red>? <gray>Material inválido."
+
+# ============================================
+# MENSAGENS DE ATUALIZA��O
+# ============================================
+update:
+  updated: "<green>? <white>%s atualizado!"
+  reset: "<green>? <white>%s redefinido para 0!"
+  reset_stone: "<green>? <white>%s redefinido para STONE!"
+
+# ============================================
+# NOMES DOS CAMPOS (PROMPTS)
+# ============================================
+prompt:
+  revision_id: "ID de Revis�o"
+  material: "Material"
+  base_item_damage: "Dano Base do Item"
+  custom_model_data: "Custom Model Data"
+  custom_model_data_strings: "Custom Model Data Strings"
+  custom_model_data_floats: "Custom Model Data Floats"
+  item_model: "Modelo do Item"
+  equippable_slot: "Slot Equip�vel"
+  equippable_model: "Modelo Equip�vel"
+  max_custom_durability: "Durabilidade Customizada M�xima"
+  max_vanilla_durability: "Durabilidade Vanilla M�xima"
+  display_name: "Nome de Exibi��o"
+  lore: "Lore"
+  nbt_tags: "Tags NBT"
+  max_stack_size: "Tamanho Máximo do Pack"
+  lore_format: "Formato da Lore"
+  custom_tooltip: "Tooltip Customizada"
+  vanilla_tooltip_style: "Estilo de Tooltip Vanilla"
+  displayed_type: "Tipo Exibido"
+  enchantments: "Encantamentos"
+  permission: "Permiss�o"
+  item_particles: "Part�culas do Item"
+  required_class: "Classe Necess�ria"
+  item_tier: "Tier do Item"
+  item_set: "Set do Item"
+  required_biomes: "Biomas Necess�rios"
+  camera_overlay: "Overlay de C�mera"
+  permanent_effects: "Efeitos Permanentes"
+  granted_permissions: "Permiss�es Concedidas"
+  cooldown_reference: "Refer�ncia de Cooldown"
+  crafting_recipe_permission: "Permiss�o de Receita de Crafting"
+  custom_sounds: "Sons Customizados"
+  commands: "Comandos"
+  compatible_types: "Tipos Compat�veis"
+  compatible_ids: "IDs Compat�veis"
+  compatible_materials: "Materiais Compat�veis"
+  repair_reference: "Refer�ncia de Reparo"
+  item_abilities: "Habilidades do Item"
+  gem_sockets: "Sockets de Gemas"
+  trim_material: "Material de Trim"
+  trim_pattern: "Padr�o de Trim"
+  browser_index: "�ndice do Navegador"
+  required_level: "Nóvel Necess�rio"

@@ -1,0 +1,21 @@
+# ============================================
+# MIDGARD ITEM - COMANDOS
+# ============================================
+# Padr�o V2.0 - Oficial
+# ============================================
+
+
+# ============================================
+# MENSAGENS DE COMANDO
+# ============================================
+commands:
+  unknown: "<red>? <gray>Comando desconhecido. Use <white>/rpg item [give|reload]"
+  usage: "<red>? <gray>Uso: <white>/rpg item give <item_id> [quantidade]"
+  no_permission: "<red>? <gray>Você não tem permiss�o para isso."
+  
+  # Sucesso
+  received: "<green>? <white>Você recebeu <yellow>%amount%x <white>%s"
+  reload_success: "<aqua>? <white>Itens e categorias recarregados com sucesso!"
+  
+  # Erros
+  item_not_found: "<red>? <gray>Item não encontrado: <white>%s"

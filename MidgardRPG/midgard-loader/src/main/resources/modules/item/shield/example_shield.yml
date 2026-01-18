@@ -1,0 +1,10 @@
+shield_example:
+  base:
+    material: SHIELD
+    name: '<white>'
+    tier: COMMON
+    type: SHIELD
+    revision-id: 1
+  mechanics:
+    stats:
+      attack-damage: 5

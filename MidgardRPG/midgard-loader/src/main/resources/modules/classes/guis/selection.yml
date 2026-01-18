@@ -1,0 +1,79 @@
+# Configuração do Menu de Seleção de Classes
+title: "<aqua>Seleção de Classe"
+size: 27
+
+items:
+  background:
+    material: GRAY_STAINED_GLASS_PANE
+    name: " "
+    slots: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 17, 18, 19, 20, 21, 23, 24, 25, 26]
+
+  guerreiro:
+    material: IRON_SWORD
+    name: "<red>⚔ Guerreiro"
+    lore:
+      - ""
+      - "<gray>Combatente corpo a corpo,"
+      - "<gray>especializado em resistência"
+      - "<gray>e força bruta."
+      - ""
+      - "<red>⚔ Força:</red> <white>Alta"
+      - "<green>🛡 Defesa:</green> <white>Alta"
+      - "<aqua>✦ Inteligência:</aqua> <white>Baixa"
+      - "<yellow>⚡ Destreza:</yellow> <white>Média"
+      - ""
+      - "<gold>▸ Clique para Selecionar"
+    slot: 11
+    action: "select_class: guerreiro"
+    flags: [HIDE_ATTRIBUTES]
+
+  mago:
+    material: BLAZE_ROD
+    name: "<aqua>✦ Mago"
+    lore:
+      - ""
+      - "<gray>Mestre das artes arcanas,"
+      - "<gray>conjura feitiços devastadores"
+      - "<gray>à distância."
+      - ""
+      - "<red>⚔ Força:</red> <white>Baixa"
+      - "<green>🛡 Defesa:</green> <white>Baixa"
+      - "<aqua>✦ Inteligência:</aqua> <white>Alta"
+      - "<yellow>⚡ Destreza:</yellow> <white>Média"
+      - ""
+      - "<gold>▸ Clique para Selecionar"
+    slot: 13
+    action: "select_class: mago"
+    flags: [HIDE_ATTRIBUTES]
+
+  arqueiro:
+    material: BOW
+    name: "<green>⚡ Arqueiro"
+    lore:
+      - ""
+      - "<gray>Atirador preciso e ágil,"
+      - "<gray>elimina inimigos antes"
+      - "<gray>de ser notado."
+      - ""
+      - "<red>⚔ Força:</red> <white>Média"
+      - "<green>🛡 Defesa:</green> <white>Baixa"
+      - "<aqua>✦ Inteligência:</aqua> <white>Média"
+      - "<yellow>⚡ Destreza:</yellow> <white>Alta"
+      - ""
+      - "<gold>▸ Clique para Selecionar"
+    slot: 15
+    action: "select_class: arqueiro"
+    flags: [HIDE_ATTRIBUTES]
+
+  info:
+    material: BOOK
+    name: "<yellow>★ Informações"
+    lore:
+      - ""
+      - "<gray>Escolha sua classe com cuidado."
+      - "<gray>Cada uma possui atributos"
+      - "<gray>e habilidades únicas."
+      - ""
+      - "<dark_gray>Use /class reset para trocar."
+    slot: 22
+    flags: [HIDE_ATTRIBUTES]

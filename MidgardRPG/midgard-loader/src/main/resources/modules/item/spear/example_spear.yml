@@ -1,0 +1,10 @@
+spear_example:
+  base:
+    material: STICK
+    name: '<white>'
+    tier: COMMON
+    type: SPEAR
+    revision-id: 1
+  mechanics:
+    stats:
+      attack-damage: 5

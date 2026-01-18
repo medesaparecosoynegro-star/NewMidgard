@@ -1,0 +1,42 @@
+teleport:
+  success: "<green>Teleportado para %target%."
+  warmup: "<yellow>Teleportando em %time% segundos..."
+home:
+  set: "<green>Home <white>%home% <green>definida."
+  deleted: "<red>Home <white>%home% <red>removida."
+  not-found: "<red>Home não encontrada."
+  teleport: "<green>Teleportado para sua home <white>%home%<green>."
+  list: "<green>Suas homes: <white>%homes%"
+  limit: "<red>Você atingiu o limite de homes (%limit%)."
+warp:
+  set: "<green>Warp <white>%warp% <green>definida."
+  deleted: "<red>Warp <white>%warp% <red>removida."
+  not-found: "<red>Warp não encontrada."
+  teleport: "<green>Teleportado para warp <white>%warp%<green>."
+  list: "<green>Warps disponíveis: <white>%warps%"
+gamemode:
+  changed: "<green>Seu modo de jogo foi alterado para <white>%gamemode%<green>."
+  changed-other: "<green>Modo de jogo de <white>%player% <green>alterado para <white>%gamemode%<green>."
+heal: "<green>Você foi curado."
+heal-other: "<green>Você curou <white>%player%<green>."
+feed: "<green>Sua fome foi saciada."
+feed-other: "<green>Você saciou a fome de <white>%player%<green>."
+fly:
+  enabled: "<green>Voo habilitado."
+  disabled: "<red>Voo desabilitado."
+  enabled-other: "<green>Voo habilitado para <white>%player%<green>."
+  disabled-other: "<red>Voo desabilitado para <white>%player%<green>."
+spawn:
+  set: "<green>Spawn definido com sucesso."
+  teleport: "<green>Teleportado para o spawn."
+  not-set: "<red>Spawn não definido."
+tpa:
+  sent: "<green>Solicita��o de teleporte enviada para <white>%player%<green>."
+  received: "<white>%player% <green>deseja se teleportar até você. Digite <white>/tpaccept <green>para aceitar."
+  accepted: "<green>Solicita��o de teleporte aceita."
+  denied: "<red>Solicita��o de teleporte negada."
+  no-request: "<red>Você não tem solicita��es de teleporte pendentes."
+  expired: "<red>Sua solicita��o de teleporte expirou."
+  teleporting: "<green>Teleportando..."
+  self: "<red>Você não pode enviar solicita��o para si mesmo."
+  already-sent: "<red>Você já enviou uma solicita��o para este jogador. Aguarde."

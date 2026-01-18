@@ -1,0 +1,36 @@
+title: "Tipos de Dano"
+stats:
+  attack-damage:
+    name: "Dano de Ataque"
+  weapon-damage:
+    name: "Dano da Arma"
+  physical-damage:
+    name: "Dano Físico"
+  magic-damage:
+    name: "Dano Mágico"
+  projectile-damage:
+    name: "Dano de Projétil"
+  skill-damage:
+    name: "Dano de Habilidade"
+  undead-damage:
+    name: "Dano contra Mortos-Vivos"
+  fire-damage:
+    name: "Dano de Fogo"
+  ice-damage:
+    name: "Dano de Gelo"
+  light-damage:
+    name: "Dano de Luz"
+  darkness-damage:
+    name: "Dano de Escuridão"
+  divine-damage:
+    name: "Dano Divino"
+
+lore:
+  # Formato com underscore (usado não código)
+  current_value: "<gray>Valor Atual: <white>%value%"
+  click_edit: "<yellow>Clique para editar"
+  right_click_reset: "<yellow>Clique direito para resetar"
+
+messages:
+  reset: "<green>%stat% resetado para 0!"
+  updated: "<green>%stat% atualizado!"

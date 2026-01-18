@@ -1,0 +1,7 @@
+dependencies {
+    implementation project(':midgard-core')
+    implementation project(':midgard-modules:midgard-mythicmobs')
+    compileOnly project(':midgard-modules:midgard-combat')
+    compileOnly 'io.lumine:Mythic-Dist:5.7.2'
+    // compileOnly 'org.spigotmc:spigot-api:1.21-R0.1-SNAPSHOT' - Already provided by parent/core
+}

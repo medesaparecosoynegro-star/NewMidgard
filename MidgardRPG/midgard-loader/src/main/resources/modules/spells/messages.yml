@@ -1,0 +1,319 @@
+# ============================================
+# MIDGARD SPELLS MODULE - MESSAGES
+# ============================================
+# Padrão V2.0 - Oficial
+# ============================================
+
+
+# ============================================
+# MAIN SPELL GUI - Menu Principal de Magias
+# ============================================
+main_gui:
+  title: "<gold><bold>Habilidades Mágicas"
+  
+  # Sistema de ajuda do menu principal
+  help:
+    title: "<aqua><bold>Ajuda - Sistema de Magias"
+    topics:
+      overview:
+        name: "<yellow><bold>★ Visão Geral"
+        lore:
+          - ""
+          - "<gray>● <white>Descrição:"
+          - "  <gray>Este é o menu principal de magias."
+          - "  <gray>Aqui você configura suas habilidades"
+          - "  <gray>ativas e alterna estilos de conjuração."
+          - ""
+          - "<gray>● <white>Objetivo:"
+          - "  <gray>Equipar feitiços nos slots disponíveis"
+          - "  <gray>para usá-los em combate."
+      
+      modes:
+        name: "<gold><bold>⚔ Modos de Conjuração"
+        lore:
+          - ""
+          - "<green>● SKILLBAR <gray>(Barra de Habilidades)"
+          - "<white>  Feitiços fixos nos slots 1-6"
+          - "<white>  Ative com teclas numéricas"
+          - "<white>  Simples e direto"
+          - ""
+          - "<light_purple>● COMBO <gray>(Sistema de Combos)"
+          - "<white>  Sequências de cliques (LLL, RRL, etc)"
+          - "<white>  Múltiplos feitiços por sequência"
+          - "<white>  Avançado e versátil"
+          - ""
+          - "<yellow>Alterne entre modos clicando"
+          - "<yellow>na Estrela do Nether!"
+      
+      skillbar:
+        name: "<green><bold>★ Modo Skillbar"
+        lore:
+          - ""
+          - "<gray>● <white>Como usar:"
+          - "  <gray>1. Clique em um slot vazio"
+          - "  <gray>2. Selecione um feitiço"
+          - "  <gray>3. Use teclas 1-6 para ativar"
+          - ""
+          - "<gray>● <white>Vantagens:"
+          - "  <green>+ <gray>Acesso rápido e direto"
+          - "  <green>+ <gray>Ideal para iniciantes"
+          - "  <green>+ <gray>Atalhos de teclado simples"
+          - ""
+          - "<yellow>★ Organize seus feitiços mais usados"
+          - "<yellow>   nas primeiras posições!"
+      
+      combo:
+        name: "<light_purple><bold>★ Modo Combo"
+        lore:
+          - ""
+          - "<gray>● <white>Como usar:"
+          - "  <gray>1. Cada slot tem uma sequência"
+          - "  <gray>2. Clique esquerdo (L) e direito (R)"
+          - "  <gray>3. Complete a sequência para ativar"
+          - ""
+          - "<gray>● <white>Exemplo:"
+          - "  <white>Sequência: <yellow>LLL"
+          - "  <gray>Clique esquerdo 3x seguidas"
+          - ""
+          - "<gray>● <white>Vantagens:"
+          - "  <green>+ <gray>Mais feitiços disponíveis"
+          - "  <green>+ <gray>Combos personalizáveis"
+          - "  <green>+ <gray>Estilo de jogo avançado"
+      
+      reset:
+        name: "<red><bold>⚠ Reset de Slots"
+        lore:
+          - ""
+          - "<gray>Clique no botão Reset para"
+          - "<red>limpar todos os seus slots"
+          - "<red>de uma vez."
+          - ""
+          - "<red><bold>⚠ AVISO:"
+          - "<red>Esta ação remove TODOS os feitiços"
+          - "<red>equipados em ambos os modos!"
+          - ""
+          - "<gray>Use quando quiser começar uma"
+          - "<gray>nova build do zero."
+      
+      tips:
+        name: "<yellow><bold>★ Dicas e Estratégias"
+        lore:
+          - ""
+          - "<yellow>★ Dica 1: Diversidade"
+          - "  <gray>Equipe feitiços de tipos variados"
+          - "  <gray>(Dano, Cura, Controle, Mobilidade)"
+          - ""
+          - "<yellow>★ Dica 2: Combos"
+          - "  <gray>No modo Combo, memorize as 3"
+          - "  <gray>sequências mais usadas primeiro"
+          - ""
+          - "<yellow>★ Dica 3: Situacional"
+          - "  <gray>Troque feitiços antes de bosses"
+          - "  <gray>ou dungeons específicas"
+  
+  # Botões do menu principal
+  buttons:
+    info:
+      name: "<aqua><bold>ℹ Informações"
+      lore:
+        - ""
+        - "<gray>Este menu permite equipar"
+        - "<gray>feitiços nos slots disponíveis."
+        - ""
+        - "<gray>● <white>Clique em um slot para:"
+        - "  <gray>Selecionar um feitiço"
+        - ""
+        - "<gray>● <white>Use o botão de Estilo para:"
+        - "  <gray>Alternar entre Skillbar e Combo"
+        - ""
+        - "<green>✔ Clique no ícone de Ajuda abaixo"
+        - "<green>  para o manual completo!"
+    
+    style_skillbar:
+      name: "<green><bold>Modo: SKILLBAR"
+      lore:
+        - ""
+        - "<gray>Modo Atual: <green>Skillbar"
+        - ""
+        - "<gray>Seus feitiços estão equipados"
+        - "<gray>nos slots 1-6 da hotbar."
+        - ""
+        - "<gray>● <white>Para usar:"
+        - "  <gray>Pressione teclas <white>1-6 <gray>no teclado"
+        - ""
+        - "<yellow>✔ Clique para alternar para <light_purple>Combo"
+    
+    style_combo:
+      name: "<light_purple><bold>Modo: COMBO"
+      lore:
+        - ""
+        - "<gray>Modo Atual: <light_purple>Combo"
+        - ""
+        - "<gray>Seus feitiços são ativados por"
+        - "<gray>sequências de cliques específicas."
+        - ""
+        - "<gray>● <white>Para usar:"
+        - "  <gray>Clique <white>Esquerdo (L) <gray>ou <white>Direito (R)"
+        - "  <gray>conforme a sequência do slot"
+        - ""
+        - "<yellow>✔ Clique para alternar para <green>Skillbar"
+    
+    reset:
+      name: "<red><bold>⚠ Resetar Slots"
+      lore:
+        - ""
+        - "<gray>Remove TODOS os feitiços"
+        - "<gray>equipados em ambos os modos."
+        - ""
+        - "<red><bold>AVISO: Não pode ser desfeito!"
+        - ""
+        - "<red>✖ Clique para resetar"
+    
+    help:
+      name: "<aqua><bold>? Ajuda"
+      lore:
+        - ""
+        - "<gray>Clique para abrir o menu de ajuda"
+        - "<gray>e aprender sobre o sistema de magias."
+        - ""
+        - "<gray>Tópicos disponíveis:"
+        - "  <yellow>★ <gray>Visão Geral"
+        - "  <yellow>★ <gray>Modos de Conjuração"
+        - "  <yellow>★ <gray>Dicas e Estratégias"
+    
+    # Slots de feitiços (Skillbar)
+    slot_empty:
+      name: "<gray>Slot %slot%: <dark_gray>Vazio"
+      lore:
+        - ""
+        - "<gray>Nenhum feitiço equipado"
+        - "<gray>neste slot."
+        - ""
+        - "<green>✔ Clique para selecionar um feitiço"
+    
+    slot_filled:
+      name: "<green>Slot %slot%: <white>%spell_name%"
+      lore:
+        - ""
+        - "<gray>Feitiço: <white>%spell_name%"
+        - "<gray>Ativação: <white>Tecla <yellow>%slot%"
+        - ""
+        - "<green>✔ Clique para trocar de feitiço"
+    
+    slot_invalid:
+      name: "<red>Slot %slot%: <dark_red>ERRO"
+      lore:
+        - ""
+        - "<red>Feitiço inválido: <white>%spell_id%"
+        - ""
+        - "<gray>Este feitiço não existe ou"
+        - "<gray>foi removido do servidor."
+        - ""
+        - "<red>✖ Clique para selecionar outro"
+    
+    # Slots de combo
+    combo_empty:
+      name: "<gray>Combo %slot%: <dark_gray>Vazio"
+      lore:
+        - ""
+        - "<gray>Sequência: <yellow>%sequence%"
+        - "<gray>Feitiço: <dark_gray>Nenhum"
+        - ""
+        - "<gray>● <white>Como usar:"
+        - "  <gray>Clique <white>Esquerdo (L) <gray>e <white>Direito (R)"
+        - "  <gray>na ordem da sequência"
+        - ""
+        - "<green>✔ Clique para selecionar um feitiço"
+    
+    combo_filled:
+      name: "<light_purple>Combo %slot%: <white>%spell_name%"
+      lore:
+        - ""
+        - "<gray>Sequência: <yellow>%sequence%"
+        - "<gray>Feitiço: <white>%spell_name%"
+        - ""
+        - "<gray>● <white>Para ativar:"
+        - "  <gray>Execute a sequência <yellow>%sequence%"
+        - "  <gray>L = Clique Esquerdo"
+        - "  <gray>R = Clique Direito"
+        - ""
+        - "<green>✔ Clique para trocar de feitiço"
+    
+    combo_invalid:
+      name: "<red>Combo %slot%: <dark_red>ERRO"
+      lore:
+        - ""
+        - "<gray>Sequência: <yellow>%sequence%"
+        - "<red>Feitiço inválido: <white>%spell_id%"
+        - ""
+        - "<gray>Este feitiço não existe ou"
+        - "<gray>foi removido do servidor."
+        - ""
+        - "<red>✖ Clique para selecionar outro"
+  
+  # Mensagens de feedback
+  messages:
+    mode_changed_skillbar: "<green>✔ Modo alterado para: <white>SKILLBAR"
+    mode_changed_combo: "<light_purple>✔ Modo alterado para: <white>COMBO"
+    reset_success: "<green>✔ Todos os slots foram resetados!"
+    reset_confirm: "<red>⚠ Tem certeza? Todos os feitiços serão removidos!"
+
+gui:
+  spell_selection:
+    title: '<green>Selecionar Feitiço'
+    items:
+      click_to_equip: '<yellow>Clique para equipar'
+    buttons:
+      back:
+        name: '<red>Voltar'
+        lore:
+          - '<gray>Voltar ao menu principal'
+      unequip:
+        name: '<red>Desequipar Slot'
+        lore:
+          - '<gray>Clique para limpar este slot'
+    messages:
+      equipped_skillbar: '<green>Feitiço %spell% <green>equipado no slot %slot%'
+      equipped_combo: '<green>Feitiço %spell% <green>vinculado ao combo %slot%'
+      unequipped_skillbar: '<green>Slot %slot% da SkillBar limpo.'
+      unequipped_combo: '<green>Slot de Combo %slot% limpo.'
+
+casting:
+  mode_enabled: "<green>✔ Modo de Conjuração Ativado!"
+  mode_disabled: "<yellow>⚠ Modo de Conjuração Desativado."
+  spell_cast: "<green>✔ Você lançou <yellow>%spell%</yellow>!"
+  on_cooldown: "<red>✖ Aguarde %time%s para usar isso novamente."
+  no_mana: "<red>✖ Mana insuficiente!"
+
+# ============================================
+# COMMANDS
+# ============================================
+commands:
+  usage_bind: "<red>Uso: /spell bind <spell> <slot>"
+  spell_bound: "<green>✔ Feitiço %spell% vinculado ao slot %slot%!"
+  usage_combo: "<red>Uso: /spell combo <spell> <sequence>"
+  combo_bound: "<green>✔ Feitiço %spell% vinculado ao combo %combo%!"
+
+# ============================================
+# ERRORS
+# ============================================
+errors:
+  no_permission: "<red>✖ Você não tem permissão!"
+  spell_not_found: "<red>✖ Feitiço não encontrado: %spell%"
+  profile_not_loaded: "<red>✖ Seu perfil não foi carregado!"
+  invalid_slot: "<red>✖ Slot inválido!"
+  config_error: "<red>✖ Erro de configuração na habilidade!"
+  system_error: "<red>✖ Ocorreu um erro interno no sistema de feitiços."
+  module_not_active: "<red>System Error: SpellsModule not active."
+
+# ============================================
+# INTERFACE (ACTION BAR)
+# ============================================
+actionbar:
+  combo_prefix: "<yellow>Combos: "
+  combo_empty: "<dark_gray>[Vazio]"
+  combo_set: "<green>%sequence%"
+  combo_default: "<gray>%sequence%"
+  error: "<red>ERR"
+
+

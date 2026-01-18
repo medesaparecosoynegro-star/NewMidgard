@@ -1,0 +1,10 @@
+greatsword_example:
+  base:
+    material: IRON_SWORD
+    name: '<white>'
+    tier: COMMON
+    type: GREATSWORD
+    revision-id: 1
+  mechanics:
+    stats:
+      attack-damage: 5

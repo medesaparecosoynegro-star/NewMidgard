@@ -1,0 +1,52 @@
+title: Configura��o de Revis�o
+enabled_config: '<gray>Habilitado (na config)? %s'
+revision_id:
+  name: '<yellow>ID de Revis�o'
+  lore:
+    - '<gray>O atualizador está sempre ativo, aumentar'
+    - '<gray>este n�mero atualizar� todas as inst�ncias'
+    - '<gray>deste MMOItem sem a��o adicional.'
+    - ''
+    - '<gray>Valor Atual: <yellow>%value%'
+    - ''
+    - '<yellow>Clique para editar'
+toggles:
+  keep_lore:
+    name: '<yellow>Manter Lore'
+    lore:
+      - '<gray>Mant�m especificamente linhas de lore que começam'
+      - '<gray>com o código de cor'
+  keep_name:
+    name: '<yellow>Manter Nome'
+    lore:
+      - '<gray>Mant�m o nome de exibi��o do item.'
+  keep_enchantments:
+    name: '<yellow>Manter Encantamentos'
+    lore:
+      - '<gray>Isso mant�m especificamente encantamentos que'
+      - '<gray>n�o s�o contabilizados em melhorias nem gemas'
+      - '<gray>(presumivelmente adicionados pelo jogador).'
+  keep_external_sh:
+    name: '<yellow>Manter SH Externo'
+    lore:
+      - '<gray>Dados registrados não StatHistory do item'
+      - '<gray>por plugins externos (como'
+      - '<gray>GemStones mas não remov�veis)'
+  keep_upgrades:
+    name: '<yellow>Manter Melhorias'
+    lore:
+      - '<gray>Este item manter� o n�vel de melhoria'
+      - '<gray>ap�s a atualiza��o? Apenas o Nóvel de Melhoria �'
+      - '<gray>mantido (desde que não exceda o'
+      - '<gray>novo m�ximo).'
+  keep_gem_stones:
+    name: '<yellow>Manter Gemas'
+    lore:
+      - '<gray>O item manter� suas gemas quando'
+      - '<gray>atualizar? (Note que isso permite overflow de gemas'
+      - '<gray>- manter� TODAS as gemas antigas'
+      - '<gray>mesmo se você reduziu os sockets de gemas)'
+  keep_soulbind:
+    name: '<yellow>Manter Soulbind'
+    lore:
+      - '<gray>Mant�m o n�vel e dados de soulbind.'

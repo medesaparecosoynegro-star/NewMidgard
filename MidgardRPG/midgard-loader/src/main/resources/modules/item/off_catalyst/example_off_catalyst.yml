@@ -1,0 +1,10 @@
+off_catalyst_example:
+  base:
+    material: PAPER
+    name: '<white>'
+    tier: COMMON
+    type: OFF_CATALYST
+    revision-id: 1
+  mechanics:
+    stats:
+      attack-damage: 5

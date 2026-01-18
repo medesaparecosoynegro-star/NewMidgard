@@ -1,0 +1,9 @@
+name: "<red>Fireball</red>"
+mythic-skill: "Fireball"
+cooldown: 5.0
+mana: 10.0
+stamina: 0.0
+lore:
+  - "<gray>Lança uma bola de fogo.</gray>"
+  - "<gray>Dano explosivo.</gray>"
+

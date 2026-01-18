@@ -1,0 +1,24 @@
+# ============================================
+# MIDGARD ITEM - GEMAS
+# ============================================
+# Padr�o V2.0 - Oficial
+# ============================================
+
+
+# ============================================
+# MENSAGENS DE GEMAS
+# ============================================
+gems:
+  # Sucesso
+  applied_success: "<green>? <white>Gema aplicada com sucesso!"
+  removed_success: "<yellow>? <white>Gema removida do item."
+  
+  # Erros
+  no_slots: "<red>? <gray>Este item não possui slots de gema."
+  slots_full: "<red>? <gray>Todos os slots de gema est�o ocupados."
+  invalid_gem: "<red>? <gray>Esta gema não é compat�vel com o item."
+  incompatible_type: "<red>? <gray>Tipo de gema incompat�vel com este slot."
+  
+  # Informa��o
+  slots_available: "<gray>Slots disponíveis: <yellow>%available%<gray>/<white>%total%"
+  gem_info: "<light_purple>? <white>%gem_name% <gray>- %description%"

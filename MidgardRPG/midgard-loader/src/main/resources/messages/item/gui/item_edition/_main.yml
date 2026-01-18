@@ -1,0 +1,20 @@
+# ============================================
+# MIDGARD ITEM - GUI: Item Edition
+# Arquivo Principal
+# ============================================
+
+title: '<gradient:#55ffff:#00aaaa><b>🛠 Edição de Item</b></gradient> <dark_gray>• <white>%id%'
+
+messages:
+  editing: '<yellow>Editando: <white>%s'
+  no-editor: '<red>Nenhum editor atribuído para este atributo ainda.'
+  material-updated: '<green>Material atualizado com sucesso!'
+
+buttons:
+  get_item:
+    name: '<gradient:#55ff55:#00aa00><b>✦ Obter Item</b></gradient>'
+    lore:
+      - '<gray>Clique para obter este item.'
+  
+  close:
+    name: '<gradient:#ff5555:#aa0000><b>✖ Fechar</b></gradient>'

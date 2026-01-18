@@ -1,0 +1,47 @@
+# ============================================
+# MIDGARD CORE - MESSAGES
+# ============================================
+
+# ============================================
+# SYSTEM MESSAGES
+# ============================================
+system:
+  loading: "<gray>Carregando sistema..."
+  loaded: "<green>✔ <white>Sistema carregado com sucesso!"
+  reload: "<aqua>⟳ <white>Configuração recarregada!"
+  language_changed: "<green>✔ <white>Idioma alterado para <aqua>Português</aqua>."
+
+# ============================================
+# SUCCESS MESSAGES
+# ============================================
+success:
+  generic: "<green>✔ <white>Operação realizada com sucesso!"
+  saved: "<green>✔ <white>Dados salvos com sucesso!"
+  created: "<green>✔ <white>%target% <gray>foi criado!"
+  deleted: "<yellow>✔ <white>%target% <gray>foi removido."
+  updated: "<aqua>✔ <white>%target% <gray>foi atualizado!"
+
+# ============================================
+# ERROR MESSAGES
+# ============================================
+error:
+  generic: "<red>✖ <gray>Ocorreu um erro inesperado."
+  no_permission: "<red>✖ <gray>Você não tem permissão para isso!"
+  player_only: "<red>✖ <gray>Apenas jogadores podem usar este comando!"
+  invalid_args: "<red>✖ <gray>Uso: <white>%usage%"
+  not_found: "<red>✖ <gray>%target% <red>não encontrado!"
+  cooldown: "<red>✖ <gray>Aguarde <white>%time%s<gray>!"
+
+# ============================================
+# INFO MESSAGES
+# ============================================
+info:
+  hint: "<yellow>💡 <gray>%message%"
+  warning: "<gold>⚠ <gray>%message%"
+
+# ============================================
+# GENERAL MESSAGES
+# ============================================
+general:
+  no-permission: "<red>✖ <gray>Você não tem permissão para isso!"
+  players_only: "<red>✖ <gray>Apenas jogadores!"

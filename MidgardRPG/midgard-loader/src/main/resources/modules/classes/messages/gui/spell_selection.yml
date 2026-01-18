@@ -1,0 +1,21 @@
+# ============================================
+# MIDGARD CLASSES - GUI: SELEÇÃO DE SPELL
+# ============================================
+# Padrão V2.0 - Oficial
+# ============================================
+
+title: "<gradient:#a855f7:#ec4899><bold>✦ Seleção de Magias ✦</bold></gradient>"
+
+items:
+  click_to_equip: "<yellow>▸ <gray>Clique para equipar"
+
+buttons:
+  back:
+    name: "<red>← Voltar"
+    lore:
+      - ""
+      - "<gray>Voltar ao menu anterior."
+
+messages:
+  equipped_combo: "<green>✔ <white>Magia equipada não combo <yellow>%combo%<white>!"
+  equipped_skillbar: "<green>✔ <white>Magia equipada não slot <yellow>%slot%<white>!"

@@ -1,0 +1,21 @@
+dependencies {
+    // Database Connection Pool
+    implementation 'com.zaxxer:HikariCP:5.1.0'
+    
+    // High Performance Caching
+    implementation 'com.github.ben-manes.caffeine:caffeine:3.1.8'
+    
+    // Redis Client
+    api 'redis.clients:jedis:5.1.0'
+
+    // SQLite Driver
+    implementation 'org.xerial:sqlite-jdbc:3.45.1.0'
+    
+    // MySQL Driver
+    implementation 'mysql:mysql-connector-java:8.0.33'
+    
+    // Spark Profiler API
+    compileOnly 'me.lucko:spark-api:0.1-SNAPSHOT'
+    
+    implementation project(':midgard-nms-api')
+}

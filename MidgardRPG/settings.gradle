@@ -1,0 +1,21 @@
+rootProject.name = 'MidgardRPG'
+
+include 'midgard-core'
+include 'midgard-loader'
+include 'midgard-modules:midgard-combat'
+include 'midgard-modules:midgard-spells'
+include 'midgard-modules:midgard-territory'
+include 'midgard-modules:midgard-classes'
+include 'midgard-modules:midgard-item'
+include 'midgard-modules:midgard-mythicmobs'
+include 'midgard-modules:midgard-essentials'
+include 'midgard-modules:midgard-character'
+include 'midgard-modules:midgard-security'
+include 'midgard-modules:midgard-performance'
+include 'midgard-nms-api'
+project(':midgard-nms-api').projectDir = file('midgard-nms/api')
+
+include 'midgard-nms-v1_21'
+project(':midgard-nms-v1_21').projectDir = file('midgard-nms/v1_21')
+
+include 'midgard-proxy'

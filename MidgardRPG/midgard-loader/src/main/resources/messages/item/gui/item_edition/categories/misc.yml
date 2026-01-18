@@ -1,0 +1,153 @@
+stats:
+  permanent_effects:
+    name: '<gradient:#55ffff:#00aaaa><b>🧪 Efeitos Permanentes</b></gradient>'
+    lore:
+      - '<gray>Efeitos de poção aplicados permanentemente ao segurar/vestir.'
+      - ''
+      - '<gray>Ativos: <green>%size%'
+      - ''
+      - '<yellow>» Clique esquerdo para adicionar Potion.'
+      - '<yellow>» Clique direito para remover última.'
+    hide_attributes: true
+
+  commands:
+    name: '<gradient:#aaaaaa:#555555><b>⌨ Comandos</b></gradient>'
+    lore:
+      - '<gray>Lista de comandos executados ao clicar.'
+      - ''
+      - '<gray>Comandos: <green>%size%'
+      - ''
+      - '<yellow>» Clique para editar</yellow>'
+    hide_attributes: true
+
+  item_abilities:
+    name: '<gradient:#ff55ff:#aa00aa><b>⚡ Habilidades Especiais</b></gradient>'
+    lore:
+      - '<gray>Habilidades de Itens do MMOItems.'
+      - ''
+      - '<gray>Habilidades: <green>%size%'
+      - ''
+      - '<yellow>» Clique esquerdo para configurar Skills.'
+      - '<yellow>» Clique direito para remover todas.'
+    hide_attributes: true
+
+  gem_sockets:
+    name: '<gradient:#55ff55:#00aa00><b>💎 Gem Sockets</b></gradient>'
+    lore:
+      - '<gray>Define os gem stones vazios.'
+      - ''
+      - '<gray>Slots: <green>%size%'
+      - ''
+      - '<yellow>» Clique esquerdo para configurar slots.'
+      - '<yellow>» Clique direito para limpar slots.'
+    hide_attributes: true
+
+  granted_permissions:
+    name: '<gradient:#55ff55:#00aa00><b>🔑 Permissões Extras</b></gradient>'
+    lore:
+      - '<gray>Permissões dadas ao jogador enquanto ele tem o item.'
+      - ''
+      - '<gray>Perms: <green>%size%'
+      - ''
+      - '<yellow>» Clique esquerdo para adicionar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  item_cooldown:
+    name: '<gradient:#ff5555:#aa0000><b>⏳ Cooldown</b></gradient>'
+    lore:
+      - '<gray>Cooldown para o item poder ser usado de novo.'
+      - ''
+      - '<gray>Tempo: <green>%value%s'
+      - ''
+      - '<yellow>» Clique esquerdo para definir tempo.'
+      - '<yellow>» Clique direito para remover cooldown.'
+    hide_attributes: true
+
+  cooldown_reference:
+    name: '<gradient:#ff5555:#aa0000><b>🔗 Grupo de Cooldown</b></gradient>'
+    lore:
+      - '<gray>ID Compartilhado do Cooldown.'
+      - ''
+      - '<gray>Ref: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para definir ID.'
+      - '<yellow>» Clique direito para Individual (Padrão).'
+    hide_attributes: true
+
+  soulbound:
+    name: '<gradient:#aa00aa:#550055><b>⛓ Soulbound (Vínculo)</b></gradient>'
+    lore:
+      - '<gray>Prende o item ao jogador.'
+      - ''
+      - '<gray>Nível: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para definir nível.'
+      - '<yellow>» Clique direito para desvincular.'
+    hide_attributes: true
+
+  custom_sounds:
+    name: '<gradient:#ffaa00:#aa5500><b>🎵 Sons Customizados</b></gradient>'
+    lore:
+      - '<gray>Sons customizados para o item.'
+      - ''
+      - '<gray>Configurados: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar sons.'
+      - '<yellow>» Clique direito para usar padrão.'
+    hide_attributes: true
+
+  success_rate:
+    name: '<gradient:#00ff00:#00aa00><b>🎲 Taxa de Sucesso</b></gradient>'
+    lore:
+      - '<gray>Taxa de sucesso ao aplicar em outro item.'
+      - ''
+      - '<gray>Chance: <green>%value%%'
+      - ''
+      - '<yellow>» Clique esquerdo para definir chance.'
+      - '<yellow>» Clique direito para 100% (Padrão).'
+    hide_attributes: true
+
+  crafting:
+    name: '<gradient:#ffaa00:#aa5500><b>🛠 Receitas de Crafting</b></gradient>'
+    lore:
+      - '<gray>Permite criar este item na bancada de trabalho.'
+      - ''
+      - '<gray>Receitas: <green>%size%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar receitas.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  crafting_recipe_permission:
+    name: '<gradient:#ff5555:#aa0000><b>🔒 Permissão de Craft</b></gradient>'
+    lore:
+      - '<gray>Permissão para utilizar esta receita.'
+      - ''
+      - '<gray>Perm: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para definir permissão.'
+      - '<yellow>» Clique direito para liberar.'
+    hide_attributes: true
+
+  camera_overlay:
+    name: '<gradient:#55ffff:#00aaaa><b>🎥 Camera Overlay</b></gradient>'
+    lore:
+      - '<gray>Imagem exibida não HUD ao usar o item.'
+      - ''
+      - '<gray>Overlay: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para escolher imagem.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  myluck:
+    name: '<gradient:#55ff55:#00aa00><b>🍀 Sorte (Luck)</b></gradient>'
+    lore:
+      - '<gray>Aumenta a sorte do jogador.'
+      - ''
+      - '<gray>Bonus: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para definir valor.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true

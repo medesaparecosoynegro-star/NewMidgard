@@ -1,0 +1,10 @@
+wand_example:
+  base:
+    material: STICK
+    name: '<white>'
+    tier: COMMON
+    type: WAND
+    revision-id: 1
+  mechanics:
+    stats:
+      attack-damage: 5

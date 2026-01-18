@@ -1,0 +1,10 @@
+thrusting_sword_example:
+  base:
+    material: IRON_SWORD
+    name: '<white>'
+    tier: COMMON
+    type: THRUSTING_SWORD
+    revision-id: 1
+  mechanics:
+    stats:
+      attack-damage: 5

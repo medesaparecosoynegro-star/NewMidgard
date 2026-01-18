@@ -1,0 +1,10 @@
+lore:
+  edit: '<gray>Clique esquerdo para editar'
+  delete: '<gray>Clique direito para deletar'
+buttons:
+  back: '<red>Voltar'
+  add: '<green>Adicionar Linha'
+prompts:
+  new-line: Nova Linha
+  edit-line: Editar Linha
+title: Editando Lista

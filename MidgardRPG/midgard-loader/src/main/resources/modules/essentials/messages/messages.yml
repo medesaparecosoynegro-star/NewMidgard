@@ -1,0 +1,367 @@
+# ============================================
+# MIDGARD ESSENTIALS MODULE - MESSAGES
+# ============================================
+# Sistema de mensagens modernizado para comandos essenciais
+# Suporta Mini Message format e códigos de cor legados (&)
+# Placeholders: %player%, %target%, %amount%, %time%, %location%
+
+# ============================================
+# PREFIX E BRANDING
+# ============================================
+
+# ============================================
+# SISTEMA DE BACK
+# ============================================
+back:
+  success: "<green>✔ Voltando para o local anterior.</green>"
+  teleporting: "<gray>Teleportando para o local anterior...</gray>"
+  no_location: "<red>✖ Você não tem nenhum local para voltar.</red>"
+
+# ============================================
+# SISTEMA DE VANISH
+# ============================================
+vanish:
+  enabled: "<green>✔ Você entrou no modo vanish.</green>"
+  disabled: "<yellow>⚠ Você saiu do modo vanish.</yellow>"
+  enabled_other: "<green>✔ <yellow>%player%</yellow> entrou no modo vanish.</green>"
+  disabled_other: "<yellow>⚠ <yellow>%player%</yellow> saiu do modo vanish.</yellow>"
+
+# ============================================
+# SISTEMA DE INVSEE
+# ============================================
+invsee:
+  usage: "<red>✖ Uso correto: <yellow>/invsee <jogador></yellow></red>"
+  opening: "<green>✔ Abrindo inventário de <yellow>%player%</yellow>.</green>"
+  viewing: "<gray>Visualizando inventário de <yellow>%player%</yellow>.</gray>"
+
+# ============================================
+# SISTEMA DE TELEPORTE
+# ============================================
+teleport:
+  # Sucesso
+  success: "<green>✔ Teleportado para <yellow>%target%</yellow>.</green>"
+  success_coords: "<green>✔ Teleportado para <yellow>X:%x% Y:%y% Z:%z%</yellow>.</green>"
+  
+  # Warmup
+  warmup: "<yellow>⚠ Teleportando em <gold>%time%</gold> segundos...</yellow>"
+  warmup_cancelled: "<red>✖ Teleporte cancelado! Você se moveu.</red>"
+  
+  # Cooldown
+  cooldown: "<yellow>⚠ Aguarde <gold>%time%</gold> antes de teleportar novamente.</yellow>"
+
+# ============================================
+# TPA (TELEPORT REQUEST)
+# ============================================
+tpa:
+  already_sent: "<red>✖ Você já enviou uma solicitação para este jogador.</red>"
+  expired: "<yellow>⚠ Sua solicitação de teleporte expirou.</yellow>"
+  sent: "<green>✔ Solicitação enviada para <yellow>%player%</yellow>.</green>"
+  received: "<yellow>%player% <gray>deseja se teleportar até você. Use <green>/tpaccept <gray>ou <red>/tpdeny</red>."
+  no_request: "<red>✖ Você não tem solicitações pendentes.</red>"
+  teleporting: "<green>✔ Solicitação aceita! Teleportando...</green>"
+  accepted: "<green>✔ Você aceitou a solicitação de %player%.</green>"
+  denied: "<red>✖ Solicitação recusada.</red>"
+
+# ============================================
+# COMMANDS
+# ============================================
+player:
+  heal: "<green>✔ Você foi curado!</green>"
+  heal_other: "<green>✔ Você curou <yellow>%player%</yellow>.</green>"
+  healed_by: "<green>✔ Você foi curado por <yellow>%player%</yellow>.</green>"
+
+spawn:
+  set: "<green>✔ Spawn definido com sucesso!</green>"
+
+commands:
+  speed:
+    usage: "<red>Uso: /speed <velocidade 0-10></red>"
+    invalid_range: "<red>✖ Velocidade deve ser entre 0 e 10.</red>"
+    fly_set: "<green>✔ Velocidade de voo definida para <yellow>%speed%</yellow>.</green>"
+    walk_set: "<green>✔ Velocidade de caminhada definida para <yellow>%speed%</yellow>.</green>"
+  
+  # Erros
+  unsafe_location: "<red>✖ Localização de destino não é segura!</red>"
+  world_not_found: "<red>✖ Mundo não encontrado: <yellow>%world%</yellow></red>"
+  teleport_failed: "<red>✖ Falha ao teleportar. Tente novamente.</red>"
+  
+  # Restrições
+  cannot_teleport_combat: "<red>✖ Você não pode teleportar durante combate!</red>"
+  cannot_teleport_here: "<red>✖ Você não pode teleportar nesta área.</red>"
+
+# ============================================
+# SISTEMA DE HOME
+# ============================================
+home:
+  # Definir
+  set: "<green>✔ Home <yellow>%home%</yellow> definida.</green>"
+  set_first: "<green>✔ Primeira home definida! Use <yellow>/home</yellow> para teleportar.</green>"
+  
+  # Remover
+  deleted: "<red>✖ Home <yellow>%home%</yellow> removida.</red>"
+  delete_confirm: "<yellow>⚠ Digite <gold>/delhome %home% confirm</gold> para confirmar.</yellow>"
+  
+  # Teleporte
+  teleport: "<green>✔ Teleportado para sua home <yellow>%home%</yellow>.</green>"
+  teleporting: "<gray>Teleportando para home <yellow>%home%</yellow>...</gray>"
+  
+  # Listagem
+  list_header: "<green>Suas Homes <dark_gray>(%count%/%limit%)</dark_gray>:</green>"
+  list_item: "  <yellow>★ %home%</yellow> <dark_gray>(%world% - %x%, %y%, %z%)</dark_gray>"
+  list_empty: "<gray>Você não tem nenhuma home definida.</gray>"
+  
+  # Limites
+  limit_reached: "<red>✖ Você atingiu o limite de homes <yellow>(%limit%)</yellow>.</red>"
+  limit_info: "<gray>Homes: <yellow>%count%</yellow>/<yellow>%limit%</yellow></gray>"
+  
+  # Erros
+  not_found: "<red>✖ Home não encontrada: <yellow>%home%</yellow></red>"
+  already_exists: "<yellow>⚠ Home <yellow>%home%</yellow> já existe. Use <gold>/sethome %home% overwrite</gold> para sobrescrever.</yellow>"
+  invalid_name: "<red>✖ Nome de home inválido. Use apenas letras, números e underscore.</red>"
+
+# ============================================
+# SISTEMA DE WARP
+# ============================================
+warp:
+  # Definir (Admin)
+  set: "<green>✔ Warp <yellow>%warp%</yellow> definida.</green>"
+  set_description: "<gray>Descrição: <white>%description%</white></gray>"
+  
+  # Remover (Admin)
+  deleted: "<red>✖ Warp <yellow>%warp%</yellow> removida.</red>"
+  
+  # Teleporte
+  teleport: "<green>✔ Teleportado para warp <yellow>%warp%</yellow>.</green>"
+  teleporting: "<gray>Teleportando para warp <yellow>%warp%</yellow>...</gray>"
+  
+  # Listagem
+  list_header: "<green>Warps Disponíveis:</green>"
+  list_item: "  <yellow>★ %warp%</yellow> <gray>- %description%</gray>"
+  list_empty: "<gray>Nenhuma warp disponível.</gray>"
+  
+  # Erros
+  not_found: "<red>✖ Warp não encontrada: <yellow>%warp%</yellow></red>"
+  no_permission: "<red>✖ Você não tem permissão para usar esta warp.</red>"
+  already_exists: "<yellow>⚠ Warp <yellow>%warp%</yellow> já existe.</yellow>"
+
+# ============================================
+# SISTEMA DE SPAWN
+# ============================================
+spawn:
+  # Definir
+  set: "<green>✔ Spawn definido com sucesso.</green>"
+  set_world: "<green>✔ Spawn do mundo <yellow>%world%</yellow> definido.</green>"
+  
+  # Teleporte
+  teleport: "<green>✔ Teleportado para o spawn.</green>"
+  teleporting: "<gray>Teleportando para o spawn...</gray>"
+  
+  # Erros
+  not_set: "<red>✖ Spawn não definido.</red>"
+  not_set_world: "<red>✖ Spawn do mundo <yellow>%world%</yellow> não definido.</red>"
+
+# ============================================
+# SISTEMA DE TPA (Teleporte Entre Jogadores)
+# ============================================
+tpa:
+  # Enviar solicitação
+  sent: "<green>✔ Solicitação de teleporte enviada para <yellow>%player%</yellow>.</green>"
+  sent_expire: "<gray>A solicitação expira em <yellow>%time%</yellow>.</gray>"
+  
+  # Receber solicitação
+  received: "<yellow>%player%</yellow> <gray>deseja se teleportar até você.</gray>"
+  received_actions: "<click:run_command:/tpaccept><hover:show_text:'<green>Clique para aceitar'><green><bold>[✔ ACEITAR]</bold></green></hover></click> <click:run_command:/tpdeny><hover:show_text:'<red>Clique para negar'><red><bold>[✖ NEGAR]</bold></red></hover></click>"
+  received_commands: "<gray>Use <yellow>/tpaccept</yellow> ou <yellow>/tpdeny</yellow>.</gray>"
+  
+  # Aceitar
+  accepted: "<green>✔ Solicitação de teleporte aceita.</green>"
+  accepted_sender: "<green>✔ <yellow>%player%</yellow> aceitou sua solicitação!</green>"
+  
+  # Negar
+  denied: "<red>✖ Solicitação de teleporte negada.</red>"
+  denied_sender: "<red>✖ <yellow>%player%</yellow> negou sua solicitação.</red>"
+  
+  # Teleportando
+  teleporting: "<green>✔ Teleportando...</green>"
+  teleported: "<green>✔ Teleportado com sucesso!</green>"
+  
+  # Expiração
+  expired: "<red>✖ Solicitação de teleporte expirou.</red>"
+  expired_sender: "<yellow>⚠ Sua solicitação para <yellow>%player%</yellow> expirou.</yellow>"
+  
+  # Erros
+  no_request: "<red>✖ Você não tem solicitações de teleporte pendentes.</red>"
+  self: "<red>✖ Você não pode enviar solicitação para si mesmo.</red>"
+  already_sent: "<yellow>⚠ Você já enviou uma solicitação para este jogador. Aguarde a resposta.</yellow>"
+  player_offline: "<red>✖ O jogador <yellow>%player%</yellow> está offline.</red>"
+  player_busy: "<yellow>⚠ <yellow>%player%</yellow> está ocupado no momento.</yellow>"
+  
+  # TPA Here (jogador vem até você)
+  tpahere_sent: "<green>✔ Solicitação enviada para <yellow>%player%</yellow> vir até você.</green>"
+  tpahere_received: "<yellow>%player%</yellow> <gray>quer que você se teleporte até ele.</gray>"
+
+# ============================================
+# GERENCIAMENTO DE JOGADOR
+# ============================================
+player:
+  # Gamemode
+  gamemode_changed: "<green>✔ Seu modo de jogo foi alterado para <yellow>%gamemode%</yellow>.</green>"
+  gamemode_changed_other: "<green>✔ Modo de jogo de <yellow>%player%</yellow> alterado para <yellow>%gamemode%</yellow>.</green>"
+  
+  # Heal
+  heal: "<green>✔ Você foi curado completamente.</green>"
+  heal_other: "<green>✔ Você curou <yellow>%player%</yellow>.</green>"
+  healed_by: "<green>✔ Você foi curado por <yellow>%player%</yellow>.</green>"
+  
+  # Feed
+  feed: "<green>✔ Sua fome foi saciada.</green>"
+  feed_other: "<green>✔ Você saciou a fome de <yellow>%player%</yellow>.</green>"
+  fed_by: "<green>✔ Sua fome foi saciada por <yellow>%player%</yellow>.</green>"
+  
+  # Fly
+  fly_enabled: "<green>✔ Voo habilitado.</green>"
+  fly_disabled: "<yellow>⚠ Voo desabilitado.</yellow>"
+  fly_enabled_other: "<green>✔ Voo habilitado para <yellow>%player%</yellow>.</green>"
+  fly_disabled_other: "<yellow>⚠ Voo desabilitado para <yellow>%player%</yellow>.</yellow>"
+  
+  # God Mode
+  god_enabled: "<gold>★ Modo deus ativado!</gold>"
+  god_disabled: "<gray>⚠ Modo deus desativado.</gray>"
+  
+  # Speed
+  speed_set: "<green>✔ Velocidade definida para <yellow>%speed%</yellow>.</green>"
+  speed_reset: "<gray>⚠ Velocidade resetada para o padrão.</gray>"
+  
+  # Inventory
+  inventory_cleared: "<green>✔ Inventário limpo.</green>"
+  inventory_cleared_other: "<green>✔ Inventário de <yellow>%player%</yellow> limpo.</green>"
+
+# ============================================
+# TEMPO E CLIMA
+# ============================================
+time:
+  set: "<green>✔ Hora do mundo alterada para <yellow>%time%</yellow>.</green>"
+  day: "<yellow>☀ Dia definido.</yellow>"
+  night: "<blue>☾ Noite definida.</blue>"
+  
+weather:
+  clear: "<yellow>☀ Clima limpo.</yellow>"
+  rain: "<blue>☔ Chuva ativada.</blue>"
+  thunder: "<dark_gray>⚡ Tempestade ativada.</dark_gray>"
+
+# ============================================
+# MENSAGENS DO SERVIDOR
+# ============================================
+server:
+  # Broadcast
+  broadcast: "<gradient:#5e4fa2:#f79459><bold>AVISO</bold></gradient> <dark_gray>»</dark_gray> <white>%message%</white>"
+  
+  # Kick
+  kicked: "<red>Você foi expulso do servidor.</red>"
+  kicked_reason: "<red>Você foi expulso: <yellow>%reason%</yellow></red>"
+  kick_success: "<green>✔ <yellow>%player%</yellow> foi expulso.</green>"
+  
+  # Ban
+  banned: "<red>Você foi banido do servidor.</red>"
+  banned_reason: "<red>Motivo: <yellow>%reason%</yellow></red>"
+  banned_expires: "<gray>Expira em: <yellow>%time%</yellow></gray>"
+  ban_success: "<green>✔ <yellow>%player%</yellow> foi banido.</green>"
+  
+  # Whitelist
+  whitelist_added: "<green>✔ <yellow>%player%</yellow> adicionado à whitelist.</green>"
+  whitelist_removed: "<red>✖ <yellow>%player%</yellow> removido da whitelist.</red>"
+  not_whitelisted: "<red>Você não está na whitelist deste servidor.</red>"
+
+# ============================================
+# MENSAGENS DE COMANDOS
+# ============================================
+commands:
+  # Uso
+  usage_home: "<red>Uso: <yellow>/home [nome]</yellow></red>"
+  usage_sethome: "<red>Uso: <yellow>/sethome [nome]</yellow></red>"
+  usage_delhome: "<red>Uso: <yellow>/delhome <nome></yellow></red>"
+  usage_warp: "<red>Uso: <yellow>/warp <nome></yellow></red>"
+  usage_tp: "<red>Uso: <yellow>/tp <jogador></yellow></red>"
+  
+  # Permissões
+  no_permission: "<red>✖ Você não tem permissão para usar este comando.</red>"
+  
+  # Player only
+  player_only: "<red>✖ Este comando só pode ser usado por jogadores.</red>"
+  
+  # Reload
+  reload_start: "<gray>Recarregando módulo essentials...</gray>"
+  reload_success: "<green>✔ Módulo essentials recarregado!</green>"
+  reload_failed: "<red>✖ Erro ao recarregar. Verifique o console.</red>"
+  
+  # Speed
+  speed:
+    usage: "<red>✖ Uso correto: <yellow>/speed <1-10></yellow></red>"
+    invalid_range: "<red>✖ A velocidade deve ser entre 1 e 10.</red>"
+    fly_set: "<green>✔ Velocidade de voo definida para <yellow>%speed%</yellow>.</green>"
+    walk_set: "<green>✔ Velocidade de caminhada definida para <yellow>%speed%</yellow>.</green>"
+  
+  # Top
+  top:
+    success: "<green>✔ Teleportado para o topo.</green>"
+  
+  # TpHere
+  tphere:
+    usage: "<red>✖ Uso correto: <yellow>/tphere <jogador></yellow></red>"
+    success: "<green>✔ Você puxou <yellow>%player%</yellow> para sua localização.</green>"
+    target_notified: "<yellow>⚠ Você foi puxado para <gold>%player%</gold>.</yellow>"
+
+# ============================================
+# MENSAGENS DE ERRO
+# ============================================
+errors:
+  # Jogador
+  player_not_found: "<red>✖ Jogador não encontrado: <yellow>%player%</yellow></red>"
+  player_offline: "<red>✖ O jogador <yellow>%player%</yellow> está offline.</red>"
+  
+  # Mundo
+  world_not_found: "<red>✖ Mundo não encontrado: <yellow>%world%</yellow></red>"
+  
+  # Números
+  invalid_number: "<red>✖ Número inválido.</red>"
+  
+  # Sistema
+  internal_error: "<red>✖ Erro interno. Reporte aos administradores.</red>"
+  feature_disabled: "<yellow>⚠ Esta funcionalidade está temporariamente desabilitada.</yellow>"
+  
+  # Cooldown genérico
+  on_cooldown: "<yellow>⚠ Aguarde <gold>%time%</gold> antes de usar este comando novamente.</yellow>"
+
+# ============================================
+# MENSAGENS DE AJUDA
+# ============================================
+help:
+  header: "<gradient:#5e4fa2:#f79459><bold>Ajuda - Essentials</bold></gradient>"
+  
+  teleport_commands:
+    - "<yellow>/home [nome]</yellow> <dark_gray>-</dark_gray> <gray>Teleportar para sua home</gray>"
+    - "<yellow>/sethome [nome]</yellow> <dark_gray>-</dark_gray> <gray>Definir uma home</gray>"
+    - "<yellow>/delhome <nome></yellow> <dark_gray>-</dark_gray> <gray>Remover uma home</gray>"
+    - "<yellow>/homes</yellow> <dark_gray>-</dark_gray> <gray>Listar suas homes</gray>"
+    - "<yellow>/warp <nome></yellow> <dark_gray>-</dark_gray> <gray>Teleportar para uma warp</gray>"
+    - "<yellow>/warps</yellow> <dark_gray>-</dark_gray> <gray>Listar warps disponíveis</gray>"
+    - "<yellow>/spawn</yellow> <dark_gray>-</dark_gray> <gray>Teleportar para o spawn</gray>"
+  
+  tpa_commands:
+    - "<yellow>/tpa <jogador></yellow> <dark_gray>-</dark_gray> <gray>Pedir para teleportar até alguém</gray>"
+    - "<yellow>/tpahere <jogador></yellow> <dark_gray>-</dark_gray> <gray>Pedir para alguém vir até você</gray>"
+    - "<yellow>/tpaccept</yellow> <dark_gray>-</dark_gray> <gray>Aceitar solicitação de teleporte</gray>"
+    - "<yellow>/tpdeny</yellow> <dark_gray>-</dark_gray> <gray>Negar solicitação de teleporte</gray>"
+  
+  footer: "<gray>Use <yellow>/help essentials</yellow> para mais comandos.</gray>"
+
+# ============================================
+# MENSAGENS DE DEBUG (Admin)
+# ============================================
+debug:
+  tp_info: "<gray>TP: From=%from_world% To=%to_world%, Distance=%distance%m</gray>"
+  home_info: "<gray>Home: %home% @ %world% (%x%, %y%, %z%)</gray>"
+  warp_info: "<gray>Warp: %warp% @ %world% (%x%, %y%, %z%)</gray>"
+  
+  cache_cleared: "<yellow>⚠ Cache de teleportes limpo.</yellow>"
+  data_saved: "<green>✔ Dados salvos com sucesso.</green>"

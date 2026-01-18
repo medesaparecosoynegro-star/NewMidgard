@@ -1,0 +1,20 @@
+title: Selecionar Classe Necessária
+error:
+  module_disabled: <red>O módulo de classes não está ativado!
+item:
+  name: "<yellow>%s"
+  lore:
+    - "<gray>ID: %s"
+    - ''
+    - "<green>Clique para selecionar esta classe"
+buttons:
+  previous_page: <green>Página Anterior
+  next_page: <green>Próxima Página
+  back: <red>Voltar
+  clear:
+    name: <yellow>Limpar Requisito
+    lore:
+      - <gray>Clique para remover o requisito de classe
+messages:
+  removed: "<green>Requisito de classe removido."
+  set: "<green>Classe necessária definida para: %s"

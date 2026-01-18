@@ -1,0 +1,8 @@
+name: "<light_purple>Míssil Mágico</light_purple>"
+mythic-skill: "MagicMissile"
+cooldown: 2.0
+mana: 5.0
+stamina: 0.0
+lore:
+  - "<gray>Um projétil rápido de pura energia mágica.</gray>"
+  - "<gray>Causa dano moderado.</gray>"

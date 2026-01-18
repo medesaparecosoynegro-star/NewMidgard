@@ -1,0 +1,10 @@
+tool_example:
+  base:
+    material: IRON_PICKAXE
+    name: '<white>'
+    tier: COMMON
+    type: TOOL
+    revision-id: 1
+  mechanics:
+    stats:
+      attack-damage: 5

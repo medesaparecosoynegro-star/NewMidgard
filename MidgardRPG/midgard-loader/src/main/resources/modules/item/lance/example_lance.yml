@@ -1,0 +1,10 @@
+lance_example:
+  base:
+    material: STICK
+    name: '<white>'
+    tier: COMMON
+    type: LANCE
+    revision-id: 1
+  mechanics:
+    stats:
+      attack-damage: 5

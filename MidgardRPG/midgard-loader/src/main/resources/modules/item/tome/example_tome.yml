@@ -1,0 +1,10 @@
+tome_example:
+  base:
+    material: BOOK
+    name: '<white>'
+    tier: COMMON
+    type: TOME
+    revision-id: 1
+  mechanics:
+    stats:
+      attack-damage: 5

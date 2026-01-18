@@ -1,0 +1,286 @@
+# Page 1
+SWORD:
+  name: "<white>Espada"
+  icon: IRON_SWORD
+  model-data: 0
+  slot: 10
+  page: 1
+
+DAGGER:
+  name: "<white>Adaga"
+  icon: IRON_SWORD
+  model-data: 0
+  slot: 11
+  page: 1
+
+SPEAR:
+  name: "<white>Lança"
+  icon: STICK
+  model-data: 0
+  slot: 12
+  page: 1
+
+HAMMER:
+  name: "<white>Martelo"
+  icon: IRON_SHOVEL
+  model-data: 0
+  slot: 13
+  page: 1
+
+GAUNTLET:
+  name: "<white>Manopla"
+  icon: LEATHER_HELMET
+  model-data: 0
+  slot: 14
+  page: 1
+
+WHIP:
+  name: "<white>Chicote"
+  icon: LEAD
+  model-data: 0
+  slot: 15
+  page: 1
+
+STAFF:
+  name: "<white>Cajado"
+  icon: STICK
+  model-data: 0
+  slot: 16
+  page: 1
+
+BOW:
+  name: "<white>Arco"
+  icon: BOW
+  model-data: 0
+  slot: 19
+  page: 1
+
+CROSSBOW:
+  name: "<white>Besta"
+  icon: CROSSBOW
+  model-data: 0
+  slot: 20
+  page: 1
+
+MUSKET:
+  name: "<white>Mosquete"
+  icon: IRON_HORSE_ARMOR
+  model-data: 0
+  slot: 21
+  page: 1
+
+LUTE:
+  name: "<white>Alaúde"
+  icon: MUSIC_DISC_STRAD
+  model-data: 0
+  slot: 22
+  page: 1
+
+TOOL:
+  name: "<white>Ferramenta"
+  icon: IRON_PICKAXE
+  model-data: 0
+  slot: 23
+  page: 1
+
+CATALYST:
+  name: "<white>Catalisador"
+  icon: EMERALD
+  model-data: 0
+  slot: 24
+  page: 1
+
+OFF_CATALYST:
+  name: "<white>Catalisador (Mão Secundária)"
+  icon: BOOK
+  model-data: 0
+  slot: 25
+  page: 1
+
+MAIN_CATALYST:
+  name: "<white>Catalisador (Mão Primária)"
+  icon: ENCHANTED_BOOK
+  model-data: 0
+  slot: 28
+  page: 1
+
+ORNAMENT:
+  name: "<white>Ornamento"
+  icon: FLOWER_POT
+  model-data: 0
+  slot: 29
+  page: 1
+
+ARMOR:
+  name: "<white>Armadura"
+  icon: IRON_CHESTPLATE
+  model-data: 0
+  slot: 30
+  page: 1
+
+CONSUMABLE:
+  name: "<white>Consumível"
+  icon: POTION
+  model-data: 0
+  slot: 31
+  page: 1
+
+MISCELLANEOUS:
+  name: "<white>Miscelânea"
+  icon: CHEST
+  model-data: 0
+  slot: 32
+  page: 1
+
+GEM_STONE:
+  name: "<white>Gema"
+  icon: DIAMOND
+  model-data: 0
+  slot: 33
+  page: 1
+
+SKIN:
+  name: "<white>Skin"
+  icon: PLAYER_HEAD
+  model-data: 0
+  slot: 34
+  page: 1
+
+# Page 2
+ACCESSORY:
+  name: "<white>Acessório"
+  icon: GOLD_NUGGET
+  model-data: 0
+  slot: 10
+  page: 2
+
+BLOCK:
+  name: "<white>Bloco"
+  icon: STONE
+  model-data: 0
+  slot: 11
+  page: 2
+
+GREATSWORD:
+  name: "<white>Espada Grande"
+  icon: IRON_SWORD
+  model-data: 0
+  slot: 12
+  page: 2
+
+LONG_SWORD:
+  name: "<white>Espada Longa"
+  icon: IRON_SWORD
+  model-data: 0
+  slot: 13
+  page: 2
+
+KATANA:
+  name: "<white>Katana"
+  icon: IRON_SWORD
+  model-data: 0
+  slot: 14
+  page: 2
+
+THRUSTING_SWORD:
+  name: "<white>Espada de Estocada"
+  icon: IRON_SWORD
+  model-data: 0
+  slot: 15
+  page: 2
+
+AXE:
+  name: "<white>Machado"
+  icon: IRON_AXE
+  model-data: 0
+  slot: 16
+  page: 2
+
+GREATAXE:
+  name: "<white>Machado Grande"
+  icon: IRON_AXE
+  model-data: 0
+  slot: 19
+  page: 2
+
+HALBERD:
+  name: "<white>Alabarda"
+  icon: IRON_AXE
+  model-data: 0
+  slot: 20
+  page: 2
+
+LANCE:
+  name: "<white>Lança de Cavalaria"
+  icon: STICK
+  model-data: 0
+  slot: 21
+  page: 2
+
+GREATHAMMER:
+  name: "<white>Martelo Grande"
+  icon: IRON_SHOVEL
+  model-data: 0
+  slot: 22
+  page: 2
+
+GREATSTAFF:
+  name: "<white>Cajado Grande"
+  icon: STICK
+  model-data: 0
+  slot: 23
+  page: 2
+
+CLUB:
+  name: "<white>Bastão"
+  icon: STICK
+  model-data: 0
+  slot: 24
+  page: 2
+
+TOME:
+  name: "<white>Tomo"
+  icon: BOOK
+  model-data: 0
+  slot: 25
+  page: 2
+
+TALISMAN:
+  name: "<white>Talismã"
+  icon: TOTEM_OF_UNDYING
+  model-data: 0
+  slot: 28
+  page: 2
+
+WAND:
+  name: "<white>Varinha"
+  icon: STICK
+  model-data: 0
+  slot: 29
+  page: 2
+
+GREATBOW:
+  name: "<white>Arco Grande"
+  icon: BOW
+  model-data: 0
+  slot: 30
+  page: 2
+
+SHIELD:
+  name: "<white>Escudo"
+  icon: SHIELD
+  model-data: 0
+  slot: 31
+  page: 2
+
+MATERIAL:
+  name: "<white>Material"
+  icon: IRON_INGOT
+  model-data: 0
+  slot: 32
+  page: 2
+
+MISC:
+  name: '<white>Outros'
+  icon: PAPER
+  model-data: 0

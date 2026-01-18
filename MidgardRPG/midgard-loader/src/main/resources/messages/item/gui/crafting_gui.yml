@@ -1,0 +1,76 @@
+# ============================================
+# MIDGARD ITEM - GUI: CRAFTING
+# ============================================
+# Padrão V2.0 - Oficial
+# ============================================
+
+type_selection:
+  title: "<gradient:#55ffff:#00aaaa><bold>✦ Selecionar Tipo de Receita ✦</bold></gradient>"
+  click_to_manage:
+    - "<gray>Clique para gerenciar receitas"
+    - "<gray>deste tipo."
+  types:
+    smithing: "<yellow>⚒ Mesa de Ferraria"
+    super_shaped: "<yellow>⭐ Super Shaped"
+    smoker: "<yellow>🔥 Defumador"
+    furnace: "<yellow>🔥 Fornalha"
+    shaped: "<yellow>📦 Com Forma"
+    mega_shaped: "<yellow>📦 Mega Shaped"
+    campfire: "<yellow>🔥 Fogueira"
+    shapeless: "<yellow>✨ Sem Forma"
+    blast_furnace: "<yellow>🔥 Alto-Forno"
+
+editor:
+  common:
+    back: "<red>← Voltar"
+    get_item:
+      name: "<gradient:#55ff55:#00aa00><bold>✦ Obter Item</bold></gradient>"
+      lore:
+        - "<gray>Clique para pegar este item."
+    output_mode:
+      name: "<gradient:#ffff55:#ffaa00><bold>⚙ Modo de Saída</bold></gradient>"
+      lore:
+        - "<gray>Clique para alternar o modo."
+        - "<gray>Atual: %s"
+      shaped: "<green>COM FORMA"
+      shapeless: "<yellow>SEM FORMA"
+    output_amount:
+      name: "<gradient:#ffff55:#ffaa00><bold>📦 Quantidade de Saída</bold></gradient>"
+      lore:
+        - "<gray>Clique para alterar a quantidade."
+        - "<gray>Atual: <white>%s"
+    duration:
+      name: "<gradient:#ffff55:#ffaa00><bold>⏱ Duração</bold></gradient>"
+      lore:
+        - "<gray>Tempo de cozimento em ticks."
+        - "<gray>Atual: <white>%s"
+    experience:
+      name: "<gradient:#ffff55:#ffaa00><bold>✨ Experiência</bold></gradient>"
+      lore:
+        - "<gray>XP gerado ao cozinhar."
+        - "<gray>Atual: <white>%s"
+    hide_book:
+      name: "<gradient:#ffff55:#ffaa00><bold>📖 Livro de Receitas</bold></gradient>"
+      lore:
+        - "<gray>Visibilidade não livro de receitas."
+        - "<gray>Atual: %s"
+      hidden: "<green>OCULTO"
+      shown: "<red>VISÍVEL"
+    invalid_ingredient: "<red>✖ <gray>Inválido: %s"
+    item_added: "<green>✔ <white>Item adicionado à receita."
+    no_item: "<red>✖ <gray>Nenhum item selecionado."
+    separator: "<dark_gray>────────────────"
+    prompts:
+      output_amount: "Quantidade de Saída"
+
+configuration:
+  title: "<gradient:#55ffff:#00aaaa><bold>✦ Configuração de Receita ✦</bold></gradient>"
+  recipe_item:
+    name: "<yellow>📜 Receita #%id%"
+    lore:
+      - "<gray>Clique para editar esta receita."
+  new_recipe:
+    name: "<gradient:#55ff55:#00aa00><bold>✦ Criar Nova Receita</bold></gradient>"
+    lore:
+      - "<gray>Clique para criar uma nova receita"
+      - "<gray>deste tipo."

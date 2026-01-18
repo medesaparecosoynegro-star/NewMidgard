@@ -1,0 +1,10 @@
+whip_example:
+  base:
+    material: LEAD
+    name: '<white>'
+    tier: COMMON
+    type: WHIP
+    revision-id: 1
+  mechanics:
+    stats:
+      attack-damage: 5

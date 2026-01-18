@@ -1,0 +1,10 @@
+consumable_example:
+  base:
+    material: APPLE
+    name: '<white>'
+    tier: COMMON
+    type: CONSUMABLE
+    revision-id: 1
+  mechanics:
+    stats:
+      attack-damage: 5

@@ -1,0 +1,10 @@
+block_example:
+  base:
+    material: STONE
+    name: '<white>'
+    tier: COMMON
+    type: BLOCK
+    revision-id: 1
+  mechanics:
+    stats:
+      attack-damage: 5

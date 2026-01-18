@@ -1,0 +1,236 @@
+# ============================================
+# MIDGARD CLASSES MODULE - MESSAGES
+# ============================================
+# Sistema de mensagens modernizado para o módulo de classes
+# Suporta Mini Message format e códigos de cor legados (&)
+# Placeholders: %player%, %class%, %class_name%, %level%, %xp%, %points%
+
+# ============================================
+# PREFIX E BRANDING
+# ============================================
+
+# ============================================
+# MENSAGENS DE CLASSE
+# ============================================
+class:
+  # Seleção
+  selected: "<green>✔ Parabéns! Você agora é um <yellow>%class_name%</yellow>!"
+  changed: "<yellow>⚠ Classe alterada de <white>%old_class%</white> para <yellow>%new_class%</yellow>."
+  
+  # Primeira vez
+  welcome: "<gradient:#5e4fa2:#f79459><bold>Bem-vindo, %class_name%!</bold></gradient>"
+  welcome_lore:
+    - ""
+    - "<gray>Você escolheu o caminho do <yellow>%class_name%</yellow>!"
+    - "<gray>Use <yellow>/class info</yellow> para ver suas habilidades."
+  
+  # Informações
+  current: "<gray>Sua classe atual: <yellow>%class_name%</yellow> <dark_gray>(Level %level%)</dark_gray>"
+  no_class: "<yellow>⚠ Você ainda não escolheu uma classe."
+  no_class_prompt: "<gray>Use <yellow>/class select</yellow> para escolher sua classe."
+  
+  # Disponibilidade
+  available_classes: "<gray>Classes disponíveis: <yellow>%classes%</yellow>"
+  class_locked: "<red>✖ Esta classe está bloqueada. Requisito: <yellow>%requirement%</yellow>"
+  class_unlocked: "<green>✔ Classe desbloqueada: <yellow>%class_name%</yellow>!"
+
+# ============================================
+# MENSAGENS DE LEVEL E XP
+# ============================================
+progression:
+  # Level Up
+  level_up: "<gold><bold>★ CLASS LEVEL UP!</bold></gold> <yellow>%class_name%</yellow> <gray>atingiu o nível</gray> <yellow>%level%</yellow>!"
+  combat_level_up: "<gold><bold>★ COMBAT LEVEL UP!</bold></gold> <gray>Você atingiu o nível de combate</gray> <yellow>%level%</yellow>!"
+  level_up_rewards:
+    - "<gray>Recompensas:"
+    - "  <yellow>+%attribute_points%</yellow> <gray>pontos de atributo</gray>"
+    - "  <yellow>+%skill_points%</yellow> <gray>pontos de habilidade</gray>"
+  
+  # XP
+  xp_gained: "<green>+%amount% XP</green> <dark_gray>(%source%)</dark_gray>"
+  xp_gained_bonus: "<gold>+%amount% XP</gold> <yellow>★ Bônus de Classe: +%bonus%%</yellow>"
+  xp_info: "<gray>XP: <yellow>%current%</yellow>/<yellow>%required%</yellow> <dark_gray>(%percentage%%)</dark_gray>"
+  next_level: "<gray>Próximo nível: <yellow>%xp_needed% XP</yellow>"
+  
+  # Prestígio
+  max_level: "<gold>★ Nível máximo atingido!</gold>"
+  prestige_available: "<light_purple>★ Prestígio disponível! Use <yellow>/class prestige</yellow>"
+  prestige_success: "<light_purple><bold>★ PRESTIGE!</bold></light_purple> <yellow>%class_name%</yellow> <gray>renasceu no prestígio</gray> <yellow>%prestige%</yellow>!"
+
+# ============================================
+# MENSAGENS DE ATRIBUTOS
+# ============================================
+attributes:
+  # Pontos
+  points_received: "<green>✔ Você recebeu <yellow>%points%</yellow> pontos de atributo!"
+  points_spent: "<gray>Você gastou <yellow>%points%</yellow> pontos."
+  not_enough_points: "<red>✖ Pontos insuficientes! Você tem <yellow>%available%</yellow>, precisa de <yellow>%required%</yellow>."
+  
+  # Reset
+  reset_success: "<yellow>⚠ Pontos de atributo resetados. Você recuperou <yellow>%points%</yellow> pontos."
+  reset_cost: "<gray>Custo do reset: <yellow>%cost%</yellow>"
+  reset_confirm: "<red>⚠ Digite <yellow>/class reset confirm</yellow> para confirmar o reset."
+  
+  # Limites
+  max_reached: "<gold>★ Você atingiu o máximo em <aqua>%attribute%</aqua>!"
+  min_required: "<red>✖ %attribute% requer no mínimo <yellow>%min%</yellow> pontos."
+
+# ============================================
+# MENSAGENS DE HABILIDADES
+# ============================================
+skills:
+  # Desbloqueio
+  unlocked: "<green>✔ Habilidade desbloqueada: <yellow>%skill_name%</yellow>!"
+  upgraded: "<green>✔ Habilidade melhorada: <yellow>%skill_name%</yellow> <gray>→</gray> <yellow>Level %level%</yellow>"
+  
+  # Uso
+  activated: "<yellow>★ %skill_name% ativado!</yellow>"
+  on_cooldown: "<red>✖ %skill_name% em recarga. Aguarde <yellow>%time%</yellow>."
+  insufficient_mana: "<blue>✖ Mana insuficiente para usar <yellow>%skill_name%</yellow>. Precisa: <yellow>%required%</yellow></blue>"
+  
+  # Requisitos
+  level_required: "<red>✖ %skill_name% requer Level <yellow>%level%</yellow>."
+  skill_required: "<red>✖ %skill_name% requer: <yellow>%requirement%</yellow>"
+  
+  # Pontos de habilidade
+  skill_points_received: "<green>✔ Você recebeu <yellow>%points%</yellow> pontos de habilidade!"
+  skill_points_spent: "<gray>Você gastou <yellow>%points%</yellow> pontos de habilidade."
+  not_enough_skill_points: "<red>✖ Pontos de habilidade insuficientes!</red>"
+
+# ============================================
+# ERROS GENÉRICOS DE CLASSE
+# ============================================
+errors:
+  class_not_found: "<red>✖ Classe não encontrada.</red>"
+  no_points: "<red>✖ Você não tem pontos suficientes.</red>"
+  profile_error: "<red>✖ Erro ao carregar perfil de classe.</red>"
+
+# ============================================
+# COMANDOS
+# ============================================
+commands:
+  usage_main: "<red>Uso: /class <select|info|skills|reset></red>"
+# MENSAGENS DE ESPECIALIZAÇÃO
+# ============================================
+specialization:
+  # Escolha
+  available: "<yellow>★ Especialização disponível no level <yellow>%level%</yellow>!"
+  selected: "<light_purple>★ Você se especializou em: <yellow>%spec_name%</yellow>!</light_purple>"
+  
+  # Informações
+  current: "<gray>Especialização: <yellow>%spec_name%</yellow>"
+  no_specialization: "<gray>Você ainda não escolheu uma especialização."
+  
+  # Mudança
+  change_confirm: "<red>⚠ Mudar de especialização resetará suas habilidades. Confirme com <yellow>/class spec change confirm</yellow>"
+  changed: "<yellow>⚠ Especialização alterada para: <yellow>%spec_name%</yellow>"
+
+# ============================================
+# MENSAGENS DE GUI
+# ============================================
+gui:
+  # Abertura
+  opening_selection: "<gray>Abrindo seleção de classes..."
+  opening_info: "<gray>Abrindo informações de classe..."
+  opening_skills: "<gray>Abrindo árvore de habilidades..."
+  
+  # Navegação
+  page_changed: "<gray>Página: <yellow>%page%</yellow>/<yellow>%max%</yellow>"
+  
+  # Ações
+  class_preview: "<gray>Visualizando: <yellow>%class_name%</yellow>"
+  skill_preview: "<gray>Habilidade: <yellow>%skill_name%</yellow> <dark_gray>(Level %level%)</dark_gray>"
+
+# ============================================
+# MENSAGENS DE COMANDOS
+# ============================================
+commands:
+  # Uso
+  usage_main: "<red>Uso: <yellow>/class [select|info|skills|reset]</yellow>"
+  usage_set: "<red>Uso: <yellow>/class set <classe></yellow>"
+  usage_give_points: "<red>Uso: <yellow>/class givepoints <player> <amount></yellow>"
+  
+  # Permissões
+  no_permission: "<red>✖ Você não tem permissão para usar este comando.</red>"
+  admin_only: "<red>✖ Este comando é apenas para administradores.</red>"
+  
+  # Jogador
+  player_only: "<red>✖ Este comando só pode ser usado por jogadores.</red>"
+  
+  # Reload
+  reload_start: "<gray>Recarregando módulo de classes..."
+  reload_success: "<green>✔ Módulo recarregado! <yellow>%classes%</yellow> classes carregadas."
+  reload_failed: "<red>✖ Erro ao recarregar. Verifique o console.</red>"
+
+# ============================================
+# MENSAGENS DE ERRO
+# ============================================
+errors:
+  # Classe
+  class_not_found: "<red>✖ Classe não encontrada: <yellow>%class%</yellow>"
+  already_this_class: "<yellow>⚠ Você já é um <yellow>%class_name%</yellow>.</yellow>"
+  cannot_change_class: "<red>✖ Você não pode mudar de classe agora.</red>"
+  
+  # Perfil
+  profile_not_found: "<red>✖ Perfil não encontrado.</red>"
+  profile_error: "<red>✖ Erro ao carregar perfil. Tente novamente.</red>"
+  
+  # Dados
+  data_error: "<red>✖ Erro ao processar dados da classe.</red>"
+  data_corrupted: "<red>✖ Dados corrompidos! Contate a staff.</red>"
+  
+  # Jogador
+  player_not_found: "<red>✖ Jogador não encontrado: <yellow>%player%</yellow>"
+  player_offline: "<red>✖ O jogador <yellow>%player%</yellow> está offline.</red>"
+  
+  # Sistema
+  internal_error: "<red>✖ Erro interno. Reporte aos administradores.</red>"
+  feature_disabled: "<yellow>⚠ Esta funcionalidade está temporariamente desabilitada.</yellow>"
+
+# ============================================
+# MENSAGENS DE AJUDA
+# ============================================
+help:
+  header: "<gradient:#5e4fa2:#f79459><bold>Ajuda - Classes</bold></gradient>"
+  
+  commands:
+    - "<yellow>/class select</yellow> <dark_gray>-</dark_gray> <gray>Escolher sua classe</gray>"
+    - "<yellow>/class info</yellow> <dark_gray>-</dark_gray> <gray>Ver informações da sua classe</gray>"
+    - "<yellow>/class skills</yellow> <dark_gray>-</dark_gray> <gray>Abrir árvore de habilidades</gray>"
+    - "<yellow>/class reset</yellow> <dark_gray>-</dark_gray> <gray>Resetar pontos de atributo</gray>"
+    - "<yellow>/class prestige</yellow> <dark_gray>-</dark_gray> <gray>Evoluir sua classe (max level)</gray>"
+  
+  admin_commands:
+    - "<yellow>/class set <player> <classe></yellow> <dark_gray>-</dark_gray> <gray>Definir classe de um jogador</gray>"
+    - "<yellow>/class givepoints <player> <amount></yellow> <dark_gray>-</dark_gray> <gray>Dar pontos de atributo</gray>"
+    - "<yellow>/class reload</yellow> <dark_gray>-</dark_gray> <gray>Recarregar configurações</gray>"
+  
+  footer: "<gray>Use <yellow>/help classes</yellow> para guia completo.</gray>"
+
+# ============================================
+# MENSAGENS DE NOTIFICAÇÃO
+# ============================================
+notifications:
+  # Auto-save
+  progress_saved: "<dark_gray>✔ Progresso de classe salvo.</dark_gray>"
+  
+  # Eventos de classe
+  level_milestone: "<gold>★ Marco alcançado! Level %level%</gold>"
+  new_skills_available: "<yellow>★ Novas habilidades disponíveis! Use <white>/class skills</white></yellow>"
+  
+  # Bônus temporários
+  bonus_active: "<green>★ Bônus de XP ativo: +%bonus%%</green>"
+  bonus_expired: "<gray>⚠ Bônus de XP expirado.</gray>"
+
+# ============================================
+# MENSAGENS DE DEBUG (Admin)
+# ============================================
+debug:
+  class_info: "<gray>Classe: %class%, Level: %level%, XP: %xp%/%required%"
+  attribute_points: "<gray>Pontos: Available=%available%, Spent=%spent%"
+  skill_points: "<gray>Skill Points: Available=%available%, Spent=%spent%"
+  
+  force_level_up: "<green>✔ Level forçado: %class% → Level %level%"
+  reset_all: "<yellow>⚠ Todos os dados da classe resetados."
+  
+  cache_info: "<gray>Cache: %cached% classes carregadas."

@@ -1,0 +1,69 @@
+blocked-commands:
+  - "/pl"
+  - "/plugins"
+  - "/about"
+  - "/version"
+  - "/ver"
+  - "/?"
+  - "/help"
+  - "/bukkit:pl"
+  - "/bukkit:plugins"
+  - "/bukkit:about"
+  - "/bukkit:version"
+  - "/bukkit:ver"
+  - "/bukkit:?"
+  - "/bukkit:help"
+  - "/minecraft:me"
+
+spawn:
+  location: null
+
+warps: {}
+
+homes:
+  limit: 3
+
+messages:
+  command-blocked: "<red>✖ <gray>Você não tem permissão para usar este comando."
+  teleport:
+    success: "<green>✔ <white>Teleportado para <aqua>%target%<white>."
+    warmup: "<yellow>⏳ <gray>Teleportando em <white>%time%<gray> segundos..."
+  home:
+    set: "<green>✔ <white>Home <aqua>%home%<white> definida."
+    deleted: "<red>✔ <white>Home <aqua>%home%<white> removida."
+    not-found: "<red>✖ <gray>Home não encontrada."
+    teleport: "<green>✔ <white>Teleportado para sua home <aqua>%home%<white>."
+    list: "<green>★ <white>Suas homes: <aqua>%homes%"
+    limit: "<red>✖ <gray>Você atingiu o limite de homes (<white>%limit%<gray>)."
+  warp:
+    set: "<green>✔ <white>Warp <aqua>%warp%<white> definida."
+    deleted: "<red>✔ <white>Warp <aqua>%warp%<white> removida."
+    not-found: "<red>✖ <gray>Warp não encontrada."
+    teleport: "<green>✔ <white>Teleportado para warp <aqua>%warp%<white>."
+    list: "<green>★ <white>Warps disponíveis: <aqua>%warps%"
+  gamemode:
+    changed: "<green>✔ <white>Seu modo de jogo foi alterado para <aqua>%gamemode%<white>."
+    changed-other: "<green>✔ <white>Modo de jogo de <aqua>%player%<white> alterado para <aqua>%gamemode%<white>."
+  heal: "<green>✔ <white>Você foi curado."
+  heal-other: "<green>✔ <white>Você curou <aqua>%player%<white>."
+  feed: "<green>✔ <white>Sua fome foi saciada."
+  feed-other: "<green>✔ <white>Você saciou a fome de <aqua>%player%<white>."
+  fly:
+    enabled: "<green>✔ <white>Voo habilitado."
+    disabled: "<red>✔ <white>Voo desabilitado."
+    enabled-other: "<green>✔ <white>Voo habilitado para <aqua>%player%<white>."
+    disabled-other: "<red>✔ <white>Voo desabilitado para <aqua>%player%<white>."
+  spawn:
+    set: "<green>✔ <white>Spawn definido com sucesso."
+    teleport: "<green>✔ <white>Teleportado para o spawn."
+    not-set: "<red>✖ <gray>Spawn não definido."
+  tpa:
+    sent: "<green>✔ <white>Solicitação de teleporte enviada para <aqua>%player%<white>."
+    received: "<aqua>%player%<white> deseja se teleportar até você. Digite <green>/tpaccept<white> para aceitar."
+    accepted: "<green>✔ <white>Solicitação de teleporte aceita."
+    denied: "<red>✔ <white>Solicitação de teleporte negada."
+    no-request: "<red>✖ <gray>Você não tem solicitações de teleporte pendentes."
+    expired: "<red>✖ <gray>Sua solicitação de teleporte expirou."
+    teleporting: "<green>✔ <white>Teleportando..."
+    self: "<red>✖ <gray>Você não pode enviar solicitação para si mesmo."
+    already-sent: "<red>✖ <gray>Você já enviou uma solicitação para este jogador. Aguarde."

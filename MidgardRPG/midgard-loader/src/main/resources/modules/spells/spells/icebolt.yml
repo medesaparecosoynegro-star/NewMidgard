@@ -1,0 +1,8 @@
+name: "<aqua>Ice Bolt</aqua>"
+mythic-skill: "IceBolt"
+cooldown: 3.0
+mana: 5.0
+stamina: 0.0
+lore:
+  - "<gray>Dispara um raio congelante.</gray>"
+  - "<gray>Lentidão não alvo.</gray>"

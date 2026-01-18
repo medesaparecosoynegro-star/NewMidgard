@@ -1,0 +1,32 @@
+plugins {
+    id 'com.github.johnrengelman.shadow' version '8.1.1'
+}
+
+dependencies {
+    implementation project(':midgard-core')
+    implementation project(':midgard-modules:midgard-combat')
+    implementation project(':midgard-modules:midgard-classes')
+    implementation project(':midgard-modules:midgard-item')
+    implementation project(':midgard-modules:midgard-spells')
+    implementation project(':midgard-modules:midgard-territory')
+    implementation project(':midgard-modules:midgard-mythicmobs')
+    implementation project(':midgard-modules:midgard-essentials')
+    implementation project(':midgard-modules:midgard-character')
+    implementation project(':midgard-modules:midgard-performance')
+    implementation project(':midgard-nms-v1_21')
+}
+
+tasks.build {
+    dependsOn tasks.shadowJar
+}
+
+shadowJar {
+    archiveClassifier.set('') // Replace the default jar
+    doLast {
+        copy {
+            from archiveFile
+            into "C:/Users/ray/Desktop/RPG/plugins"
+        }
+        println "Copied jar to C:/Users/ray/Desktop/RPG/plugins"
+    }
+}

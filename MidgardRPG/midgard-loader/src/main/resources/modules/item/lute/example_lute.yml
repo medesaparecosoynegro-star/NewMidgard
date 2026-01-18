@@ -1,0 +1,10 @@
+lute_example:
+  base:
+    material: NOTE_BLOCK
+    name: '<white>'
+    tier: COMMON
+    type: LUTE
+    revision-id: 1
+  mechanics:
+    stats:
+      attack-damage: 5

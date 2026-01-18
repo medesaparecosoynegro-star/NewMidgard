@@ -1,0 +1,219 @@
+stats:
+  block_power:
+    name: '<gradient:#55aaff:#0055ff><b>🛡 Poder de Bloqueio</b></gradient>'
+    lore:
+      - '<gray>A % do dano que sua peça de armadura'
+      - '<gray>reduz quando você bloqueia um ataque.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  block_rating:
+    name: '<gradient:#55aaff:#55ffff><b>🛡 Taxa de Bloqueio</b></gradient>'
+    lore:
+      - '<gray>A chance que sua peça de armadura'
+      - '<gray>bloqueia um ataque.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  block_cooldown_reduction:
+    name: '<gradient:#00aaaa:#00ffff><b>⌛ Redução de Cooldown de Bloqueio</b></gradient>'
+    lore:
+      - '<gray>Reduz o tempo de recarga do bloqueio em %.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  dodge_rating:
+    name: '<gradient:#ffff55:#ffaa00><b>💨 Taxa de Esquiva</b></gradient>'
+    lore:
+      - '<gray>A chance de esquivar de um ataque.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+  dodge_cooldown_reduction:
+    name: '<gradient:#ffff55:#aaaa00><b>⌛ Redução de Cooldown de Esquiva</b></gradient>'
+    lore:
+      - '<gray>Reduz o tempo de recarga da esquiva em %.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  parry_rating:
+    name: '<gradient:#ff5555:#aa0000><b>⚔ Taxa de Aparar</b></gradient>'
+    lore:
+      - '<gray>A chance de aparar um ataque.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+  parry_cooldown_reduction:
+    name: '<gradient:#ff5555:#550000><b>⌛ Redução de Cooldown de Aparar</b></gradient>'
+    lore:
+      - '<gray>Reduz o tempo de recarga de aparar em %.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  damage_reduction:
+    name: '<gradient:#aaaaaa:#555555><b>🧱 Redução de Dano</b></gradient>'
+    lore:
+      - '<gray>Reduz dano de qualquer fonte.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+  defense:
+    name: '<gradient:#00aa00:#00ff00><b>🛡 Defesa</b></gradient>'
+    lore:
+      - '<gray>Reduz dano de qualquer fonte.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+  fall_damage_reduction:
+    name: '<gradient:#aaaaaa:#ffffff><b>🍃 Redução de Queda</b></gradient>'
+    lore:
+      - '<gray>Reduz especificamente o dano recebido'
+      - '<gray>por cair de lugares altos.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  projectile_damage_reduction:
+    name: '<gradient:#ffffaa:#ff5500><b>🏹 Redução de Projéteis</b></gradient>'
+    lore:
+      - '<gray>Reduz dano de flechas, tridentes'
+      - '<gray>e outros ataques à distância.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  physical_damage_reduction:
+    name: '<gradient:#ffaa55:#aa5500><b>🛡 Redução Física</b></gradient>'
+    lore:
+      - '<gray>Reduz dano de ataques corpo-a-corpo'
+      - '<gray>e habilidades físicas.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  fire_damage_reduction:
+    name: '<gradient:#ff5500:#aa0000><b>🔥 Redução de Fogo</b></gradient>'
+    lore:
+      - '<gray>Reduz dano de lava, fogo, magma'
+      - '<gray>e efeito de queimadura (tick).'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  magic_damage_reduction:
+    name: '<gradient:#aa00ff:#5500aa><b>🔮 Redução Mágica</b></gradient>'
+    lore:
+      - '<gray>Reduz dano de poções, feitiços'
+      - '<gray>e habilidades mágicas.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  pve_damage_reduction:
+    name: '<gradient:#55ff55:#00aa00><b>🧟 Redução PvE</b></gradient>'
+    lore:
+      - '<gray>Reduz dano causado por Monstros (Mobs).'
+      - '<gray>Não afeta ataques de jogadores.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  pvp_damage_reduction:
+    name: '<gradient:#ff5555:#aa0000><b>⚔ Redução PvP</b></gradient>'
+    lore:
+      - '<gray>Reduz dano causado por Jogadores.'
+      - '<gray>Essencial para itens de duelo.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+  fall_damage_multiplier:
+    name: '<gradient:#ff0000:#aa0000><b>🔻 Multiplicador de Queda</b></gradient>'
+    lore:
+      - '<gray>Multiplica o dano de queda final.'
+      - '<gray>Valores < 1.0 reduzem o dano.'
+      - '<gray>Valores > 1.0 aumentam o dano (perigoso).'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  knockback_resistance:
+    name: '<gradient:#555555:#aaaaaa><b>⚓ Resistência a Repulsão</b></gradient>'
+    lore:
+      - '<gray>Chance de não ser empurrado'
+      - '<gray>ao receber um ataque.'
+      - '<gray>1.0 = 100% Imune a Knockback.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  explosion_knockback_resistance:
+    name: '<gradient:#555555:#000000><b>💣 Resist. Repulsão (Explosão)</b></gradient>'
+    lore:
+      - '<gray>Chance de não ser arremessado'
+      - '<gray>por TNTs ou Creepers.'
+      - '<gray>Separado da repulsão de ataques.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true

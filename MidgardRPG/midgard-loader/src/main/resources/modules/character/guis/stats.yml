@@ -1,0 +1,94 @@
+title: "<gradient:#5e4fa2:#f79459><bold>✦ Atributos de %player% ✦</bold></gradient>"
+size: 54
+items:
+  background:
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+    slots: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 17, 18, 26, 27, 35, 36, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53]
+  
+  info:
+    material: PLAYER_HEAD
+    slot: 4
+    name: "<gradient:#ffd700:#ffaa00><bold>⚔ Informações do Herói</bold></gradient>"
+    lore:
+      - "<dark_gray>━━━━━━━━━━━━━━━━━━━━━"
+      - "<gray>Nome: <yellow><bold>%player%</bold>"
+      - "<gray>Nível: <aqua><bold>%level%</bold>"
+      - "<gray>Classe: <green><bold>%class%</bold>"
+      - ""
+      - "<gold>✦ Seus atributos definem"
+      - "<gold>  seu verdadeiro poder!"
+      - "<dark_gray>━━━━━━━━━━━━━━━━━━━━━"
+
+  vitals:
+    material: RED_DYE
+    slot: 20
+    name: "<gradient:#ff0000:#ff4d4d><bold>❤ Vitais</bold></gradient>"
+    lore:
+      - "<dark_gray>━━━━━━━━━━━━━━━━━━━━━"
+      - ""
+      - "<gray>❤ Vida Máxima: <red><bold>%stat_max_health%</bold>"
+      - "<gray>♥ Regen. Vida: <red>%stat_health_regen%/s</gray>"
+      - ""
+      - "<gray>✦ Mana Máxima: <blue><bold>%stat_max_mana%</bold>"
+      - "<gray>✧ Regen. Mana: <blue>%stat_mana_regen%/s</gray>"
+      - ""
+      - "<dark_gray>━━━━━━━━━━━━━━━━━━━━━"
+
+  offense:
+    material: IRON_SWORD
+    slot: 22
+    name: "<gradient:#ff8c00:#ffa500><bold>⚔ Ofensiva</bold></gradient>"
+    lore:
+      - "<dark_gray>━━━━━━━━━━━━━━━━━━━━━"
+      - ""
+      - "<gray>⚔ Dano Físico: <gold><bold>%stat_physical_damage%</bold>"
+      - "<gray>✨ Dano Mágico: <light_purple><bold>%stat_magic_damage%</bold>"
+      - "<gray>⚡ Vel. Ataque: <yellow><bold>%stat_attack_speed%</bold>"
+      - ""
+      - "<gray>★ Chance Crítico: <red><bold>%stat_critical_chance%</bold>"
+      - "<gray>✦ Dano Crítico: <red><bold>%stat_critical_damage%</bold>"
+      - ""
+      - "<gray>◈ Pen. Armadura: <gold><bold>%stat_armor_penetration%</bold>"
+      - "<gray>◆ Pen. Mágica: <light_purple><bold>%stat_magic_penetration%</bold>"
+      - ""
+      - "<dark_gray>━━━━━━━━━━━━━━━━━━━━━"
+    flags: [HIDE_ATTRIBUTES]
+
+  defense:
+    material: IRON_CHESTPLATE
+    slot: 24
+    name: "<gradient:#0000ff:#00bfff><bold>🛡 Defensiva</bold></gradient>"
+    lore:
+      - "<dark_gray>━━━━━━━━━━━━━━━━━━━━━"
+      - ""
+      - "<gray>🛡 Armadura: <blue><bold>%stat_armor%</bold>"
+      - "<gray>✦ Res. Mágica: <aqua><bold>%stat_magic_resistance%</bold>"
+      - ""
+      - "<gray>▣ Bloqueio: <yellow><bold>%stat_block_chance%</bold>"
+      - "<gray>⚡ Esquiva: <green><bold>%stat_dodge_chance%</bold>"
+      - "<gray>◉ Tenacidade: <light_purple><bold>%stat_tenacity%</bold>"
+      - ""
+      - "<dark_gray>━━━━━━━━━━━━━━━━━━━━━"
+    flags: [HIDE_ATTRIBUTES]
+
+  utility:
+    material: FEATHER
+    slot: 31
+    name: "<gradient:#00ff00:#adff2f><bold>⚡ Utilidade</bold></gradient>"
+    lore:
+      - "<dark_gray>━━━━━━━━━━━━━━━━━━━━━"
+      - ""
+      - "<gray>➤ Vel. Movimento: <white><bold>%stat_movement_speed%</bold>"
+      - "<gray>⟳ Red. Recarga: <aqua><bold>%stat_cooldown_reduction%</bold>"
+      - "<gray>☘ Sorte: <green><bold>%stat_luck%</bold>"
+      - ""
+      - "<dark_gray>━━━━━━━━━━━━━━━━━━━━━"
+
+  close:
+    material: BARRIER
+    slot: 49
+    name: "<red><bold>✖ Fechar Menu</bold>"
+    lore:
+      - "<gray>Clique para fechar."
+    action: "close"

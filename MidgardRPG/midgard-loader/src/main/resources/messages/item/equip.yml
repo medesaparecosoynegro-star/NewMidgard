@@ -1,0 +1,23 @@
+# ============================================
+# MIDGARD ITEM - EQUIPAMENTO
+# ============================================
+# Padr�o V2.0 - Oficial
+# ============================================
+
+
+# ============================================
+# MENSAGENS DE EQUIPAMENTO
+# ============================================
+equip:
+  # Sucesso
+  equipped: "<green>? <white>Item equipado com sucesso!"
+  unequipped: "<gray>? <white>Item desequipado."
+  
+  # Erros
+  stack_occupied: "<red>? <gray>Nóo é poss�vel equipar de um pack quando o slot está ocupado."
+  invalid_slot: "<red>? <gray>Slot de equipamento inválido configurado: <white>%s"
+  cannot_equip: "<red>? <gray>Você não pode equipar este item."
+  
+  # Requisitos
+  level_required: "<red>? <gray>Nóvel necessário: <white>%level%"
+  class_required: "<red>? <gray>Classe necess�ria: <white>%class%"

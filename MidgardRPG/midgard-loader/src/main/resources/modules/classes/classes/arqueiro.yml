@@ -1,0 +1,39 @@
+display-name: "<green>Archer"
+icon: BOW
+lore:
+  - "<gray>Deadly precision from afar."
+  - "<gray>High mobility and burst damage."
+  - ""
+  - "<dark_gray>Stats:"
+  - "<gray> Damage: <green>High"
+  - "<gray> Defense: <yellow>Medium"
+  - "<gray> Range: <green>Very High"
+
+attributes:
+  base:
+    strength: 4
+    defense: 4
+    vitality: 6
+    intelligence: 3
+    dexterity: 10
+  per-level:
+    dexterity: 2.5
+    strength: 0.5
+
+health:
+  base: 18
+  per-level: 4
+
+mana:
+  base: 15
+  per-level: 3
+
+skills:
+  POWER_SHOT: 
+    level: 1
+  EXPLOSIVE_ARROW: 
+    level: 5
+  BACKSTEP: 
+    level: 3
+  ARROW_RAIN: 
+    level: 12

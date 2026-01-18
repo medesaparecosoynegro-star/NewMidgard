@@ -1,0 +1,10 @@
+material_example:
+  base:
+    material: STICK
+    name: '<white>'
+    tier: COMMON
+    type: MATERIAL
+    revision-id: 1
+  mechanics:
+    stats:
+      attack-damage: 5

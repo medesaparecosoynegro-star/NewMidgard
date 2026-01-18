@@ -1,0 +1,223 @@
+stats:
+  display_name:
+    name: '<gradient:#55ff55:#00aa00><b>✎ Nome de Exibição</b></gradient>'
+    lore:
+      - '<gray>O nome de exibição do item.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para alterar este valor.'
+      - '<yellow>» Clique direito para remover este valor.'
+    hide_attributes: true
+
+  lore:
+    name: '<gradient:#aaaaaa:#555555><b>📜 Lore</b></gradient>'
+    lore:
+      - '<gray>A lore do item.'
+      - ''
+      - '<gray>Linhas: <green>%size%'
+      - ''
+      - '<yellow>» Clique esquerdo para adicionar uma nova linha.'
+      - '<yellow>» Clique direito para remover a última linha.'
+    hide_attributes: true
+
+  lore_format:
+    name: '<gradient:#ffff55:#aaaa00><b>📝 Formato de Lore</b></gradient>'
+    lore:
+      - '<gray>O formato de lore decide'
+      - '<gray>quais stats são exibidos e sua'
+      - '<gray>ordem na lore do item.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para alterar este valor.'
+      - '<yellow>» Clique direito para remover este valor.'
+    hide_attributes: true
+
+  custom_model_data:
+    name: '<gradient:#ffaa00:#aa5500><b>🎨 Custom Model Data</b></gradient>'
+    lore:
+      - '<gray>Seu custom model data inteiro 1.14+.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para alterar este valor.'
+      - '<yellow>» Clique direito para remover este valor.'
+    hide_attributes: true
+
+  custom_model_data_strings:
+    name: '<gradient:#ffaa00:#ff5500><b>🎨 Strings de Custom Model Data</b></gradient>'
+    lore:
+      - '<gray>Strings para seu custom model data. Considere usar'
+      - '<gray>o componente ITEM_MODEL ao invés.'
+      - ''
+      - '<gray>Strings: <green>%size%'
+      - ''
+      - '<yellow>» Clique esquerdo para adicionar uma nova string.'
+      - '<yellow>» Clique direito para remover a última string.'
+    hide_attributes: true
+
+  custom_model_data_floats:
+    name: '<gradient:#ffaa00:#ffff55><b>🎨 Floats de Custom Model Data</b></gradient>'
+    lore:
+      - '<gray>Floats para seu custom model data. Considere usar'
+      - '<gray>o componente ITEM_MODEL ao invés.'
+      - ''
+      - '<gray>Floats: <green>%size%'
+      - ''
+      - '<yellow>» Clique esquerdo para adicionar um novo float.'
+      - '<yellow>» Clique direito para remover o último float.'
+    hide_attributes: true
+
+  item_model:
+    name: '<gradient:#55ffff:#00aaaa><b>💠 Modelo do Item</b></gradient>'
+    lore:
+      - '<gray>Modelo a ser usado para renderizar o item.'
+      - ''
+      - '<gray>Disponível apenas na 1.21.2+'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para alterar este valor.'
+      - '<yellow>» Clique direito para remover este valor.'
+    hide_attributes: true
+
+  item_color:
+    name: '<gradient:#ff55ff:#aa00aa><b>🎨 Cor do Item</b></gradient>'
+    lore:
+      - '<gray>Define a cor RGB para:</gray>'
+      - '<gray>• Armaduras de Couro</gray>'
+      - '<gray>• Poções</gray>'
+      - '<gray>• Fogos de Artifício</gray>'
+      - ''
+      - '<dark_gray>RGB: <white>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para escolher cor.'
+      - '<yellow>» Clique direito para resetar.'
+    hide_attributes: true
+
+  skull_texture:
+    name: '<gradient:#aaaaaa:#ffffff><b>💀 Textura da Cabeça</b></gradient>'
+    lore:
+      - '<gray>Valor Base64 da skin da cabeça.</gray>'
+      - '<gray>Funciona apenas em <white>PLAYER_HEAD</white>.</gray>'
+      - ''
+      - '<gray>Pegue valores em:</gray>'
+      - '<underlined><aqua>minecraft-heads.com</aqua></underlined>'
+      - ''
+      - '<dark_gray>Status: <white>%status%'
+      - ''
+      - '<yellow>» Clique esquerdo para colar Base64.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  trim_material:
+    name: '<gradient:#ff55ff:#5500ff><b>🛡 Material de Acabamento</b></gradient>'
+    lore:
+      - '<gray>Material para dar acabamento à sua armadura.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para ciclar opções:'
+    hide_attributes: true
+
+  trim_pattern:
+    name: '<gradient:#ff55ff:#5500ff><b>🛡 Padrão de Acabamento</b></gradient>'
+    lore:
+      - '<gray>Padrão da armadura com acabamento.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para ciclar opções:'
+    hide_attributes: true
+
+  hide_armor_trim:
+    name: '<gradient:#777777:#333333><b>👁 Esconder Acabamento de Armadura</b></gradient>'
+    lore:
+      - '<gray>Esconde o acabamento da armadura na lore do item.'
+      - ''
+      - '<gray>Ativo: <green>%value%'
+      - ''
+      - '<yellow>» Clique direito para escolher a probabilidade de ter esta opção.'
+    hide_attributes: true
+
+  custom_tooltip:
+    name: '<gradient:#55aaff:#0055ff><b>💬 Tooltip Customizada</b></gradient>'
+    lore:
+      - '<gray>O identificador da textura de tooltip customizada do MMOItems'
+      - '<gray>que este item irá usar.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para alterar este valor.'
+      - '<yellow>» Clique direito para remover este valor.'
+    hide_attributes: true
+
+  vanilla_tooltip_style:
+    name: '<gradient:#55aaff:#0055ff><b>💬 Estilo de Tooltip Vanilla</b></gradient>'
+    lore:
+      - '<gray>Estilo de tooltip vanilla do seu item'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para alterar este valor.'
+      - '<yellow>» Clique direito para remover este valor.'
+    hide_attributes: true
+
+  hide_tooltip:
+    name: '<gradient:#ff5555:#aa0000><b>🚫 Esconder Tooltip</b></gradient>'
+    lore:
+      - '<gray>Esconde completamente a tooltip do item,'
+      - '<gray>excluindo nome e lore!'
+      - ''
+      - '<gray>Ativo: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para alternar'
+      - '<yellow>» Clique direito para escolher uma probabilidade para ter esta opção.'
+    hide_attributes: true
+
+  hide_durability_bar:
+    name: '<gradient:#ff5555:#aa0000><b>🚫 Esconder Barra de Durabilidade</b></gradient>'
+    lore:
+      - '<gray>Ative isso para ter a barra verde'
+      - '<gray>acima dos slots não hot-bar completamente'
+      - '<gray>escondida, mesmo se o item tiver durabilidade!'
+      - ''
+      - '<gray>Ativo: <green>%value%'
+      - ''
+      - '<yellow>» Clique direito para escolher a probabilidade de ter esta opção.'
+    hide_attributes: true
+
+  hide_enchantments:
+    name: '<gradient:#aa55ff:#5500aa><b>✨ Esconder Encantamentos</b></gradient>'
+    lore:
+      - '<gray>Ative para esconder completamente os'
+      - '<gray>encantamentos da lore do item!'
+      - ''
+      - '<gray>Ativo: <green>%value%'
+      - ''
+      - '<yellow>» Clique direito para escolher uma probabilidade para ter esta opção.'
+    hide_attributes: true
+
+  displayed_type:
+    name: '<gradient:#55ff55:#00aa00><b>🏷 Tipo Exibido</b></gradient>'
+    lore:
+      - '<gray>Esta opção afetará apenas o'
+      - '<gray>tipo exibido na lore do item.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para alterar este valor.'
+      - '<yellow>» Clique direito para remover este valor.'
+    hide_attributes: true
+
+  item_particles:
+    name: '<gradient:#ff55ff:#00aaff><b>✨ Partículas</b></gradient>'
+    lore:
+      - '<gray>Emite partículas ao redor do jogador.</gray>'
+      - ''
+      - '<dark_gray>Partícula: <white>%particle%'
+      - ''
+      - '<yellow>» Clique esquerdo para configurar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true

@@ -1,0 +1,10 @@
+bow_example:
+  base:
+    material: BOW
+    name: '<white>'
+    tier: COMMON
+    type: BOW
+    revision-id: 1
+  mechanics:
+    stats:
+      attack-damage: 5

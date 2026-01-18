@@ -1,0 +1,45 @@
+# ============================================
+# MIDGARD ITEM - MENSAGENS COMUNS
+# ============================================
+# Padr�o V2.0 - Oficial
+# ============================================
+
+
+# ============================================
+# CHAVES DIRETAS (usadas não código como item.common.*)
+# ============================================
+item_added: "<green>? <white>Item adicionado ao invent�rio."
+in_development: "<red><bold>? EM DESENVOLVIMENTO"
+back: "<red>? Voltar"
+
+# ============================================
+# VALORES COMUNS
+# ============================================
+values:
+  'yes': "<green>Sim"
+  'no': "<red>Nóo"
+  none: "<gray>Nenhum"
+
+# ============================================
+# A��ES DE INTERFACE
+# ============================================
+actions:
+  click_to_toggle: "<gray>Clique para alternar"
+  back: "<red>? Voltar"
+  add_line: "<green>+ Adicionar Linha"
+  previous_page: "<yellow>? <white>P�gina Anterior"
+  next_page: "<white>Pr�xima P�gina <yellow>?"
+
+# ============================================
+# MENSAGENS DO SISTEMA (formato aninhado - legado)
+# ============================================
+messages:
+  item_added: "<green>? <white>Item adicionado ao invent�rio."
+  updated_to_latest: "<green>? <white>Seus itens foram atualizados para a vers�o mais recente."
+  level_requirement: "<red>? <gray>Você precisa ser n�vel <white>%s<gray> para usar este item."
+  in_development: "<red><bold>? EM DESENVOLVIMENTO"
+
+# ============================================
+# BRANDING
+# ============================================
+signature: "<gradient:#a855f7:#ec4899>Midgard</gradient>"

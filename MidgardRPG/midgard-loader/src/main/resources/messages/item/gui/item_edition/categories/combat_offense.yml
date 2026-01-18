@@ -1,0 +1,203 @@
+stats:
+  weapon_damage:
+    name: '<gradient:#ff4444:#ff0000><b>⚔ Dano de Arma</b></gradient>'
+    lore:
+      - '<gray>Dano adicional de arma ao acertar em %.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  skill_damage:
+    name: '<gradient:#aa00ff:#ff00ff><b>✴ Dano de Habilidade</b></gradient>'
+    lore:
+      - '<gray>Dano adicional de habilidade em %.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  projectile_damage:
+    name: '<gradient:#aaaaaa:#ffffff><b>🏹 Dano de Projétil</b></gradient>'
+    lore:
+      - '<gray>Dano adicional de projétil de habilidade/arma.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  physical_damage:
+    name: '<gradient:#ff8844:#ff4444><b>🗡 Dano Físico</b></gradient>'
+    lore:
+      - '<gray>Dano físico adicional de habilidade/arma.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  magic_damage:
+    name: '<gradient:#55aaff:#00ffff><b>🔮 Dano Mágico</b></gradient>'
+    lore:
+      - '<gray>Dano mágico adicional de habilidade em %.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  undead_damage:
+    name: '<gradient:#00aa00:#55ff55><b>🧟 Dano em Mortos-Vivos</b></gradient>'
+    lore:
+      - '<gray>Causa dano adicional a mortos-vivos.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  critical_strike_chance:
+    name: '<gradient:#ffaa00:#ffff55><b>🎯 Chance de Crítico</b></gradient>'
+    lore:
+      - '<gray>Ataques Críticos causam mais dano.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  critical_strike_power:
+    name: '<gradient:#ff4400:#ff8800><b>💥 Poder de Crítico</b></gradient>'
+    lore:
+      - '<gray>O dano extra que críticos de arma causam.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  skill_critical_strike_chance:
+    name: '<gradient:#aa00ff:#ffafff><b>🔮 Crítico de Habilidade</b></gradient>'
+    lore:
+      - '<gray>Aumenta a chance de causar críticos de habilidade (em %).'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  skill_critical_strike_power:
+    name: '<gradient:#ff00ff:#ffaaff><b>✨ Poder Crítico de Skill</b></gradient>'
+    lore:
+      - '<gray>Dano extra causado (em %) por críticos de habilidade.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+  lifesteal:
+    name: '<gradient:#ff0000:#ff5555><b>❤ Roubo de Vida</b></gradient>'
+    lore:
+      - '<gray>Porcentagem do dano causado que retorna'
+      - '<gray>como cura para você.'
+      - '<gray>Aplica-se apenas a ataques de Arma.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  spell_vampirism:
+    name: '<gradient:#aa0000:#ff0055><b>🩸 Vampirismo</b></gradient>'
+    lore:
+      - '<gray>Porcentagem do dano causado que retorna'
+      - '<gray>como cura para você.'
+      - '<gray>Aplica-se apenas a danos de Habilidade.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  sweeping_damage_ratio:
+    name: '<gradient:#ffffff:#aaaaaa><b>🧹 Dano de Varredura</b></gradient>'
+    lore:
+      - '<gray>Porcentagem de dano causado a inimigos'
+      - '<gray>próximos ao alvo principal (Sweep).'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  attack_speed:
+    name: '<gradient:#ffff00:#ffaa00><b>⚡ Velocidade de Ataque</b></gradient>'
+    lore:
+      - '<gray>Golpes por segundo.'
+      - '<gray>Base Vanilla: 4.0 (Mão), 1.6 (Espada).'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  cooldown_reduction:
+    name: '<gradient:#00ffff:#00aaaa><b>⌛ Redução de Cooldown</b></gradient>'
+    lore:
+      - '<gray>Reduz o tempo de recarga de todas as'
+      - '<gray>habilidades (Skills) em uma porcentagem.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  two_handed:
+    name: '<gradient:#aaaaaa:#555555><b>👐 Duas Mãos</b></gradient>'
+    lore:
+      - '<gray>Se ativado, impede o jogador de segurar'
+      - '<gray>outro item na mão secundária (Offhand).'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para alternar.'
+    hide_attributes: true
+
+  enchantments:
+    name: '<gradient:#aa00ff:#55ffff><b>✨ Encantamentos</b></gradient>'
+    lore:
+      - '<gray>Lista de encantamentos Vanilla aplicados.'
+      - ''
+      - '<gray>Total: <green>%size%'
+      - ''
+      - '<yellow>» Clique esquerdo para gerenciar.'
+      - '<yellow>» Clique direito para limpar tudo.'
+    hide_attributes: true
+
+  damage_types:
+    name: '<gradient:#ff4444:#ff0000><b>⚔ Tipos de Dano</b></gradient>'
+    lore:
+      - '<gray>Configura a distribuição de elementos'
+      - '<gray>deste ataque (Fogo, Gelo, Terra...).'
+      - '<gray>Usado para fraquezas e resistências.'
+      - ''
+      - '<yellow>» Clique esquerdo para gerenciar.'
+    hide_attributes: true

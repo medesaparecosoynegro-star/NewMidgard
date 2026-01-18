@@ -1,0 +1,8 @@
+name: "<light_purple>Arcane Pulse</light_purple>"
+mythic-skill: "ArcanePulse"
+cooldown: 6.0
+mana: 12.0
+stamina: 0.0
+lore:
+  - "<gray>Libera uma onda arcana em área.</gray>"
+  - "<gray>Escala com poder arcano.</gray>"

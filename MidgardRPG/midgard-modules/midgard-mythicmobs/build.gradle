@@ -1,0 +1,8 @@
+dependencies {
+    implementation project(':midgard-core')
+    implementation project(':midgard-modules:midgard-classes')
+    implementation project(':midgard-modules:midgard-combat')
+    implementation project(':midgard-modules:midgard-item')
+    
+    compileOnly 'io.lumine:Mythic-Dist:5.7.2'
+}

@@ -1,0 +1,98 @@
+# Configuração Geral do Módulo de Spells
+general:
+  debug: false
+  show_cast_messages: true
+
+# Progressão interna da spell (uso contínuo)
+progression:
+  uses_per_cast: 1
+  mutation_unlock_uses_default: 20
+  level_uses: 25
+
+# Configuração de Combos Padrão (Slot -> Sequência)
+combos:
+  1: "LLL"
+  2: "RRR"
+  3: "LRL"
+  4: "RLR"
+  5: "LLR"
+  6: "RRL"
+
+# Configuração da GUI de Spells
+gui:
+  title: "<dark_gray>Habilidades"
+  rows: 6
+  slots: [19, 20, 21, 23, 24, 25]
+  
+  background_item:
+    material: GRAY_STAINED_GLASS_PANE
+    name: " "
+  
+  items:
+    info:
+      slot: 4
+      material: CHEST
+      name: "<yellow>Meus Feitiços"
+      lore:
+        - "<gray>Visualize seus feitiços aprendidos"
+    reset:
+      slot: 45
+      material: CAULDRON
+      name: "<red>Resetar Atribuições"
+      lore:
+        - "<gray>Limpar todos os slots"
+    style:
+      slot: 53
+      material: NETHER_STAR
+      name: "<aqua>Estilo de Conjuração"
+      lore_skillbar:
+        - "<green>► Barra de Habilidade"
+        - "<gray>  Combos"
+        - "<yellow>Clique para alternar"
+      lore_combo:
+        - "<gray>  Barra de Habilidade"
+        - "<green>► Combos"
+        - "<yellow>Clique para alternar"
+
+  # Modo Skill Bar
+  skill_bar:
+    slots: [19, 20, 21, 23, 24, 25]
+    filled_item:
+      material: ENCHANTED_BOOK
+      name_format: "<green>%spell_name%"
+      lore:
+        - "<gray>Slot da Barra: %slot%"
+        - " "
+        - "<yellow>Clique para alterar"
+    empty_item:
+      material: BLACK_STAINED_GLASS_PANE
+      name_format: "<gray>Slot Vazio - %slot%"
+      lore:
+        - "<yellow>Clique para equipar"
+    invalid_item:
+      material: BARRIER
+      name_format: "<red>Feitiço inválido: %spell_id%"
+      lore: []
+
+  # Modo Combo
+  combo:
+    slots: [19, 20, 21, 23, 24, 25]
+    filled_item:
+      material: ENCHANTED_BOOK
+      name_format: "<green>%spell_name%"
+      lore:
+        - "<gray>Slot de Combo: %slot%"
+        - "<gray>Sequência: <yellow>%sequence%"
+        - " "
+        - "<yellow>Clique para alterar"
+    empty_item:
+      material: BLACK_STAINED_GLASS_PANE
+      name_format: "<gray>Slot de Combo Vazio - %slot%"
+      lore:
+        - "<gray>Sequência: <yellow>%sequence%"
+        - "<yellow>Clique para equipar"
+    invalid_item:
+      material: BARRIER
+      name_format: "<red>Feitiço inválido: %spell_id%"
+      lore:
+        - "<gray>Sequência: <yellow>%sequence%"

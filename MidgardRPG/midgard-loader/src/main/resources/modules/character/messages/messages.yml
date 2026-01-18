@@ -1,0 +1,232 @@
+# ============================================
+# MIDGARD CHARACTER MODULE - MESSAGES
+# ============================================
+# Sistema de mensagens modernizado para o módulo de personagem
+# Suporta Mini Message format e códigos de cor legados (&)
+# Placeholders disponíveis: %player%, %attribute%, %level%, %points%
+
+# ============================================
+# PREFIX E BRANDING
+# ============================================
+
+# ============================================
+# MENSAGENS DE ATRIBUTOS
+# ============================================
+attributes:
+  # Level up de atributo individual
+  level_up: "<gray>Você evoluiu <aqua>%attribute%</aqua> para o nível <yellow>%level%</yellow>!"
+  
+  # Recebimento de pontos
+  points_received: "<gray>Você recebeu <yellow>%points%</yellow> pontos de atributo."
+  points_spent: "<gray>Você gastou <yellow>%points%</yellow> pontos em <aqua>%attribute%</aqua>."
+  
+  # Reset
+  reset_success: "<yellow>⚠ Seus atributos foram reiniciados com sucesso."
+  reset_confirm: "<red>⚠ Tem certeza? Digite <yellow>/character reset confirm</yellow> para confirmar."
+  reset_cancelled: "<gray>Reinicialização de atributos cancelada."
+  
+  # Erros
+  insufficient_points: "<red>✖ Pontos insuficientes! Você tem <yellow>%available%</yellow>, precisa de <yellow>%required%</yellow>."
+  max_level_reached: "<gold>★ Você atingiu o nível máximo em <aqua>%attribute%</aqua>!"
+  invalid_attribute: "<red>✖ Atributo inválido: <yellow>%attribute%</yellow>"
+  
+  # Informação
+  current_value: "<gray>%attribute%: <yellow>%value%</yellow> (Base: <white>%base%</white> + Bônus: <green>%bonus%</green>)"
+  available_points: "<gray>Pontos disponíveis: <yellow>%points%</yellow>"
+
+# ============================================
+# MENSAGENS DE MENU
+# ============================================
+menu:
+  # Abertura
+  opening: "<gray>Abrindo menu de personagem..."
+  opened: "<green>✔ Menu de personagem aberto."
+  
+  # Fechamento
+  closing: "<gray>Fechando menu..."
+  
+  # Navegação
+  page_changed: "<gray>Página alterada: <yellow>%page%</yellow>/<yellow>%max%</yellow>"
+  
+  # Ações
+  attribute_increased: "<green>✔ %attribute% aumentado para <yellow>%value%</yellow>!"
+  attribute_decreased: "<red>✖ %attribute% diminuído para <yellow>%value%</yellow>."
+  
+  # Erros no menu
+  not_enough_points: "<red>✖ Pontos insuficientes para esta ação."
+  menu_error: "<red>✖ Erro ao processar ação no menu."
+  
+  # Confirmações
+  changes_saved: "<green>✔ Alterações salvas com sucesso!"
+  changes_discarded: "<yellow>⚠ Alterações descartadas."
+
+# ============================================
+# MENSAGENS DE PERFIL
+# ============================================
+profile:
+  # Visualização
+  viewing_own: "<gray>Visualizando seu perfil..."
+  viewing_other: "<gray>Visualizando perfil de <yellow>%player%</yellow>..."
+  
+  # Carregamento
+  loading: "<gray>Carregando dados do personagem..."
+  loaded: "<green>✔ Dados carregados."
+  
+  # Salvamento
+  saving: "<gray>Salvando dados do personagem..."
+  saved: "<green>✔ Dados salvos com sucesso."
+  save_failed: "<red>✖ Erro ao salvar dados. Tente novamente."
+  
+  # Criação
+  creating: "<gray>Criando novo perfil..."
+  created: "<green>✔ Perfil criado com sucesso!"
+  
+  # Reset
+  resetting: "<yellow>⚠ Reiniciando perfil..."
+  reset: "<yellow>⚠ Perfil reiniciado."
+
+# ============================================
+# MENSAGENS DE ESTATÍSTICAS
+# ============================================
+stats:
+  # Atributos principais
+  strength: "<red><bold>⚔ Força</bold></red>"
+  dexterity: "<yellow><bold>★ Destreza</bold></yellow>"
+  intelligence: "<aqua><bold>✦ Inteligência</bold></aqua>"
+  defense: "<green><bold>🛡 Defesa</bold></green>"
+  agility: "<white><bold>⚡ Agilidade</bold></white>"
+  
+  # Estatísticas derivadas
+  health: "<red>❤ Vida</red>"
+  mana: "<aqua>✦ Mana</aqua>"
+  stamina: "<yellow>★ Estamina</yellow>"
+  
+  # Informações de stats
+  view_stats: "<gray>Use <yellow>/stats</yellow> para ver todas as estatísticas."
+  stats_updated: "<green>✔ <white>Estatísticas atualizadas!"
+
+# ============================================
+# MENSAGENS DE XP E LEVEL
+# ============================================
+experience:
+  # Ganho de XP
+  gained: "<green>+%amount% XP</green> <dark_gray>(%source%)</dark_gray>"
+  gained_bonus: "<gold>+%amount% XP</gold> <yellow>★ Bônus: +%bonus%%</yellow>"
+  
+  # Level up
+  level_up: "<gold><bold>★ LEVEL UP!</bold></gold> <yellow>Você atingiu o nível %level%!</yellow>"
+  level_up_rewards: "<gray>Recompensas: <yellow>+%points%</yellow> pontos de atributo"
+  
+  # Informação
+  current_xp: "<gray>XP: <yellow>%current%</yellow>/<yellow>%required%</yellow> <dark_gray>(%percentage%%)</dark_gray>"
+  next_level: "<gray>Próximo nível: <yellow>%required% XP</yellow>"
+
+# ============================================
+# MENSAGENS DE HOTBAR
+# ============================================
+hotbar:
+  # Compass
+  compass_received: "<green>✔ Bússola do menu recebida!"
+  compass_lost: "<yellow>⚠ Você perdeu a bússola do menu. Use <white>/menu</white> para recebê-la novamente."
+  
+  # Ações
+  opening_menu: "<gray>Abrindo menu principal..."
+  
+  # Configurações
+  hotbar_locked: "<green>✔ Hotbar bloqueada. Items especiais protegidos."
+  hotbar_unlocked: "<yellow>⚠ Hotbar desbloqueada. Cuidado com items especiais!"
+
+# ============================================
+# MENSAGENS DE COMANDOS
+# ============================================
+commands:
+  # Uso incorreto
+  usage_character: "<red>Uso: <yellow>/character [menu|stats|reset]</yellow>"
+  usage_stats: "<red>Uso: <yellow>/stats [player]</yellow>"
+  
+  # Permissões
+  no_permission: "<red>✖ Você não tem permissão para usar este comando."
+  
+  # Apenas jogadores
+  player_only: "<red>✖ Este comando só pode ser usado por jogadores."
+  
+  # Cooldown
+  cooldown: "<yellow>⚠ Aguarde %time% antes de usar este comando novamente."
+  
+  # Reload
+  reload_start: "<gray>Recarregando módulo de personagem..."
+  reload_success: "<green>✔ Módulo recarregado com sucesso!"
+  reload_failed: "<red>✖ Erro ao recarregar módulo. Verifique o console."
+
+# ============================================
+# MENSAGENS DE ERRO
+# ============================================
+errors:
+  # Jogador
+  player_not_found: "<red>✖ Jogador não encontrado: <yellow>%player%</yellow>"
+  player_offline: "<red>✖ O jogador <yellow>%player%</yellow> está offline."
+  player_not_online: "<red>✖ Você precisa estar online para usar este comando."
+  
+  # Dados
+  data_error: "<red>✖ Erro ao carregar dados do personagem."
+  data_not_found: "<red>✖ Dados do personagem não encontrados."
+  data_corrupted: "<red>✖ Dados corrompidos! Entre em contato com a staff."
+  
+  # Menu
+  menu_already_open: "<yellow>⚠ Você já está com um menu aberto."
+  menu_not_available: "<red>✖ Menu não disponível no momento."
+  
+  # Sistema
+  internal_error: "<red>✖ Erro interno. Por favor, reporte aos administradores."
+  feature_disabled: "<yellow>⚠ Esta funcionalidade está temporariamente desabilitada."
+  
+  # Timeout
+  operation_timeout: "<red>✖ Operação expirou. Tente novamente."
+
+# ============================================
+# MENSAGENS DE AJUDA
+# ============================================
+help:
+  header: "<gradient:#5e4fa2:#f79459><bold>Ajuda - Personagem</bold></gradient>"
+  
+  commands:
+    - "<yellow>/character menu</yellow> <dark_gray>-</dark_gray> <gray>Abrir menu de personagem</gray>"
+    - "<yellow>/character stats</yellow> <dark_gray>-</dark_gray> <gray>Ver suas estatísticas</gray>"
+    - "<yellow>/character reset</yellow> <dark_gray>-</dark_gray> <gray>Resetar atributos</gray>"
+    - "<yellow>/stats [player]</yellow> <dark_gray>-</dark_gray> <gray>Ver stats de um jogador</gray>"
+  
+  footer: "<gray>Use <yellow>/help character</yellow> para mais informações."
+
+# ============================================
+# MENSAGENS DE NOTIFICAÇÃO
+# ============================================
+notifications:
+  # Auto-save
+  autosave: "<dark_gray>✔ Progresso salvo automaticamente.</dark_gray>"
+  
+  # Avisos
+  low_health: "<red>⚠ Vida baixa!</red>"
+  low_mana: "<blue>⚠ Mana baixa!</blue>"
+  
+  # Conquistas relacionadas a atributos
+  milestone_reached: "<gold>★ Marco alcançado!</gold> <yellow>%attribute% nível %level%</yellow>"
+  
+  # Sistema
+  system_maintenance: "<yellow>⚠ Manutenção programada em %time%. Salve seu progresso!</yellow>"
+
+# ============================================
+# MENSAGENS DE DEBUG (Admin)
+# ============================================
+debug:
+  # Informações técnicas
+  profile_info: "<gray>Profile UUID: <white>%uuid%</white>"
+  attribute_debug: "<gray>%attribute%: Base=%base%, Bonus=%bonus%, Total=%total%"
+  data_location: "<gray>Dados armazenados em: <white>%path%</white>"
+  
+  # Operações
+  force_save: "<green>✔ Salvamento forçado executado."
+  cache_cleared: "<yellow>⚠ Cache limpo."
+  
+  # Testes
+  test_success: "<green>✔ Teste bem-sucedido: %test%"
+  test_failed: "<red>✖ Teste falhou: %test%"

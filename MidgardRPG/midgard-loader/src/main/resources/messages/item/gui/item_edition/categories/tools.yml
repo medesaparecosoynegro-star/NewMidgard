@@ -1,0 +1,109 @@
+stats:
+  mining_speed:
+    name: '<gradient:#ffff55:#ffaa00><b>⛏ Velocidade de Mineração</b></gradient>'
+    lore:
+      - '<gray>Velocidade de quebrar blocos com a ferramenta.'
+      - ''
+      - '<gray>Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar valor.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+  mining_efficiency:
+    name: '<gradient:#ffff55:#ffaa00><b>⚡ Eficiência</b></gradient>'
+    lore:
+      - '<gray>Eficiência de quebrar blocos (> 10 = instantâneo)'
+      - ''
+      - '<gray>Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar valor.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+  submerged_mining_speed:
+    name: '<gradient:#55ffff:#00aaaa><b>🌊 Mineração Submersa</b></gradient>'
+    lore:
+      - '<gray>Multiplica a velocidade de quebrar ao estar na água.'
+      - ''
+      - '<gray>Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar valor.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+  block_interaction_range:
+    name: '<gradient:#55ff55:#00aa00><b>📏 Alcance (Blocos)</b></gradient>'
+    lore:
+      - '<gray>Alcance da ferramenta ao quebrar/interagir com blocos.'
+      - ''
+      - '<gray>Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar valor.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+  entity_interaction_range:
+    name: '<gradient:#55ff55:#00aa00><b>📏 Alcance (Entidades)</b></gradient>'
+    lore:
+      - '<gray>Alcance da ferramenta ao atacar/interagir com entidades.'
+      - ''
+      - '<gray>Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar valor.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+  bonus_oxygen:
+    name: '<gradient:#55ffff:#00aaaa><b>🫧 Oxigênio Bônus</b></gradient>'
+    lore:
+      - '<gray>Chance de não consumir ar ao respirar na água.'
+      - ''
+      - '<gray>Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar valor.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+  burning_time:
+    name: '<gradient:#ff5555:#aa0000><b>🔥 Tempo de Queima</b></gradient>'
+    lore:
+      - '<gray>Reduz o tempo de queima (fogo).'
+      - ''
+      - '<gray>Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar valor.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+  max_custom_durability:
+    name: '<gradient:#aaaaaa:#555555><b>🛡 Durabilidade MMO</b></gradient>'
+    lore:
+      - '<gray>Durabilidade máxima customizada (para RPGs).'
+      - ''
+      - '<gray>Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar valor.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+  max_vanilla_durability:
+    name: '<gradient:#aaaaaa:#555555><b>🔨 Durabilidade Vanilla</b></gradient>'
+    lore:
+      - '<gray>Durabilidade máxima vanilla.'
+      - ''
+      - '<gray>Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar valor.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+  lost_when_broken:
+    name: '<gradient:#ff5555:#aa0000><b>🗑 Perder ao Quebrar</b></gradient>'
+    lore:
+      - '<gray>Se deve remover o item quando a durabilidade chega a 0.'
+      - ''
+      - '<gray>Status: <green>%value%'
+      - ''
+      - '<yellow>» Clique para alternar</yellow>'
+    hide_attributes: true
+  unbreakable:
+    name: '<gradient:#aa00ff:#5500aa><b>♾ Inquebrável</b></gradient>'
+    lore:
+      - '<gray>Torna o item completamente indestructível.'
+      - ''
+      - '<gray>Status: <green>%value%'
+      - ''
+      - '<yellow>» Clique para alternar</yellow>'
+    hide_attributes: true

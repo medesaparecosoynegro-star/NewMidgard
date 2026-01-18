@@ -1,0 +1,193 @@
+stats:
+  required_level:
+    name: '<gradient:#ffaa00:#aa5500><b>📊 Nível Necessário</b></gradient>'
+    lore:
+      - '<gray>O nível que seu item precisa'
+      - '<gray>para ser usado.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para alterar este valor.'
+      - '<yellow>» Clique direito para remover este valor.'
+    hide_attributes: true
+
+  required_class:
+    name: '<gradient:#55ffff:#00aaaa><b>⚔ Classe Necessária</b></gradient>'
+    lore:
+      - '<gray>A classe que você precisa'
+      - '<gray>para usar este item.'
+      - ''
+      - '<gray>Classes: <green>%size%'
+      - ''
+      - '<yellow>» Clique esquerdo para adicionar uma classe.'
+      - '<yellow>» Clique direito para remover a última classe.'
+    hide_attributes: true
+
+  required_biomes:
+    name: '<gradient:#22aa22:#005500><b>🌍 Biomas Necessários</b></gradient>'
+    lore:
+      - '<gray>O bioma em que o jogador deve estar'
+      - '<gray>para usar este item.'
+      - ''
+      - '<gray>Biomas: <green>%size%'
+      - ''
+      - '<yellow>» Clique esquerdo para adicionar um bioma.'
+      - '<yellow>» Clique direito para remover a última permissão.'
+    hide_attributes: true
+
+  compatible_types:
+    name: '<gradient:#55ff55:#00aa00><b>📌 Tipos Compatíveis</b></gradient>'
+    lore:
+      - '<gray>Limita em quais <white>Tipos de Item</white></gray>'
+      - '<gray>esta Gema ou Skin pode ser aplicada.</gray>'
+      - ''
+      - '<gray>Ex: SWORD, AXE, ARMOR.</gray>'
+      - ''
+      - '<dark_gray>Tipos: <white>%size%'
+      - ''
+      - '<yellow>» Clique esquerdo para adicionar tipo.'
+      - '<yellow>» Clique direito para remover último.'
+    hide_attributes: true
+  
+  compatible_materials:
+    name: '<gradient:#55ff55:#00aa00><b>🧱 Materiais Compatíveis</b></gradient>'
+    lore:
+      - '<gray>Limita em quais <white>Materiais Vanilla</white></gray>'
+      - '<gray>esta Skin pode ser aplicada.</gray>'
+      - ''
+      - '<gray>Ex: DIAMOND_SWORD, BOW.</gray>'
+      - ''
+      - '<dark_gray>Materiais: <white>%size%'
+      - ''
+      - '<yellow>» Clique esquerdo para adicionar material.'
+      - '<yellow>» Clique direito para remover último.'
+    hide_attributes: true
+
+  compatible_ids:
+    name: '<gradient:#55ff55:#00aa00><b>🆔 IDs Compatíveis</b></gradient>'
+    lore:
+      - '<gray>Limita IDs específicos de Itens</gray>'
+      - '<gray>que aceitam esta Gema/Skin.</gray>'
+      - ''
+      - '<dark_gray>IDs: <white>%size%'
+      - ''
+      - '<yellow>» Clique esquerdo para adicionar ID.'
+      - '<yellow>» Clique direito para remover último.'
+    hide_attributes: true
+
+  disable_advanced_enchants:
+    name: '<gradient:#ff5555:#aa0000><b>🚫 Advanced Enchantments</b></gradient>'
+    lore:
+      - '<gray>Impede a aplicação de encantos</gray>'
+      - '<gray>do plugin AdvancedEnchantments.</gray>'
+      - ''
+      - '<dark_gray>Bloqueado: <white>%value%'
+      - ''
+      - '<yellow>▸ Clique para alternar</yellow>'
+    hide_attributes: true
+  
+  disable_crafting:
+    name: '<gradient:#ff5555:#aa0000><b>🚫 Bloquear Crafting</b></gradient>'
+    lore:
+      - '<gray>Impede que o item seja usado'
+      - '<gray>como ingrediente de crafting.'
+      - ''
+      - '<gray>Bloqueado: <green>%value%'
+      - ''
+      - '<yellow>» Clique para alternar</yellow>'
+    hide_attributes: true
+
+  disable_smelting:
+    name: '<gradient:#ff5555:#aa0000><b>🚫 Bloquear Fornalha</b></gradient>'
+    lore:
+      - '<gray>Impede que o item seja fundido'
+      - '<gray>ou cozinhado em fornalhas.'
+      - ''
+      - '<gray>Bloqueado: <green>%value%'
+      - ''
+      - '<yellow>» Clique para alternar</yellow>'
+    hide_attributes: true
+
+  disable_smithing:
+    name: '<gradient:#ff5555:#aa0000><b>🚫 Bloquear Smithing</b></gradient>'
+    lore:
+      - '<gray>Impede upgrade na Smithing Table.'
+      - ''
+      - '<gray>Bloqueado: <green>%value%'
+      - ''
+      - '<yellow>» Clique para alternar</yellow>'
+    hide_attributes: true
+
+  disable_enchanting:
+    name: '<gradient:#ff5555:#aa0000><b>🚫 Bloquear Enchanting</b></gradient>'
+    lore:
+      - '<gray>Impede encantar na Mesa de Encantamento.'
+      - ''
+      - '<gray>Bloqueado: <green>%value%'
+      - ''
+      - '<yellow>» Clique para alternar</yellow>'
+    hide_attributes: true
+
+  disable_repairing:
+    name: '<gradient:#ff5555:#aa0000><b>🚫 Bloquear Reparo</b></gradient>'
+    lore:
+      - '<gray>Impede reparos não item.'
+      - ''
+      - '<gray>Bloqueado: <green>%value%'
+      - ''
+      - '<yellow>» Clique para alternar</yellow>'
+    hide_attributes: true
+
+  disable_item_dropping:
+    name: '<gradient:#ff5555:#aa0000><b>🚫 Bloquear Drop (Q)</b></gradient>'
+    lore:
+      - '<gray>Impede dropar o item (tecla Q).'
+      - ''
+      - '<gray>Bloqueado: <green>%value%'
+      - ''
+      - '<yellow>» Clique para alternar</yellow>'
+    hide_attributes: true
+
+  disable_drop_on_death:
+    name: '<gradient:#ff5555:#aa0000><b>🚫 Manter ao Morrer</b></gradient>'
+    lore:
+      - '<gray>O item permanece não inventário'
+      - '<gray>após a morte. (Keep Inventory)'
+      - ''
+      - '<gray>Ativo: <green>%value%'
+      - ''
+      - '<yellow>» Clique para alternar</yellow>'
+    hide_attributes: true
+  
+  unstackable:
+    name: '<gradient:#ff5555:#aa0000><b>🚫 Não Agrupável</b></gradient>'
+    lore:
+      - '<gray>Força o item a não empilhar.'
+      - ''
+      - '<gray>Ativo: <green>%value%'
+      - ''
+      - '<yellow>» Clique para alternar</yellow>'
+    hide_attributes: true
+
+  amphibian:
+    name: '<gradient:#55ffff:#00aaaa><b>🧜‍♂️ Anfíbio (Água)</b></gradient>'
+    lore:
+      - '<gray>Permite usar armas e arcos'
+      - '<gray>embaixo dagua sem penalidade.'
+      - ''
+      - '<gray>Ativo: <green>%value%'
+      - ''
+      - '<yellow>» Clique para alternar</yellow>'
+    hide_attributes: true
+
+  repair_reference:
+    name: '<gradient:#aaaaaa:#555555><b>🔧 Material de Reparo</b></gradient>'
+    lore:
+      - '<gray>Define qual item é consumido</gray>'
+      - '<gray>ao reparar este item na bigorna.</gray>'
+      - ''
+      - '<dark_gray>Material: <white>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para definir material.'
+      - '<yellow>» Clique direito para usar padrão.'
+    hide_attributes: true

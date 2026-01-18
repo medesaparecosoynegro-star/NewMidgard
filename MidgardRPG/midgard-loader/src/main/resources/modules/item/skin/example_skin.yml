@@ -1,0 +1,10 @@
+skin_example:
+  base:
+    material: PAPER
+    name: '<white>'
+    tier: COMMON
+    type: SKIN
+    revision-id: 1
+  mechanics:
+    stats:
+      attack-damage: 5

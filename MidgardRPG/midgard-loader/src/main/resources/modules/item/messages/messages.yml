@@ -1,0 +1,214 @@
+# ============================================
+# MIDGARD ITEM MODULE - MESSAGES
+# ============================================
+
+# ============================================
+# COMMON MESSAGES
+# ============================================
+common:
+  level_requirement: "<red>✖ <gray>Você precisa do nível <white>%level% <gray>para usar este item."
+  previous_page: "<green>← Página Anterior"
+  next_page: "<green>Próxima Página →"
+  updated_to_latest: "<green>✔ <gray>Item atualizado para a versão mais recente."
+  no: "<red>Não"
+  yes: "<green>Sim"
+  click_to_toggle: "<gray>Clique para alternar."
+  back: "<red>← Voltar"
+
+# ============================================
+# COMMAND MESSAGES
+# ============================================
+command:
+  received: "<green>✔ <gray>Você recebeu o item <white>%item%<gray>."
+  reload-success: "<green>✔ <gray>Configurações de itens recarregadas."
+  no-permission: "<red>✖ <gray>Você não tem permissão."
+  unknown: "<red>✖ <gray>Subcomando desconhecido."
+  usage: "<red>✖ <gray>Uso correto: <white>/item <arg> ..."
+  item-not-found: "<red>✖ <gray>Item não encontrado: <white>%id%"
+
+# ============================================
+# EQUIP MESSAGES
+# ============================================
+equip:
+  stack_occupied: "<red>✖ <gray>Você já está usando um item deste tipo."
+  invalid_slot: "<red>✖ <gray>Este item não pode ser equipado aqui."
+
+# ============================================
+# RESTRICTION MESSAGES
+# ============================================
+restriction:
+  drop: "<red>✖ <gray>Você não pode dropar este item."
+
+# ============================================
+# GEM MESSAGES
+# ============================================
+gem:
+  applied_success: "<green>✔ <gray>Gema aplicada com sucesso!"
+
+# ============================================
+# GUI - EDITOR
+# ============================================
+gui:
+  editor:
+    prompt:
+      display-name: "<green>Digita o nome de exibição (Aceita MiniMessage):"
+      lore-format: "<green>Escolha o formato da lore (padrão/compacto):"
+      max-stack-size: "<green>Digite o tamanho máximo do stack (1-64):"
+      nbt-tags: "<green>Digite as tags NBT (JSON):"
+      custom-tooltip: "<green>Digite a tooltip customizada:"
+      vanilla-tooltip-style: "<green>Estilo vanilla tooltip (true/false):"
+      displayed-type: "<green>Digite o tipo exibido (ex: Espada Lendária):"
+      base-item-damage: "<green>Digite o dano base (inteiro):"
+      custom-model-data: "<green>Digite o CustomModelData (inteiro):"
+      custom-model-data-strings: "<green>Digite CustomModelData como strings (lista):"
+      custom-model-data-floats: "<green>Digite CustomModelData como floats (lista):"
+      item-model: "<green>Digite o Item Model (namespace:path):"
+      max-custom-durability: "<green>Digite a durabilidade customizada:"
+      max-vanilla-durability: "<green>Digite a durabilidade vanilla:"
+      item-particles: "<green>Configurar partículas (abre menu):"
+      required-level: "<green>Digite o nível necessário:"
+      item-set: "<green>Digite o ID do set de itens:"
+      required-biomes: "<green>Digite os biomas necessários (separados por vírgula):"
+      camera-overlay: "<green>Digite o caminho da textura de overlay:"
+      permanent-effects: "<green>Digite os efeitos permanentes (TIPO:NIVEL):"
+      granted-permissions: "<green>Digite as permissões concedidas:"
+      cooldown-reference: "<green>Digite o grupo de cooldown:"
+      crafting-recipe-permission: "<green>Digite a permissão de craft:"
+      custom-sounds: "<green>Configurar sons (abre menu):"
+      compatible-types: "<green>Tipos compatíveis:"
+      compatible-ids: "<green>IDs compatíveis:"
+      compatible-materials: "<green>Materiais compatíveis:"
+      repair-reference: "<green>Referência de reparo:"
+      item-abilities: "<green>Habilidades:"
+      gem-sockets: "<green>Sockets de gemas:"
+      trim-material: "<green>Material do acabamento:"
+      trim-pattern: "<green>Padrão do acabamento:"
+      browser-index: "<green>Índice do navegador:"
+
+  item_edition:
+    buttons:
+      get_item:
+        name: "<green>Obter Item"
+
+# ============================================
+# GUI - BROWSER
+# ============================================
+  browser:
+    click-to-delete-item: "<red>Clique para deletar"
+    click-to-get: "<green>Clique para obter"
+    shift-click-to-edit: "<yellow>Shift+Clique para editar"
+    previous-page: "<green>← Página Anterior"
+    next-page: "<green>Próxima Página →"
+    close: "<red>Fechar"
+    buttons:
+      delete:
+        name: "<red>Modo de Exclusão"
+        mode-active: "<red>Modo ativo! Clique em itens para deletar."
+        click-to-delete: "<gray>Clique em um item para deletar"
+        click-to-cancel: "<yellow>Clique aqui para cancelar"
+        click-to-enable: "<gray>Clique para ativar modo de exclusão"
+      create:
+        name: "<green>Criar Novo Item"
+      back:
+        name: "<red>← Voltar"
+    messages:
+      enter-id: "<yellow>Digite o ID do novo item:"
+      cancel-abort: "<gray>Digite 'cancelar' para abortar"
+    delete-confirmation:
+      confirm:
+        name: "<green>✔ Confirmar"
+        lore: "<gray>Clique para confirmar exclusão"
+      cancel:
+        name: "<red>✖ Cancelar"
+      success: "<green>✔ Item deletado com sucesso!"
+
+# ============================================
+# GUI - CRAFTING
+# ============================================
+  crafting_gui:
+    editor:
+      common:
+        get_item:
+          name: "<green>Obter Item"
+        back: "<red>← Voltar"
+        output_amount:
+          name: "<yellow>Quantidade de Saída"
+        output_mode:
+          name: "<yellow>Modo de Saída"
+        hide_book:
+          name: "<gray>Ocultar do Livro de Receitas"
+        experience:
+          name: "<yellow>Experiência"
+        duration:
+          name: "<yellow>Tempo de Cozimento"
+        separator: " "
+        no_item: "<dark_gray>Nenhum item"
+        item_added: "<green>✔ Item adicionado à receita!"
+    configuration:
+      new_recipe:
+        name: "<green>+ Nova Receita"
+    type_selection:
+      types:
+        smithing: "<gray>Ferraria"
+        super_shaped: "<light_purple>Super Shaped"
+        smoker: "<yellow>Defumador"
+        furnace: "<red>Fornalha"
+        shaped: "<green>Shaped"
+        mega_shaped: "<gold>Mega Shaped"
+        campfire: "<gold>Fogueira"
+        shapeless: "<aqua>Shapeless"
+        blast_furnace: "<red>Alto-Forno"
+
+# ============================================
+# GUI - EQUIPPABLE SLOT SELECTION
+# ============================================
+  equippable_slot_selection:
+    items:
+      head:
+        name: "<aqua>Cabeça"
+      chest:
+        name: "<aqua>Peito"
+      legs:
+        name: "<aqua>Pernas"
+      feet:
+        name: "<aqua>Pés"
+      off_hand:
+        name: "<aqua>Mão Secundária"
+      hand:
+        name: "<aqua>Mão Principal"
+      none:
+        name: "<gray>Nenhum"
+
+# ============================================
+# GUI - CLASS REQUIREMENT SELECTION
+# ============================================
+  class_requirement_selection:
+    error:
+      module_disabled: "<red>✖ Módulo de classes não está ativo!"
+    messages:
+      removed: "<green>✔ Requisito de classe removido."
+    buttons:
+      previous_page: "<green>← Página Anterior"
+      next_page: "<green>Próxima Página →"
+      back: "<red>← Voltar"
+      clear:
+        name: "<red>Limpar Requisito"
+
+# ============================================
+# GUI - EDITORS
+# ============================================
+  editors:
+    boolean:
+      reset: "<yellow>Valor resetado para padrão."
+    stat:
+      invalid_format: "<red>✖ Formato inválido! Use: STAT:VALOR"
+  editor:
+    invalid-number: "<red>✖ Número inválido!"
+    invalid-material: "<red>✖ Material inválido!"
+
+# ============================================
+# OLD MESSAGES (To be refactored)
+# ============================================
+messages:
+  editing: "<yellow>✎ <gray>Editando item..."
+  no-editor: "<red>✖ <gray>Nenhum editor aberto."

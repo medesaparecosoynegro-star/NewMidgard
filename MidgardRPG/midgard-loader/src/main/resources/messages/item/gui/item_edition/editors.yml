@@ -1,0 +1,20 @@
+# ============================================
+# MIDGARD ITEM - Mensagens dos Editores
+# Feedback de edição de stats
+# ============================================
+
+editors:
+  boolean:
+    reset: '<green>✔ Valor redefinido para falso'
+    toggled: '<green>✔ Valor alternado para %value%'
+
+  stat:
+    reset: '<green>✔ %stat% redefinido para 0!'
+    enter_value: '<yellow>✎ Digite o valor de %stat% não chat:</yellow> <gray>(ou "cancel")</gray>'
+    updated: '<green>✔ %stat% atualizado!'
+    invalid_format: '<red>✖ Formato de número inválido.'
+
+  string:
+    cleared: '<green>✔ %prompt% limpo!'
+    enter_value: '<yellow>✎ Digite %prompt% não chat:</yellow> <gray>(ou "cancel")</gray>'
+    updated: '<green>✔ %prompt% atualizado!'

@@ -1,0 +1,61 @@
+# ============================================
+# MIDGARD ITEM - CONFIGURAÇÃO DE REVISÃO
+# ============================================
+# Padrão V2.0 - Oficial
+# ============================================
+
+title: "<gradient:#55ffff:#00aaaa><bold>✦ Configuração de Revisão ✦</bold></gradient>"
+enabled_config: "<gray>Habilitado (no config)? %s"
+
+revision_id:
+  name: "<gradient:#ffff55:#ffaa00><bold>⟳ ID de Revisão</bold></gradient>"
+  lore:
+    - "<gray>O atualizador está sempre ativo. Aumentar"
+    - "<gray>este número atualizará todas as instâncias"
+    - "<gray>deste item sem nenhuma ação adicional."
+    - ""
+    - "<gray>Valor Atual: <yellow>%value%"
+    - ""
+    - "<yellow>▸ <gray>Clique para editar"
+
+toggles:
+  keep_lore:
+    name: "<gradient:#ffff55:#ffaa00><bold>📜 Manter Lore</bold></gradient>"
+    lore:
+      - "<gray>Mantém especificamente linhas de lore"
+      - "<gray>que começam com código de cor específico."
+  
+  keep_name:
+    name: "<gradient:#ffff55:#ffaa00><bold>✎ Manter Nome</bold></gradient>"
+    lore:
+      - "<gray>Mantém o nome de exibição do item."
+  
+  keep_enchantments:
+    name: "<gradient:#ffff55:#ffaa00><bold>✨ Manter Encantamentos</bold></gradient>"
+    lore:
+      - "<gray>Mantém especificamente encantamentos que"
+      - "<gray>foram adicionados pelo jogador."
+  
+  keep_external_sh:
+    name: "<gradient:#ffff55:#ffaa00><bold>🔗 Manter SH Externos</bold></gradient>"
+    lore:
+      - "<gray>Dados registrados nos StatHistory do item"
+      - "<gray>(similar às GemStones mas não removíveis)."
+  
+  keep_upgrades:
+    name: "<gradient:#ffff55:#ffaa00><bold>⬆ Manter Upgrades</bold></gradient>"
+    lore:
+      - "<gray>O item reterá o nível de upgrade"
+      - "<gray>mesmo com novo máximo."
+  
+  keep_gem_stones:
+    name: "<gradient:#ffff55:#ffaa00><bold>💎 Manter Gemas</bold></gradient>"
+    lore:
+      - "<gray>O item reterá suas gemas quando"
+      - "<gray>atualizado (mesmo com menos sockets)."
+  
+  keep_soulbind:
+    name: "<gradient:#ffff55:#ffaa00><bold>🔒 Manter Soulbind</bold></gradient>"
+    lore:
+      - "<gray>Se o item antigo está vinculado à alma,"
+      - "<gray>a atualização manterá o vínculo."

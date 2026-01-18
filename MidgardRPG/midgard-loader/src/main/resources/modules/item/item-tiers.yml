@@ -1,0 +1,8 @@
+# Item Tiers Configuration
+# Define rarity tiers for items here.
+COMMON:
+  name: "<white>Common"
+  unidentification:
+    name: "<white>Unidentified Common Item"
+    lore:
+    - "<gray>Right-click to identify!"

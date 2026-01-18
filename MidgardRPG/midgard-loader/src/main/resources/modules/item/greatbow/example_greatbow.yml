@@ -1,0 +1,10 @@
+greatbow_example:
+  base:
+    material: BOW
+    name: '<white>'
+    tier: COMMON
+    type: GREATBOW
+    revision-id: 1
+  mechanics:
+    stats:
+      attack-damage: 5

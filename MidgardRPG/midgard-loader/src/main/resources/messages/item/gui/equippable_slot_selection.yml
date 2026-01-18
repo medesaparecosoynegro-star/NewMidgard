@@ -1,0 +1,30 @@
+title: "Selecionar Slot Equipável"
+items:
+  head:
+    name: "<green>CABEÇA"
+    lore:
+      - "<gray>Clique para definir o slot como CABEÇA"
+  chest:
+    name: "<green>PEITORAL"
+    lore:
+      - "<gray>Clique para definir o slot como PEITORAL"
+  legs:
+    name: "<green>PERNAS"
+    lore:
+      - "<gray>Clique para definir o slot como PERNAS"
+  feet:
+    name: "<green>PÉS"
+    lore:
+      - "<gray>Clique para definir o slot como PÉS"
+  off_hand:
+    name: "<green>MÃO SECUNDÁRIA"
+    lore:
+      - "<gray>Clique para definir o slot como MÃO SECUNDÁRIA"
+  hand:
+    name: "<green>MÃO PRINCIPAL"
+    lore:
+      - "<gray>Clique para definir o slot como MÃO PRINCIPAL"
+  none:
+    name: "<red>NENHUM"
+    lore:
+      - "<gray>Clique para limpar o slot equipável"

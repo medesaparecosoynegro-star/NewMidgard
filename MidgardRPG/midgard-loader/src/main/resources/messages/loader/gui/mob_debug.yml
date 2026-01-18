@@ -1,0 +1,59 @@
+title: "<dark_gray>[<gradient:#a855f7:#ec4899>Debug</gradient><dark_gray>] <white><name>"
+
+basic-info:
+  name: "<gradient:#ffd700:#ffa500>📋 Informações Básicas</gradient>"
+  lore:
+    - "<dark_gray>━━━━━━━━━━━━━━━━━━━━━"
+    - ""
+    - "<gray>» Nome: <white><name>"
+    - "<gray>» Tipo: <white><type>"
+    - "<gray>» Vida: <red><health><dark_gray>/<gray><max_health> <red>❤"
+    - ""
+    - "<dark_gray>UUID: <dark_gray><uuid>"
+    - "<dark_gray>━━━━━━━━━━━━━━━━━━━━━"
+
+mythic-info:
+  name: "<gradient:#a855f7:#ec4899>☠ Info do MythicMobs</gradient>"
+  lore:
+    - "<dark_gray>━━━━━━━━━━━━━━━━━━━━━"
+    - ""
+    - "<gray>» Interno: <light_purple><internal_name>"
+    - "<gray>» Exibição: <white><display_name>"
+    - "<gray>» Nível: <yellow>⭐ <level>"
+    - "<gray>» Facção: <aqua><faction>"
+    - "<gray>» Postura: <gold><stance>"
+    - ""
+    - "<gray>» Vida: <red><health><dark_gray>/<gray><max_health> <red>❤"
+    - "<dark_gray>━━━━━━━━━━━━━━━━━━━━━"
+
+vanilla-info:
+  name: "<gray><bold>🎲 Entidade Vanilla</bold>"
+  lore:
+    - "<dark_gray>━━━━━━━━━━━━━━━━━━━━━"
+    - ""
+    - "<gray>Esta entidade <yellow>não<gray> é um MythicMob."
+    - "<gray>Apenas dados padrões do Bukkit."
+    - ""
+    - "<dark_gray>━━━━━━━━━━━━━━━━━━━━━"
+
+attribute:
+  name: "<gradient:#a855f7:#ec4899>✦ <attribute></gradient>"
+  lore:
+    - "<dark_gray>━━━━━━━━━━━━━━━━━━━━━"
+    - "<gray>Valor Atual: <white><value>"
+    - "<dark_gray>━━━━━━━━━━━━━━━━━━━━━"
+
+equipment:
+  helmet: "<gradient:#ffd700:#ffa500>🧢 Capacete</gradient>"
+  chestplate: "<gradient:#ffd700:#ffa500>👕 Peitoral</gradient>"
+  leggings: "<gradient:#ffd700:#ffa500>👖 Calça</gradient>"
+  boots: "<gradient:#ffd700:#ffa500>👢 Botas</gradient>"
+  main-hand: "<gradient:#ff6b6b:#ff4757>⚔ Mão Principal</gradient>"
+  off-hand: "<gradient:#70a1ff:#1e90ff>🛡 Mão Secundária</gradient>"
+  empty: "<dark_gray>❌ Vazio"
+
+navigation:
+  previous: "<gradient:#a855f7:#ec4899>◀ Página Anterior</gradient>"
+  next: "<gradient:#a855f7:#ec4899>Próxima Página ▶</gradient>"
+  close: "<red><bold>✘ Fechar</bold>"
+  page-info: "<dark_gray>Página <white><current><dark_gray>/<white><total>"

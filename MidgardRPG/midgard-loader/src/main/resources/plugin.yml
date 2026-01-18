@@ -1,0 +1,31 @@
+name: MidgardRPG
+version: 1.0.0
+main: me.ray.midgard.loader.MidgardPlugin
+api-version: 1.21
+authors: [Ray]
+description: A large-scale Modular RPG plugin.
+depend: 
+  - WorldGuard
+  - WorldEdit
+  - PlaceholderAPI
+  - ProtocolLib
+  - FancyHolograms
+  - MythicMobs
+  - FancyNpcs
+  - TAB
+  - ItemsAdder
+softdepend:
+  - spark
+
+commands:
+  midgardrpg:
+    description: Main command for MidgardRPG
+    usage: /midgardrpg <subcommand>
+    aliases: [rpg, mrpg]
+  performance:
+    description: Spark-based performance monitoring
+    usage: /performance [subcommand]
+    aliases: [perf]
+    permission: midgard.admin
+
+

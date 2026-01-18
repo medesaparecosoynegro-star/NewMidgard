@@ -1,0 +1,10 @@
+talisman_example:
+  base:
+    material: TOTEM_OF_UNDYING
+    name: '<white>'
+    tier: COMMON
+    type: TALISMAN
+    revision-id: 1
+  mechanics:
+    stats:
+      attack-damage: 5

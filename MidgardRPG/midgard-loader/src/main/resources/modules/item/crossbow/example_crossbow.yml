@@ -1,0 +1,10 @@
+crossbow_example:
+  base:
+    material: CROSSBOW
+    name: '<white>'
+    tier: COMMON
+    type: CROSSBOW
+    revision-id: 1
+  mechanics:
+    stats:
+      attack-damage: 5

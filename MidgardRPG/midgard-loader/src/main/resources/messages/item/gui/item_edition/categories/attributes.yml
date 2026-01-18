@@ -1,0 +1,270 @@
+stats:
+  armor:
+    name: '<gradient:#55aaff:#0000aa><b>🛡 Armadura</b></gradient>'
+    lore:
+      - '<gray>A armadura dada ao portador.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  armor_toughness:
+    name: '<gradient:#55aaff:#00aaaa><b>🛡 Resistência de Armadura</b></gradient>'
+    lore:
+      - '<gray>A resistência da armadura reduz o dano sofrido.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  max_health:
+    name: '<gradient:#ff5555:#aa0000><b>❤ Vida Máxima</b></gradient>'
+    lore:
+      - '<gray>A quantidade de vida que seu item dá ao portador.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  health_regeneration:
+    name: '<gradient:#ff5555:#ffaaaa><b>❤ Regeneração de Vida</b></gradient>'
+    lore:
+      - '<gray>Quantidade de pontos de vida regenerados a cada segundo.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  max_health_regeneration:
+    name: '<gradient:#ff5555:#aa0000><b>❤ Regeneração de Vida Máxima</b></gradient>'
+    lore:
+      - '<gray>Porcentagem de vida máxima regenerada a cada segundo.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  max_mana:
+    name: '<gradient:#55aaff:#0055ff><b>💧 Mana Máxima</b></gradient>'
+    lore:
+      - '<gray>Adiciona mana à sua barra de mana máxima.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  mana_regeneration:
+    name: '<gradient:#55aaff:#aaddff><b>💧 Regeneração de Mana</b></gradient>'
+    lore:
+      - '<gray>Quantidade de pontos de mana regenerados a cada segundo.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  max_mana_regeneration:
+    name: '<gradient:#0000aa:#0000ff><b>💧 Regeneração de Mana Máxima</b></gradient>'
+    lore:
+      - '<gray>Porcentagem de mana máxima regenerada a cada segundo.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  max_stamina:
+    name: '<gradient:#ffff55:#ffaa00><b>⚡ Estamina Máxima</b></gradient>'
+    lore:
+      - '<gray>Estamina máxima adicional.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  stamina_regeneration:
+    name: '<gradient:#ffff55:#ffddaa><b>⚡ Regeneração de Estamina</b></gradient>'
+    lore:
+      - '<gray>Quantidade de pontos de estamina regenerados a cada segundo.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  max_stamina_regeneration:
+    name: '<gradient:#aa5500:#ffaa00><b>⚡ Regeneração de Estamina Máxima</b></gradient>'
+    lore:
+      - '<gray>Porcentagem de estamina máxima regenerada a cada segundo.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  max_stellium:
+    name: '<gradient:#aa00ff:#ff00ff><b>✨ Stellium Máximo</b></gradient>'
+    lore:
+      - '<gray>Stellium máximo adicional.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+  
+  max_absorption:
+    name: '<gradient:#ffff55:#aaaa00><b>💛 Absorção Máxima</b></gradient>'
+    lore:
+      - '<gray>A absorção máxima é usada por itens como Golden Apples'
+      - '<gray>para conceder corações amarelos adicionais ao jogador.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  movement_speed:
+    name: '<gradient:#ffffff:#aaaaaa><b>🏃 Velocidade de Movimento</b></gradient>'
+    lore:
+      - '<gray>Aumenta a velocidade de caminhada do jogador. Padrão MC é 0.1'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  movement_efficiency:
+    name: '<gradient:#ffffff:#555555><b>🏃 Eficiência de Movimento</b></gradient>'
+    lore:
+      - '<gray>Reduz stamina gasta ao andar/correr.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  water_movement_efficiency:
+    name: '<gradient:#55ffff:#00aaaa><b>🏊 Eficiência na Água</b></gradient>'
+    lore:
+      - '<gray>Aumenta velocidade de movimentação na água.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  sneaking_speed:
+    name: '<gradient:#555555:#000000><b>🥷 Velocidade Furtiva</b></gradient>'
+    lore:
+      - '<gray>Velocidade de movimento ao agachar (shift).'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  knockback_resistance:
+    name: '<gradient:#aaaaaa:#555555><b>🧱 Resistência a Repulsão</b></gradient>'
+    lore:
+      - '<gray>Impede que você seja empurrado por ataques e explosões.'
+      - '<gray>1.0 = Imunidade Total.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+  
+  jump_strength:
+    name: '<gradient:#aaffaa:#00aa00><b>⬆ Força do Pulo</b></gradient>'
+    lore:
+      - '<gray>Aumenta a altura vertical do pulo.'
+      - '<gray>Pode permitir pular cercas (>1.5).'
+      - '<gray>Funciona como poção de Jump Boost.'
+      - ''
+      - '<gray>ℹ Requer Minecraft 1.20.5+'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  gravity:
+    name: '<gradient:#aa00aa:#550055><b>🌑 Gravidade</b></gradient>'
+    lore:
+      - '<gray>Modifica a gravidade aplicada não jogador.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  safe_fall_distance:
+    name: '<gradient:#ffffff:#55ffff><b>🕊 Queda Segura</b></gradient>'
+    lore:
+      - '<gray>Altura de queda segura adicional (blocos).'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  scale:
+    name: '<gradient:#ffffff:#555555><b>📏 Escala (Tamanho)</b></gradient>'
+    lore:
+      - '<gray>Modifica o tamanho do jogador.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  step_height:
+    name: '<gradient:#aaaaaa:#555555><b>🪜 Altura do Passo</b></gradient>'
+    lore:
+      - '<gray>Altura máxima de bloco para subir sem pular.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true
+
+  additional_experience:
+    name: '<gradient:#55ff55:#00aa00><b>⭐ Experiência Adicional</b></gradient>'
+    lore:
+      - '<gray>Experiência adicional da classe principal MMOCore em %.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para editar.'
+      - '<yellow>» Clique direito para remover.'
+    hide_attributes: true

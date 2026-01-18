@@ -1,0 +1,10 @@
+greatstaff_example:
+  base:
+    material: STICK
+    name: '<white>'
+    tier: COMMON
+    type: GREATSTAFF
+    revision-id: 1
+  mechanics:
+    stats:
+      attack-damage: 5

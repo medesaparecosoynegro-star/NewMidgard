@@ -1,0 +1,7 @@
+title: Selecionar Tipo de Ingrediente
+minecraft_item:
+  name: '<yellow>Item do Minecraft'
+  lore: '<gray>Clique para selecionar um item vanilla.'
+midgard_item:
+  name: '<yellow>Item do Midgard'
+  lore: '<gray>Clique para selecionar um item customizado.'

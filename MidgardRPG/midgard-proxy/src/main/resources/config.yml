@@ -1,0 +1,21 @@
+# MidgardProxy Configuration
+redis:
+  address: "127.0.0.1"
+  port: 6379
+  password: ""
+  ssl: false
+
+messages:
+  global-chat-format: "<green>[G] <white><sender>: <message>"
+  reload-success: "<green>Configuração recarregada com sucesso!"
+
+# Lista de servidores considerados Lobby
+lobby-servers:
+  - "lobby"
+  - "lobby-1"
+  - "lobby-2"
+
+# Outros servidores (opcional)
+servers:
+  survival: "survival-1"
+  pvp: "arena-1"

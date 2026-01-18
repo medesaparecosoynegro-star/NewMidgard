@@ -1,0 +1,10 @@
+gauntlet_example:
+  base:
+    material: LEATHER_HELMET
+    name: '<white>'
+    tier: COMMON
+    type: GAUNTLET
+    revision-id: 1
+  mechanics:
+    stats:
+      attack-damage: 5

@@ -1,0 +1,26 @@
+# ============================================
+# MIDGARD ITEM - EDITORES (LEGADO)
+# ============================================
+# Padr�o V2.0 - Oficial
+# Use os arquivos em gui/item_edition/editors.yml
+# ============================================
+
+
+boolean:
+  reset: "<green>? <white>Valor redefinido para falso."
+  toggled: "<green>? <white>Valor alternado para <yellow>%value%</yellow>."
+
+string:
+  cleared: "<green>? <white>%prompt% limpo!"
+  enter_value: "<yellow>? <gray>Digite <white>%prompt% <gray>no chat: <dark_gray>(ou \"cancel\")"
+  updated: "<green>? <white>%prompt% atualizado!"
+
+list:
+  cleared: "<green>? <white>%title% limpo!"
+  updated: "<green>? <white>%title% atualizado!"
+
+stat:
+  reset: "<green>? <white>%stat% redefinido para 0!"
+  enter_value: "<yellow>? <gray>Digite o valor de <white>%stat% <gray>no chat: <dark_gray>(ou \"cancel\")"
+  updated: "<green>? <white>%stat% atualizado!"
+  invalid_format: "<red>? <gray>Formato de n�mero inválido."

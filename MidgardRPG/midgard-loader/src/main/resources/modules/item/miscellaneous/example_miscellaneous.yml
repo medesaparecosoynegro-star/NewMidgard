@@ -1,0 +1,10 @@
+miscellaneous_example:
+  base:
+    material: STICK
+    name: '<white>'
+    tier: COMMON
+    type: MISCELLANEOUS
+    revision-id: 1
+  mechanics:
+    stats:
+      attack-damage: 5

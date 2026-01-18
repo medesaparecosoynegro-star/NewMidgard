@@ -1,0 +1,116 @@
+# ==============================================================================
+#                        CONFIGURAÇÃO DE ITENS - MIDGARD RPG
+# ==============================================================================
+
+settings:
+  # Habilitar debug não console
+  debug: false
+  
+  # Lore padrão para stats (opcional, para formatação automática futura)
+  lore-format:
+    layout:
+      - "{displayed-type}"
+      - "{stats}"
+      - "{sockets}"
+      - "{abilities}"
+      - "{elements}"
+      - "{lore}"
+    
+    stats:
+      ATTACK_DAMAGE: "<gray>» Dano de Ataque: <white>{value}"
+      ATTACK_SPEED: "<gray>» Vel. de Ataque: <white>{value}"
+      DODGE_RATING: "<gray>■ Taxa de Esquiva: <green>+{value}%"
+      MAX_HEALTH: "<red>♥ Vida: <green>+{value}"
+      MAX_MANA: "<aqua>■ Mana Máxima: <green>+{value}"
+      MAX_MANA_REGENERATION: "<aqua>■ Regeneração de Mana: <green>+{value}"
+      
+      FIRE_DAMAGE: "<red>♨ {value} {name}"
+      ICE_DAMAGE: "<aqua>❄ {value} {name}"
+      LIGHT_DAMAGE: "<yellow>☀ {value} {name}"
+      DARKNESS_DAMAGE: "<dark_purple>🌑 {value} {name}"
+      DIVINE_DAMAGE: "<gold>✨ {value} {name}"
+      
+      default: "<gray>■ {name}: <white>{value}"
+
+    sockets:
+      empty: "<gray>◆ Engaste de {type} Vazio"
+      filled: "<gray>◆ {gem_name}"
+      separator: "<dark_gray><strikethrough>                                </strikethrough>"
+
+    abilities:
+      passive: "<gray>{name} <dark_gray>| <gold>PASSIVA"
+      active: "<gray>{name} <dark_gray>| <aqua>ATIVO"
+      cooldown: "<gray>⏱ {value}s de Cooldown"
+      separator: "<dark_gray><strikethrough>                                </strikethrough>"
+
+guis:
+  item_edition:
+    title: "<gradient:#55ffff:#00aaaa><bold>✦ Edição de Item ✦</bold></gradient> <gray>%id%"
+    rows: 6
+    items:
+      get_item:
+        slot: 2
+        material: EMERALD
+        name: "<green>✔ Obter Item"
+        lore:
+          - "<gray>Clique para pegar este item."
+      display_item:
+        slot: 4
+      close:
+        slot: 6
+        material: BARRIER
+        name: "<red>✖ Fechar"
+      previous_page:
+        slot: 27
+        material: ARROW
+        name: "<green>← Página Anterior"
+      next_page:
+        slot: 35
+        material: ARROW
+        name: "<green>Próxima Página →"
+      back:
+        slot: 49
+        material: ARROW
+        name: "<yellow>← Voltar"
+
+  item_browser:
+    title: "<gradient:#55ffff:#00aaaa><bold>✦ Navegador de Itens ✦</bold></gradient>"
+    rows: 6
+    items:
+      delete_mode:
+        slot: 47
+        material: RED_DYE
+        name: "<red>✖ Deletar Item"
+      create_item:
+        slot: 51
+        material: EMERALD
+        name: "<green>✔ Criar Novo Item"
+      previous_page:
+        slot: 18
+        material: ARROW
+        name: "<green>← Página Anterior"
+      next_page:
+        slot: 26
+        material: ARROW
+        name: "<green>Próxima Página →"
+      close:
+        slot: 49
+        material: BARRIER
+        name: "<red>✖ Fechar"
+
+  type_browser:
+    title: "<gradient:#55ffff:#00aaaa><bold>✦ Categorias ✦</bold></gradient>"
+    rows: 6
+    items:
+      previous_page:
+        slot: 18
+        material: ARROW
+        name: "<green>← Página Anterior"
+      next_page:
+        slot: 26
+        material: ARROW
+        name: "<green>Próxima Página →"
+      close:
+        slot: 49
+        material: BARRIER
+        name: "<red>✖ Fechar"

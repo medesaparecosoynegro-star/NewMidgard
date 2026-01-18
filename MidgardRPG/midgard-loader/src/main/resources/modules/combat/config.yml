@@ -1,0 +1,344 @@
+# ==============================================================================
+#                        CONFIGURAÇÃO DE COMBATE - MIDGARD RPG
+# ==============================================================================
+# Este arquivo controla todas as mecânicas de combate, indicadores de dano,
+# stamina, fórmulas de defesa e interações elementais.
+#
+# Dica: Use '&' ou '§' para códigos de cores, ou tags do MiniMessage <red>, <bold>.
+# ==============================================================================
+
+# ==============================================================================
+#                      SISTEMA DE ESCALONAMENTO DE DANO
+# ==============================================================================
+# Aqui você define a fórmula matemática usada para calcular o dano.
+# Existem dois modos disponíveis: "ADDITIVE" e "MULTIPLICATIVE".
+#
+# ------------------------------------------------------------------------------
+# MODO 1: ADDITIVE (Clássico / Simples)
+# Neste modo, os atributos dão dano FIXO.
+# Fórmula: DanoFinal = DanoArma + (Força * Fator) + Bônus
+#
+# Exemplo (Level 1, 10 Força, Fator 0.5):
+# Dano = 1 (Mão) + (10 * 0.5) = 6 de Dano.
+#
+# Prós: Simples de entender, bom para servidores onde números são baixos e controlados.
+# Contras: Um jogador level 1 pode ter muito dano inicial se não balanceado.
+# ------------------------------------------------------------------------------
+# MODO 2: MULTIPLICATIVE (RPG Moderno / Wynncraft / RuneScape)
+# Neste modo, os atributos dão PORCENTAGEM de bônus sobre o dano da arma/base.
+# Fórmula: DanoFinal = (DanoArma + DanoBase) * (1 + (Força * Multiplicador))
+#
+# Exemplo (Level 1, 10 Força, Multiplicador 0.01 (1%)):
+# Dano = 1 (Mão) * (1 + (10 * 0.01)) = 1 * 1.10 = 1.1 de Dano.
+#
+# Exemplo (Level 50, Arma 100 Dano, 500 Força):
+# Dano = 100 * (1 + (500 * 0.01)) = 100 * 6.0 = 600 de Dano.
+#
+# Prós: Escalonamento suave e consistente. O dano depende mais da arma equipada.
+# Contras: Requer balanceamento das armas para que o jogador sinta evolução.
+# ------------------------------------------------------------------------------
+
+formulas:
+  # Escolha o modo de cálculo: "ADDITIVE" ou "MULTIPLICATIVE"
+  damage-mode: "MULTIPLICATIVE"
+  
+  # Dano base da mão vazia (para quem está sem arma)
+  base-hand-damage: 1.0
+  
+  multipliers:
+    # Apenas para modo MULTIPLICATIVE
+    # Quanto de % de dano cada ponto de atributo dá.
+    # 0.01 = 1% por ponto. 100 Força = +100% (2x) dano.
+    strength: 0.01       # 1% Força -> Dano Físico
+    intelligence: 0.01   # 1% Inteligência -> Dano Mágico
+
+  # Divisor da fórmula de defesa (Usado se o scaling estiver desativado).
+  # Fórmula: DanoReduzido = Dano * (1 - (Defesa / (Defesa + Divisor)))
+  defense-divisor: 100.0
+
+  # Escalonamento de Defesa por Nível (Recomendado: true)
+  # Faz com que a defesa necessária para atingir a mesma redução aumente com o nível do atacante.
+  # Fórmula: Divisor = BaseDivisor * NivelAtacante
+  defense-scaling:
+    enabled: true
+    base-divisor: 20.0
+    
+  # Limite máximo de redução de dano (0.80 = 80%)
+  max-mitigation: 0.80
+
+# ==============================================================================
+#                        ESCALONAMENTO DE ATRIBUTOS
+# ==============================================================================
+# Define o quanto cada atributo primário (Stats) influencia nos secundários (Sub-stats).
+# Funciona tanto no modo Additive quanto Multiplicative (exceto onde notado).
+scaling:
+  strength:
+    # No modo ADDITIVE: +0.5 Dano por ponto.
+    # No modo MULTIPLICATIVE: Este valor é IGNORADO (usa o multipliers.strength acima).
+    physical-damage: 0.5 
+    
+  intelligence:
+    mana: 1.0           # 1 Int = +1 Mana
+    
+    # No modo ADDITIVE: +1.0 Dano Mágico por ponto.
+    # No modo MULTIPLICATIVE: IGNORADO (usa multipliers.intelligence).
+    magic-damage: 1.0   
+    
+    mana-regen: 0.1     # 10 Int = +1 Regen Mana
+    
+  dexterity:
+    crit-chance: 0.2    # 10 Dex = +2% Crítico
+    
+  agility:
+    speed: 0.1          # 10 Agi = +0.001 Velocidade (aprox +1%)
+    dodge: 0.2          # 10 Agi = +2% Esquiva
+    
+  vitality:
+    health: 5.0         # 1 Vit = +5 Vida
+    defense: 1.0        # 1 Vit = +1 Defesa
+
+damage-indicator:
+  # Define se os indicadores de dano (números flutuantes) devem aparecer.
+  enabled: true
+  
+  # Tempo que o indicador fica na tela (em ticks). 20 ticks = 1 segundo.
+  # Recomendado: 18 (0.9s) para um efeito rápido e fluido.
+  duration-ticks: 18
+  
+  # Cor de fundo do indicador (Hex ARGB).
+  # Formato: #AARRGGBB (Alpha, Red, Green, Blue)
+  # Exemplo: #C0000000 (Preto com 75% de opacidade)
+  # Use #00000000 para totalmente transparente.
+  background-color: "#80000000"
+  
+  # Template da mensagem. Variáveis: %icons%, %color%, %damage%
+  template: "%icons%   %color%%damage%"
+  
+  # Casas decimais para o valor do dano.
+  decimals: 1
+  
+  # Física do indicador
+  gravity: 0.04
+  initial-velocity: 0.25
+  
+  format:
+    # Cor/Formatação para dano normal.
+    normal: "<gray>"
+    
+    # Cor/Formatação para dano físico.
+    physical: "<red>"
+
+    # Cor/Formatação para dano crítico.
+    critical: "<red><bold>"
+    
+    # Formatação para outros tipos de dano
+    magical: "<blue>"
+    projectile: "<green>"
+    environment: "<dark_green>"
+    true: "<white>"
+    
+    # Cores para danos elementais
+    fire: "<red>"
+    ice: "<aqua>"
+    light: "<yellow>"
+    darkness: "<dark_purple>"
+    divine: "<gold>"
+    
+  icon:
+    # Ícone que aparece antes do número não dano crítico.
+    critical: ""
+    
+    # Ícone exibido para quando o jogador usa uma arma.
+    weapon: "🗡"
+    
+    # Ícones de tipos de dano
+    physical: "✘"
+    projectile: "➶"
+    magical: "✩"
+    environment: "🌲"
+    true: "🛡"
+    
+    # Ícones para danos elementais
+    fire: "🔥"
+    ice: "❄"
+    light: "⚡"
+    darkness: "☠"
+    divine: "☀"
+
+combat-tag:
+  # Tempo que o jogador fica "em combate" após bater ou apanhar.
+  # Durante este tempo, a regeneração de vida e mana é pausada.
+  duration-seconds: 10
+
+stamina:
+  # Quantidade de stamina drenada a cada verificação enquanto corre.
+  sprint-drain-per-check: 2.0
+  
+  # Intervalo de verificação da stamina (em ticks).
+  # 5 ticks = 4 verificações por segundo.
+  # Dreno total por segundo = (20 / check-interval) * sprint-drain
+  # Exemplo: (20 / 5) * 2.0 = 8.0 de stamina por segundo.
+  check-interval-ticks: 5
+
+elemental-interactions:
+  # Ativa o sistema de fraquezas e resistências elementais
+  enabled: true
+  
+  # Mapa de Multiplicadores (Atacante -> Vítima)
+  # Se Fire ataca Ice -> Dano * 1.5 (50% a mais)
+  fire:
+    ice: 1.5
+  
+  ice:
+    fire: 1.5
+    
+  light:
+    darkness: 1.5
+    
+  darkness:
+    light: 1.5
+    
+  divine:
+    undead: 2.0     # Dano Dobrado contra mortos-vivos
+    darkness: 1.5
+
+level:
+  # Nível máximo do jogador
+  max-level: 100
+  
+  # XP base necessária para o nível 1 -> 2
+  base-xp: 100.0
+  
+  # Crescimento da curva de XP
+  linear-xp: 15.0
+  exponential-xp: 1.1
+
+  # XP padrão ao matar um mob que não tem configuração específica
+  default-kill-xp: 10.0
+  # Mitigação = Defesa / (Defesa + Divisor)
+  defense-scaling:
+    enabled: true
+    base-divisor: 20.0 # Nível 1 = Divisor 20. Nível 100 = Divisor 2000.
+
+  # Limite Máximo de Mitigação (Hard Cap)
+  # Impede que jogadores fiquem imortais (100% redução).
+  # 0.80 = 80% de redução máxima.
+  max-mitigation: 0.80
+
+# ==============================================================================
+#                        INTERAÇÕES ELEMENTAIS
+# ==============================================================================
+# Define como os elementos interagem entre si.
+# O formato é: atacante -> vítima: multiplicador
+#
+# Exemplo:
+# fire:
+#   ice: 1.5  -> Fogo causa 150% de dano em Gelo (Fraqueza)
+#   water: 0.5 -> Fogo causa 50% de dano em Água (Resistência)
+#
+# Se uma interação não estiver listada, o multiplicador padrão é 1.0.
+# ==============================================================================
+elemental-interactions:
+  # Define se o sistema de fraquezas e resistências elementais está ativo.
+  # Se false, todos os elementos causarão dano normal (1.0x), ignorando a tabela abaixo.
+  enabled: true
+
+  fire:
+    ice: 1.5      # Fogo derrete Gelo (Dano aumentado)
+    nature: 1.2   # Fogo queima Natureza (Leve vantagem)
+    water: 0.5    # Fogo é fraco contra Água (Dano reduzido)
+  
+  ice:
+    fire: 0.5     # Gelo derrete não Fogo (Dano reduzido)
+    nature: 1.2   # Gelo congela Natureza (Leve vantagem)
+    water: 0.8    # Gelo congela Água (Leve desvantagem)
+
+  light:
+    darkness: 2.0 # Luz é super efetiva contra Trevas (Dano dobrado)
+    divine: 0.5   # Luz não afeta muito o Divino
+
+  darkness:
+    light: 0.5    # Trevas são dissipadas pela Luz (Dano reduzido)
+    divine: 0.2   # Trevas são muito fracas contra Divino
+    human: 1.2    # Trevas corrompem Humanos
+
+  divine:
+    darkness: 2.5 # Divino purifica Trevas (Dano massivo)
+    undead: 2.0   # Divino purifica Mortos-vivos
+
+level:
+  # ============================================================================
+  #                        SISTEMA DE PROGRESSÃO E XP
+  # ============================================================================
+  # Este sistema controla como os jogadores evoluem e ganham experiência.
+  # Diferente de RPGs simples, aqui temos conceitos de "Risco vs Recompensa",
+  # "Sorte (RNG)" e "Escalonamento Dinâmico".
+  
+  # Nível máximo que um jogador pode alcançar.
+  max-level: 100
+  
+  # ----------------------------------------------------------------------------
+  # 1. CURVA DE EVOLUÇÃO (XP NECESSÁRIO)
+  # ----------------------------------------------------------------------------
+  # Define quanto XP o jogador precisa para passar de nível.
+  # A fórmula usada cria uma curva suave no início e íngreme no final.
+  # Fórmula: XP_Necessario = Base + (Nível * Linear) * (Exponencial ^ Nível)
+  requirements:
+    base-xp: 150.0        # Valor inicial (Nível 1->2)
+    linear-growth: 25.0   # Adiciona um valor fixo a cada nível (Crescimento suave)
+    exponential-growth: 1.08 # Multiplicador composto (Crescimento rápido nos níveis altos)
+                             # CUIDADO: Valores acima de 1.15 tornam o jogo impossível rápido.
+
+  # ----------------------------------------------------------------------------
+  # 2. MECÂNICA DE GANHO DE XP (MATAR MOBS)
+  # ----------------------------------------------------------------------------
+  # Aqui definimos a lógica complexa de quanto XP um mob deve dar.
+  xp-gain:
+    # Valor base se o mob não tiver um XP específico definido.
+    default-base: 20.0
+    
+    # Mobs com XP Especial
+    # Você pode definir valores fixos para mobs vanilla aqui.
+    # Para MythicMobs, use o drop: "- midgard-xp{amount=500} 1 1" no arquivo do mob.
+    mobs:
+      ZOMBIE: 25.0
+      SKELETON: 30.0
+      ENDER_DRAGON: 15000.0
+      WITHER: 10000.0
+    
+    # --- [ A. FATOR SORTE (RNG) ] ---------------------------------------------
+    # Adiciona aleatoriedade para que o grind não seja monótono.
+    # O XP final será multiplicado por um valor aleatório entre min e max.
+    variance:
+      enabled: true
+      min-factor: 0.80    # Azar: Ganha apenas 80% do XP original.
+      max-factor: 1.30    # Sorte: Ganha 130% (Crítico de XP).
+
+    # --- [ B. ESCALONAMENTO POR NÍVEL DO MOB ] --------------------------------
+    # Mobs de nível alto devem dar mais XP naturalmente.
+    # O sistema tenta ler o nível do mob do nome (ex: "[Lv. 10] Zumbi").
+    scaling:
+      mob-level-impact: true
+      # Bônus fixo por nível do mob.
+      # Exemplo: Mob Nível 10 ganha +50 XP base (10 * 5.0).
+      mob-level-multiplier: 5.0
+
+    # --- [ C. SISTEMA DE DISPARIDADE (GAP LEVEL) ] ----------------------------
+    # A mecânica mais importante para balanceamento.
+    # Penaliza quem mata mobs fracos e premia quem enfrenta desafios.
+    disparity:
+      enabled: true
+      
+      # PENALIDADE (Anti-Farm de Nível Baixo)
+      # Impede que jogadores fortes fiquem farmando na área inicial.
+      penalty:
+        threshold: 5         # Diferença de níveis permitida sem penalidade.
+        reduction: 0.15      # -15% XP para cada nível de diferença extra.
+        min-cap: 0.05        # O jogador sempre ganhará pelo menos 5% (nunca 0).
+
+      # BÔNUS (Underdog / Desafio)
+      # Recompensa jogadores que matam mobs mais fortes que eles.
+      bonus:
+        threshold: 0         # A partir de qual diferença o bônus começa.
+        increment: 0.08      # +8% XP para cada nível que o mob for superior.
+        max-cap: 2.50        # Limite máximo: 2.5x o XP original (evita abuso).

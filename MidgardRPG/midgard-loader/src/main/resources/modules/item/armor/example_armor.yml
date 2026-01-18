@@ -1,0 +1,10 @@
+armor_example:
+  base:
+    material: LEATHER_CHESTPLATE
+    name: '<white>'
+    tier: COMMON
+    type: ARMOR
+    revision-id: 1
+  mechanics:
+    stats:
+      attack-damage: 5

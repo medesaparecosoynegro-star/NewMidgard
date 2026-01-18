@@ -1,0 +1,150 @@
+stats:
+  material:
+    name: '<gradient:#aaaaaa:#555555><b>🧱 Material</b></gradient>'
+    lore:
+      - '<gray>O material do seu item.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para alterar este valor.'
+      - '<yellow>» Clique direito para remover este valor.'
+    hide_attributes: true
+
+  tier:
+    name: '<gradient:#ffaa00:#ffff55><b>⭐ Tier do Item</b></gradient>'
+    lore:
+      - '<gray>O tier (raridade) do item.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para alterar este valor.'
+      - '<yellow>» Clique direito para remover este valor.'
+    hide_attributes: true
+
+  revision_id:
+    name: '<gradient:#55ffff:#00aaaa><b>🔄 ID de Revisão</b></gradient>'
+    lore:
+      - '<gray>O ID de Revisão é usado para determinar'
+      - '<gray>se um item está desatualizado ou não. Você'
+      - '<gray>deve aumentar isso sempre que'
+      - '<gray>fizer alterações não seu item!'
+      - ''
+      - '<gold>O atualizador é inteligente e aplicará'
+      - '<gold>mudanças nos atributos base do item,'
+      - '<gold>mantendo gemas intactas (por exemplo).'
+      - ''
+      - '<gray>ID de Revisão Atual: <green>%value%'
+      - ''
+      - '<yellow>▸ Clique direito para aumentar este valor.'
+      - '<yellow>▸ Clique esquerdo para diminuir este valor.'
+    hide_attributes: true
+
+  max_stack_size:
+    name: '<gradient:#ffffff:#aaaaaa><b>📦 Tamanho Máximo do Pack</b></gradient>'
+    lore:
+      - '<blue>Atributo Vanilla'
+      - ''
+      - '<gray>O tamanho máximo do pack do seu item.'
+      - '<gray>Define quantos itens não máximo podem se'
+      - '<gray>empilhar juntos (como poções ou blocos).'
+      - ''
+      - '<gray>Tamanho Máximo Atual do Pack: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para alterar este valor.'
+      - '<yellow>» Clique direito para remover este valor.'
+    hide_attributes: true
+
+  item_set:
+    name: '<gradient:#55ff55:#00aa00><b>🛡 Conjunto de Itens</b></gradient>'
+    lore:
+      - '<gray>Conjuntos de itens podem dar ao jogador bônus'
+      - '<gray>extras quando eles vestem múltiplas peças.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para alterar este valor.'
+      - '<yellow>» Clique direito para remover este valor.'
+    hide_attributes: true
+
+  permission:
+    name: '<gradient:#ff5555:#aa0000><b>🔒 Permissão</b></gradient>'
+    lore:
+      - '<gray>A permissão necessária para usar este item.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para alterar este valor.'
+      - '<yellow>» Clique direito para remover a última permissão.'
+    hide_attributes: true
+
+  base_item_damage:
+    name: '<gradient:#ff5555:#aa0000><b>💥 Dano Base do Item</b></gradient>'
+    lore:
+      - '<gray>Dano padrão do item. Isso <red>NÃO'
+      - '<gray>impacta a durabilidade máxima do item.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para alterar este valor.'
+      - '<yellow>» Clique direito para remover este valor.'
+    hide_attributes: true
+
+  disable_interaction:
+    name: '<gradient:#ff5555:#550000><b>✋ Desativar Interação</b></gradient>'
+    lore:
+      - '<gray>Desative qualquer interação indesejada:'
+      - '<gray>comer alimentos, beber poções, usar não ar.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para alternar'
+      - '<yellow>» Clique direito para escolher uma probabilidade para ter esta opção.'
+    hide_attributes: true
+
+  equippable_slot:
+    name: '<gradient:#00aaaa:#005555><b>🧥 Slot Equipável</b></gradient>'
+    lore:
+      - '<gray>Slot onde o item deve ser equipado.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para alterar este valor.'
+      - '<yellow>» Clique direito para remover este valor.'
+    hide_attributes: true
+
+  equippable_model:
+    name: '<gradient:#00aaaa:#005555><b>👗 Modelo Equipável</b></gradient>'
+    lore:
+      - '<gray>Chave nomeada do modelo usado quando o item é equipado.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para alterar este valor.'
+      - '<yellow>» Clique direito para remover este valor.'
+    hide_attributes: true
+
+  browser_index:
+    name: '<gradient:#55ff55:#00aa00><b>🔢 Índice do Navegador</b></gradient>'
+    lore:
+      - '<blue>Opção de Modelo'
+      - ''
+      - '<gray>Usado pelo Navegador de Itens do MMOItems para'
+      - '<gray>ordenar itens. Quanto menor o número, mais'
+      - '<gray>alto o item fica na lista.'
+      - ''
+      - '<gray>Valor Atual: <green>%value%'
+      - ''
+      - '<yellow>» Clique esquerdo para alterar este valor.'
+      - '<yellow>» Clique direito para remover este valor.'
+    hide_attributes: true
+
+  nbt_tags:
+    name: '<gradient:#5555ff:#0000aa><b>💾 Tags NBT</b></gradient>'
+    lore:
+      - '<gray>Tags NBT Customizadas.'
+      - ''
+      - '<gray>Tags: <green>%size%'
+      - ''
+      - '<yellow>» Clique esquerdo para adicionar uma tag.'
+      - '<yellow>» Clique direito para remover a última tag.'
+    hide_attributes: true

@@ -1,0 +1,10 @@
+club_example:
+  base:
+    material: OAK_LOG
+    name: '<white>'
+    tier: COMMON
+    type: CLUB
+    revision-id: 1
+  mechanics:
+    stats:
+      attack-damage: 5

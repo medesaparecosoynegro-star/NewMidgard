@@ -1,0 +1,272 @@
+# Configura��o do Modulo Character
+# Configura��o do Modulo Character
+enabled: true
+
+menu:
+  title: "Informações do Personagem"
+  rows: 3
+  # Item de preenchimento para espa�os vazios
+  filler:
+    enabled: true
+    material: GRAY_STAINED_GLASS_PANE
+    name: " "
+    
+  items:
+    character_info:
+      slot: 7
+      material: PLAYER_HEAD
+      name: "<aqua>Informações do Personagem"
+      skull_owner: "%player_name%"
+      lore:
+        - "<gray>Nóvel Total: <white>%class_level%"
+        - "<gray>Nóvel Combate: <white>%class_level%"
+        - "<gray>Classe: <white>%class_name%"
+        - "<gray>Miss�es: <white>%quests_completed%/%quests_total%"
+        - "<gray>XP: <white>%xp_percent%"
+        - ""
+        - "<light_purple>Identifica��es:"
+        - "%identifications_page%"
+        - "%pagination%"
+        - ""
+        - "<green>Clique para Trocar de P�gina"
+
+      # Configura��o da pagina��o na lore (substitui %pagination%)
+      pagination:
+        format:
+          - ""
+          - "<white>P�gina %current_page%"
+          - "<gold><bold><< %bar%<gold><bold>>>"
+        bar:
+          current: "<green><bold>� "
+          other: "<gray><bold>� "
+        
+      # Lista de identificadores que ser� paginada (10 por página)
+      identifications:
+        - "<light_purple>- <gray>For�a: %strength%"
+        - "<light_purple>- <gray>Destreza: %dexterity%"
+        - "<light_purple>- <gray>Intelig�ncia: %intelligence%"
+        - "<light_purple>- <gray>Defesa: %defense%"
+        - "<light_purple>- <gray>Agilidade: %agility%"
+        - "<light_purple>- <gray>B�nus de XP: %xp_bonus%"
+        - "<light_purple>- <gray>B�nus de Loot: %loot_bonus%"
+        - "<light_purple>- <gray>Roubo de Vida: %life_steal%/3s"
+        - "<light_purple>- <gray>Roubo de Mana: %mana_steal%/3s"
+        - "<light_purple>- <gray>Regen. de Mana: %mana_regen%/5s"
+        - "<light_purple>- <gray>Vida: %health%"
+        - "<light_purple>- <gray>Regen. de Vida: %health_regen%"
+        - "<light_purple>- <gray>Dano de Terra: %damage_earth%%"
+        - "<light_purple>- <gray>Dano de Trov�o: %damage_thunder%%"
+        - "<light_purple>- <gray>Dano de �gua: %damage_water%%"
+        - "<light_purple>- <gray>Dano de Fogo: %damage_fire%%"
+        - "<light_purple>- <gray>Dano de Ar: %damage_air%%"
+        - "<light_purple>- <gray>Dano de Gelo: %damage_ice%%"
+        - "<light_purple>- <gray>Dano de Luz: %damage_light%%"
+        - "<light_purple>- <gray>Dano de Trevas: %damage_darkness%%"
+        - "<light_purple>- <gray>Dano Divino: %damage_divine%%"
+        - "<light_purple>- <gray>Dano: %damage%"
+        - "<light_purple>- <gray>Dano de Feiti�o: %spell_damage%%"
+        - "<light_purple>- <gray>Dano Ataque Principal: %weapon_damage%"
+        - "<light_purple>- <gray>Defesa de Terra: %defense_earth%%"
+        - "<light_purple>- <gray>Defesa de Trov�o: %defense_thunder%%"
+        - "<light_purple>- <gray>Defesa de �gua: %defense_water%%"
+        - "<light_purple>- <gray>Defesa de Fogo: %defense_fire%%"
+        - "<light_purple>- <gray>Defesa de Ar: %defense_air%%"
+        - "<light_purple>- <gray>Defesa de Gelo: %defense_ice%%"
+        - "<light_purple>- <gray>Defesa de Luz: %defense_light%%"
+        - "<light_purple>- <gray>Defesa de Trevas: %defense_darkness%%"
+        - "<light_purple>- <gray>Defesa Divina: %defense_divine%%"
+        - "<light_purple>- <gray>Velocidade de Movimento: %speed%%"
+
+    mastery_tomes:
+      slot: 8
+      material: WRITABLE_BOOK
+      name: "<dark_purple>Tomos de Maestria"
+      lore:
+        - "<gray>Tomos s�o recompensas especiais"
+        - "<gray>que podem fortalecer seu personagem"
+        - ""
+        - "<red>Req de Miss�o: Reino da"
+        - "<red>Luz I - Os Buracos de Minhoca"
+        - "<dark_gray>[Nv. 54]"
+        
+    ability_tree:
+      slot: 9
+      material: OAK_SAPLING
+      name: "<aqua>�rvore de Habilidades"
+      lore:
+        - "<gray>Gaste seus Pontos de Habilidade"
+        - "<gray>e desbloqueie novas habilidades!"
+        - ""
+        - "<aqua>? Pontos Dispon�veis: <white>%available_points%/%max_points%"
+        - ""
+        - "<gold>Pr�ximos Pontos de Habilidade:"
+        - "<gray>- Combate Nv. %next_level%"
+        - "<gray>..."
+        - ""
+        - "<green>Clique para Abrir"
+        
+    strength:
+      slot: 11
+      material: LIME_DYE
+      name: "<light_purple>Melhore sua habilidade de <dark_green>For�a"
+      lore:
+        - "  <gray>Agora          <gold>Prox"
+        - "  <aqua>%strength_pts% pts   <dark_gray>>>>>>>   <yellow>%strength_pts_next% pts"
+        - "    <aqua>* Modificado pelo seu equipamento"
+        - ""
+        - "<gray>Cada ponto nesta habilidade ir�"
+        - "<light_purple>aumentar <gray>qualquer dano que você causar,"
+        - "<gray>e aumentar o dano de <dark_green>Terra"
+        - "<gray>que você pode infligir"
+        - ""
+        - "<green>Clique-Esquerdo para adicionar 1 ponto"
+        - "<white>Segure Shift para modificar por 5"
+        - "<red>Você precisa estar dentro de uma cidade"
+        - "<red>para remover pontos de habilidade"
+        
+    dexterity:
+      slot: 12
+      material: YELLOW_DYE
+      name: "<light_purple>Melhore sua habilidade de <yellow>Destreza"
+      lore:
+        - "  <gray>Agora          <gold>Prox"
+        - "  <aqua>%dexterity_pts% pts   <dark_gray>>>>>>>   <yellow>%dexterity_pts_next% pts"
+        - "    <aqua>* Modificado pelo seu equipamento"
+        - ""
+        - "<gray>Cada ponto nesta habilidade ir�"
+        - "<light_purple>aumentar <gray>a chance de realizar um"
+        - "<gray>acerto cr�tico (dobrando o dano),"
+        - "<gray>e aumentar o dano de <yellow>Trov�o"
+        - "<gray>que você pode infligir"
+        - ""
+        - "<green>Clique-Esquerdo para adicionar 1 ponto"
+        - "<white>Segure Shift para modificar por 5"
+        - "<red>Você precisa estar dentro de uma cidade"
+        - "<red>para remover pontos de habilidade"
+        
+    intelligence:
+      slot: 13
+      material: LIGHT_BLUE_DYE
+      name: "<light_purple>Melhore sua habilidade de <aqua>Intelig�ncia"
+      lore:
+        - "  <gray>Agora          <gold>Prox"
+        - "  <aqua>%intelligence_pts% pts   <dark_gray>>>>>>>   <yellow>%intelligence_pts_next% pts"
+        - "    <aqua>* Modificado pelo seu equipamento"
+        - ""
+        - "<gray>Cada ponto nesta habilidade ir�"
+        - "<light_purple>aumentar <gray>sua mana m�xima,"
+        - "<gray>o dano de <aqua>�gua <gray>que você pode"
+        - "<gray>infligir, e <light_purple>reduzir <gray>custos de feiti�o"
+        - ""
+        - "<dark_aqua>Redu��o de Custo de Feiti�o: <white>0%"
+        - "<green>Clique-Esquerdo para adicionar 1 ponto"
+        - "<white>Segure Shift para modificar por 5"
+        - "<red>Você precisa estar dentro de uma cidade"
+        - "<red>para remover pontos de habilidade"
+        
+    defense:
+      slot: 14
+      material: RED_DYE
+      name: "<light_purple>Melhore sua habilidade de <red>Defesa"
+      lore:
+        - "  <gray>Agora          <gold>Prox"
+        - "  <aqua>%defense_pts% pts   <dark_gray>>>>>>>   <yellow>%defense_pts_next% pts"
+        - "    <aqua>* Modificado pelo seu equipamento"
+        - ""
+        - "<gray>Cada ponto nesta habilidade ir�"
+        - "<light_purple>reduzir <gray>qualquer dano que você receber,"
+        - "<gray>e aumentar o dano de <red>Fogo"
+        - "<gray>que você pode infligir"
+        - ""
+        - "<green>Clique-Esquerdo para adicionar 1 ponto"
+        - "<white>Segure Shift para modificar por 5"
+        - "<red>Você precisa estar dentro de uma cidade"
+        - "<red>para remover pontos de habilidade"
+        
+    agility:
+      slot: 15
+      material: WHITE_DYE
+      name: "<light_purple>Melhore sua habilidade de <white>Agilidade"
+      lore:
+        - "  <gray>Agora          <gold>Prox"
+        - "  <aqua>%agility_pts% pts   <dark_gray>>>>>>>   <yellow>%agility_pts_next% pts"
+        - "    <aqua>* Modificado pelo seu equipamento"
+        - ""
+        - "<gray>Cada ponto nesta habilidade ir�"
+        - "<light_purple>aumentar <gray>a chance de desviar de"
+        - "<gray>ataques, e aumentar o dano de <white>Ar"
+        - "<gray>que você pode infligir"
+        - ""
+        - "<green>Clique-Esquerdo para adicionar 1 ponto"
+        - "<white>Segure Shift para modificar por 5"
+        - "<red>Você precisa estar dentro de uma cidade"
+        - "<red>para remover pontos de habilidade"
+        
+    combat_info:
+      slot: 16
+      material: IRON_SWORD
+      name: "<red>Informações de Combate"
+      flags: 
+        - HIDE_ATTRIBUTES
+      lore:
+        - "<red>? Vida: <white>%health%/%max_health%"
+        - ""
+        - "<aqua>Defesas Elementais:"
+        - "<gray>- <dark_green>Terra <gray>Defesa: <white>%defense_earth%"
+        - "<gray>- <yellow>Trov�o <gray>Defesa: <white>%defense_thunder%"
+        - "<gray>- <aqua>�gua <gray>Defesa: <white>%defense_water%"
+        - "<gray>- <red>Fogo <gray>Defesa: <white>%defense_fire%"
+        - "<gray>- <white>Ar <gray>Defesa: <white>%defense_air%"
+        
+    profession_info:
+      slot: 17
+      material: IRON_AXE
+      name: "<green>Informações de Profiss�o"
+      flags:
+        - HIDE_ATTRIBUTES
+      lore:
+        - "<gray>Informações gerais sobre"
+        - "<gray>as profiss�es do seu personagem"
+        - ""
+        - "<aqua>? Sindicatos Silverbull:"
+        - "<gray>Você não faz parte de um"
+        - "<gray>Sindicato! Visite a <white>Sede"
+        - "<white>Silverbull <gray>para mais"
+        - "<gray>informa��es"
+        - ""
+        - "<gold>Habilidades de Coleta:"
+        - "<gray>- <dark_red>Nv. 8 Pesca <dark_gray>[9.52%]"
+        - "<gray>- <gray>Nv. 1 Corte de Lenha <dark_gray>[0%]"
+        - "<gray>- <gray>Nv. 1 Minera��o <dark_gray>[0%]"
+        - "<gray>- <gray>Nv. 1 Agricultura <dark_gray>[0%]"
+        - ""
+        - "<gold>Habilidades de Cria��o:"
+        - "<gray>- <gray>Nv. 1 Escriba <dark_gray>[0%]"
+        - "<gray>- <gray>Nv. 1 Joalheria <dark_gray>[0%]"
+        - "<gray>- <gray>Nv. 1 Alquimia <dark_gray>[0%]"
+        - "<gray>- <gray>Nv. 1 Culin�ria <dark_gray>[0%]"
+        - "<gray>- <gray>Nv. 1 Forja de Armas <dark_gray>[0%]"
+        - "<gray>- <gray>Nv. 1 Alfaiataria <dark_gray>[0%]"
+        - "<gray>- <gray>Nv. 1 Marcenaria <dark_gray>[0%]"
+        - "<gray>- <gray>Nv. 1 Armadura <dark_gray>[0%]"
+        
+    store:
+      slot: 25
+      material: EMERALD
+      name: "<green>Loja e Guarda-Roupa"
+      lore:
+        - "<gray>Navegue pela Loja"
+        - "<gray>e equipe cosm�ticos adquiridos"
+        - ""
+        - "<green>Clique para Abrir"
+        
+    guild:
+      slot: 26
+      material: WHITE_BANNER
+      name: "<aqua>Ver Sua Guilda"
+      lore:
+        - "<gray>Você deve entrar em uma guilda"
+        - "<gray>antes de ver este menu"
+        - ""
+        - "<gray>Encontre o Mestre da Guilda em"
+        - "<gray>Cinfras para criar uma guilda"

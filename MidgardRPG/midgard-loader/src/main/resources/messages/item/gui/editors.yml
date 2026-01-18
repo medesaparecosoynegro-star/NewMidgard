@@ -1,0 +1,15 @@
+boolean:
+  reset: <green>Valor resetado para falso.
+  toggled: <green>Valor alterado para %value%.
+string:
+  cleared: <green>%prompt% limpo!
+  enter_value: '<yellow>Digite %prompt% não chat (ou digite ''cancel'' para cancelar):'
+  updated: <green>%prompt% atualizado!
+list:
+  cleared: <green>%title% limpo!
+  updated: <green>%title% atualizado!
+stat:
+  reset: <green>%stat% resetado para 0!
+  enter_value: '<yellow>Digite o valor para %stat% não chat (ou digite ''cancel'' para cancelar):'
+  updated: <green>%stat% atualizado!
+  invalid_format: <red>Formato de número inválido.

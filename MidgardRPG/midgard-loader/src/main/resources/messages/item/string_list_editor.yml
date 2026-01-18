@@ -1,0 +1,19 @@
+# ============================================
+# MIDGARD ITEM - EDITOR DE LISTA
+# ============================================
+# Padrão V2.0 - Oficial
+# ============================================
+
+title: "<gradient:#55ffff:#00aaaa><bold>✦ Editando Lista ✦</bold></gradient>"
+
+lore:
+  edit: "<gray>Clique esquerdo para editar"
+  delete: "<gray>Clique direito para remover"
+
+buttons:
+  back: "<red>← Voltar"
+  add: "<green>+ Adicionar Linha"
+
+prompts:
+  new_line: "Nova Linha"
+  edit_line: "Editar Linha"
